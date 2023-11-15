@@ -47,6 +47,7 @@ jobs:
       
       - name: create VPN markdown file
         run: |
+          pwd
           python main.py
           cat source/_posts/VPN合集.md
       
@@ -65,6 +66,7 @@ jobs:
       - name: Commit Changes
         run: |
           pwd
+          ls -la
           git checkout main
           git add .
           git commit -m "Updated at $(date '+%Y-%m-%d %H:%M:%S')"
