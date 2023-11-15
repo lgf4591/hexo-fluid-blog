@@ -90,8 +90,13 @@ theme: fluid
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
+# deploy:
+#   - type: baidu_url_submitter
+# 参考： https://www.bilibili.com/video/BV1Yb411a7ty/?spm_id_from=333.788.recommend_more_video.2&vd_source=6cecd1f17a6c0ef08a944dd92199a516
 deploy:
-  - type: baidu_url_submitter
+  type: git
+  repo: git@github.com:lgf4591/lgf4591.github.io.git
+  branch: master
 
 nofollow:
   enable: true
