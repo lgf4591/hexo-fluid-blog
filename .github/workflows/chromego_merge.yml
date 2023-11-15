@@ -60,14 +60,12 @@ jobs:
           chmod 700 ~/.ssh
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan github.com >> ~/.ssh/known_hosts
-          git config --global user.email "actions@github.com"
-          git config --global user.name "GitHub Action"
 
       - name: Commit Changes
         run: |
-          pwd
-          ls -la
-          git checkout main
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Action"
+          git pull --rebase
           git add .
-          git commit -m "Updated at $(date '+%Y-%m-%d %H:%M:%S')"
+          git commit --allow-empty -m "pdated at $(date '+%Y-%m-%d %H:%M:%S')"
           git push
