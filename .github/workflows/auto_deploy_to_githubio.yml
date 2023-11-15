@@ -1,0 +1,62 @@
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
+
+name: Auto deploy to github pages
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Download Branch
+      uses: actions/checkout@v2
+
+    - name: Update Submodule
+      run: |
+        git submodule init
+        git submodule update --remote
+
+    - name: Setup Node
+      uses: actions/setup-node@v1
+      with:
+        node-version: "14.x"
+
+    - name: Hexo Generate
+      run: |
+        rm -rf ./public
+        yarn run hexo clean
+        yarn run hexo generate
+    
+    - name: Setup Git
+      env:
+        ACTION_DEPLOY_KEY: ${{ secrets.HEXO_DEPLOY_KEY }}
+      run: |
+        mkdir -p ~/.ssh/
+        echo "$ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa
+        chmod 700 ~/.ssh
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan github.com >> ~/.ssh/known_hosts
+        git config --global user.email "lgf4591@outlook.com"
+        git config --global user.name "lgf4591"
+
+    - name: Install NodeModules
+      run: |
+        rm -f .yarnclean yarn.lock
+        yarn global add hexo-cli
+        yarn --non-interactive --silent
+        yarn list --depth=0
+
+    - name: Install Pandoc
+      run: sudo apt-get install -y pandoc
+
+    - name: Deploy
+      run: |
+        hexo clean
+        hexo deploy
