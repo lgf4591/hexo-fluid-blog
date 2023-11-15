@@ -2,3 +2,6 @@
 	path = themes/fluid
 	url = https://github.com/fluid-dev/hexo-theme-fluid
 	branch = develop
+[submodule "python/chromego_merge"]
+	path = python/chromego_merge
+	url = https://github.com/vveg26/chromego_merge.git

@@ -16,7 +16,7 @@ sticky: 100
 ## 添加[#](https://www.cnblogs.com/jyroy/p/14367776.html#idx_0)
 
 ```
-Copygit submodule add <url> <path>
+git submodule add <url> <path>
 
 ```
 
@@ -28,7 +28,7 @@ Copygit submodule add <url> <path>
 如果在添加子模块的时候想要指定分支，可以利用 -b 参数
 
 ```
-Copygit submodule add -b <branch> <url> <path>
+git submodule add -b <branch> <url> <path>
 
 ```
 
@@ -37,14 +37,14 @@ Copygit submodule add -b <branch> <url> <path>
 ### 未指定分支[#](https://www.cnblogs.com/jyroy/p/14367776.html#idx_2)
 
 ```
-Copygit submodule add https://github.com/tensorflow/benchmarks.git 3rdparty/benchmarks
+git submodule add https://github.com/tensorflow/benchmarks.git 3rdparty/benchmarks
 
 ```
 
 .gitsubmodule内容
 
 ```
-Copy[submodule "3rdparty/benchmarks"]
+[submodule "3rdparty/benchmarks"]
 path = 3rdparty/benchmarks
 url = https://github.com/tensorflow/benchmarks.git
 
@@ -53,14 +53,14 @@ url = https://github.com/tensorflow/benchmarks.git
 ### 指定分支[#](https://www.cnblogs.com/jyroy/p/14367776.html#idx_3)
 
 ```
-Copygit submodule add -b cnn_tf_v1.10_compatible https://github.com/tensorflow/benchmarks.git 3rdparty/benchmarks
+git submodule add -b cnn_tf_v1.10_compatible https://github.com/tensorflow/benchmarks.git 3rdparty/benchmarks
 
 ```
 
 .gitsubmodule内容
 
 ```
-Copy[submodule "3rdparty/benchmarks"]
+[submodule "3rdparty/benchmarks"]
 path = 3rdparty/benchmarks
 url = https://github.com/tensorflow/benchmarks.git
 branch = cnn_tf_v1.10_compatible
@@ -72,14 +72,14 @@ branch = cnn_tf_v1.10_compatible
 当我们add子模块之后，会发现文件夹下没有任何内容。这个时候我们需要再执行下面的指令添加源码。
 
 ```
-Copygit submodule update --init --recursive
+git submodule update --init --recursive
 
 ```
 
 这个命令是下面两条命令的合并版本
 
 ```
-Copygit submodule init
+git submodule init
 git submodule update
 
 ```
@@ -89,7 +89,7 @@ git submodule update
 我们引入了别人的仓库之后，如果该仓库作者进行了更新，我们需要手动进行更新。即进入子模块后，执行
 
 ```
-Copygit pull
+git pull
 
 ```
 
@@ -100,34 +100,34 @@ Copygit pull
 1.  删除子模块目录及源码
 
 ```
-Copyrm -rf 子模块目录
+rm -rf 子模块目录
 
 ```
 
 2.  删除.gitmodules中的对应子模块内容
 
 ```
-Copyvi .gitmodules
+vi .gitmodules
 
 ```
 
 3.  删除.git/config配置中的对应子模块内容
 
 ```
-Copyvi .git/config
+vi .git/config
 
 ```
 
 4.  删除.git/modules/下对应子模块目录
 
 ```
-Copyrm -rf .git/modules/子模块目录
+rm -rf .git/modules/子模块目录
 
 ```
 
 5.  删除git索引中的对应子模块
 
 ```
-Copygit rm --cached 子模块目录
+git rm --cached 子模块目录
 
 ```
