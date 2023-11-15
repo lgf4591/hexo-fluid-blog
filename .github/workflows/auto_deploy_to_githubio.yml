@@ -6,8 +6,6 @@ name: Auto deploy to github pages
 on:
   push:
     branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
 
 jobs:
   build:
@@ -17,6 +15,9 @@ jobs:
     steps:
     - name: Download Branch
       uses: actions/checkout@v2
+    
+    - name: Install Pandoc
+      run: sudo apt-get install -y pandoc
 
     - name: Update Submodule
       run: |
@@ -52,9 +53,6 @@ jobs:
         rm -rf ./public
         yarn run hexo clean
         yarn run hexo generate
-
-    - name: Install Pandoc
-      run: sudo apt-get install -y pandoc
 
     - name: Auto Deploy to Github Pages
       run: |
