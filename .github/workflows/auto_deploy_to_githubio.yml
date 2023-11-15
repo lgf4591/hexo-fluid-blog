@@ -27,12 +27,6 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: "14.x"
-
-    - name: Hexo Generate
-      run: |
-        rm -rf ./public
-        yarn run hexo clean
-        yarn run hexo generate
     
     - name: Setup Git
       env:
@@ -52,11 +46,17 @@ jobs:
         yarn global add hexo-cli
         yarn --non-interactive --silent
         yarn list --depth=0
+    
+    - name: Hexo Generate
+      run: |
+        rm -rf ./public
+        yarn run hexo clean
+        yarn run hexo generate
 
     - name: Install Pandoc
       run: sudo apt-get install -y pandoc
 
-    - name: Deploy
+    - name: Auto Deploy to Github Pages
       run: |
         hexo clean
         hexo deploy
