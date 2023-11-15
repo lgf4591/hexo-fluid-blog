@@ -96,7 +96,7 @@ theme: fluid
 deploy:
   type: git
   repo: git@github.com:lgf4591/lgf4591.github.io.git
-  branch: master
+  branch: main
 
 nofollow:
   enable: true
