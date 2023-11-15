@@ -36,7 +36,7 @@ jobs:
           ssh-keyscan github.com >> ~/.ssh/known_hosts
           git config --global user.email "actions@github.com"
           git config --global user.name "GitHub Action"
-          git pull --rebase
+          git pull remote origin/main --rebase
       
       - name: Update Submodule
         run: |
