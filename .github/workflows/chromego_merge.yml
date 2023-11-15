@@ -4,10 +4,10 @@ name: ChromeGo Merge Script
 #   push:
 #     branches: [ "main" ]
 
-on:
-  # push:
-  #   branches:
-  #     - main  # 替换为你的默认分支
+on:  
+  push:
+    tags:
+      - 'v*'
   schedule:
     - cron: '0 0,3,13 * * *'  # 每6h一次
   workflow_dispatch:  # 触发手动事件
