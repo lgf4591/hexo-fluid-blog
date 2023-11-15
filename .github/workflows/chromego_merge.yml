@@ -60,6 +60,7 @@ jobs:
 
       - name: Commit Changes
         run: |
+          git checkout main
           git add .
           git commit -m "Updated at $(date '+%Y-%m-%d %H:%M:%S')"
-          git push
+          git push origin main
