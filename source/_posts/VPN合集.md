@@ -1,7 +1,7 @@
 
 ---
-title: VPN合集
-date: 2023-11-16 02:25:16
+title: VPN合集 (Last Update Time: 2023-11-16 02:41:30)
+date: 2023-11-16 02:41:30
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -12,8 +12,6 @@ math: true
 mermaid: true
 sticky: 100
 ---
-
-======================================================== Last Update Time: 2023-11-16 02:25:16 ========================================================
 
 
 # vless_node
