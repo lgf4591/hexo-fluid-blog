@@ -3,14 +3,14 @@
 
 name: Auto deploy to github pages
 
-on:
-  push:
-    branches: [ "main" ]
-
-# on:  
+# on:
 #   push:
-#     tags:
-#       - 'v*'
+#     branches: [ "main" ]
+
+on:  
+  push:
+    tags:
+      - 'v*'
 
 
 permissions:

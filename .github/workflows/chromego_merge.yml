@@ -1,16 +1,16 @@
 name: ChromeGo Merge Script
 
-# on:
-#   push:
-#     branches: [ "main" ]
-
-on:  
+on:
   push:
-    tags:
-      - 'v*'
-  schedule:
-    - cron: '0 0,3,13 * * *'  # 每6h一次
-  workflow_dispatch:  # 触发手动事件
+    branches: [ "main" ]
+
+# on:  
+#   # push:
+#   #   tags:
+#   #     - 'v*'
+#   schedule:
+#     - cron: '0 0,3,13 * * *'  # 每6h一次
+#   workflow_dispatch:  # 触发手动事件
 
 jobs:
   merge:
