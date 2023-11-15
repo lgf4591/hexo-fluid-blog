@@ -32,7 +32,6 @@ jobs:
 
       - name: Install dependencies
         run: |
-          python main.py
           cd python/chromego_merge
           pip install -r requirements.txt
 
@@ -45,6 +44,11 @@ jobs:
         run: |
           cd python/chromego_merge
           python merge.py
+      
+      - name: create VPN markdown file
+        run: |
+          python main.py
+          cat source/_posts/VPN合集.md
       
       - name: Setup Git
         env:
@@ -60,6 +64,7 @@ jobs:
 
       - name: Commit Changes
         run: |
+          pwd
           git checkout main
           git add .
           git commit -m "Updated at $(date '+%Y-%m-%d %H:%M:%S')"
