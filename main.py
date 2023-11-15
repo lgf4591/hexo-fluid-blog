@@ -48,7 +48,7 @@ with open("python/chromego_merge/sub/shadowrocket_base64.txt","r", encoding="utf
 
 final_content = f"""
 ---
-title: VPN合集 (Last Update Time: {update_time})
+title: VPN合集 
 date: {update_time}
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
@@ -61,7 +61,8 @@ mermaid: true
 sticky: 100
 ---
 
-
+> Last Update Time: {update_time}
+---
 # vless_node
 ```bash
 

@@ -69,7 +69,7 @@ jobs:
       with:
         apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-        projectName: eterance-tools
+        projectName: fluid-blog
         directory: ./public
         # Optional: Enable this if you want to have GitHub Deployments triggered
         gitHubToken: ${{ secrets.ACTION_TOKEN }}
