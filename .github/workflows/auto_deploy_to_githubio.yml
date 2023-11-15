@@ -47,14 +47,10 @@ jobs:
         yarn global add hexo-cli
         yarn --non-interactive --silent
         yarn list --depth=0
-    
-    - name: Hexo Generate
+
+    - name: Auto Deploy to Github Pages
       run: |
         rm -rf ./public
         yarn run hexo clean
         yarn run hexo generate
-
-    - name: Auto Deploy to Github Pages
-      run: |
-        hexo clean
-        hexo deploy
+        yarn run hexo deploy
