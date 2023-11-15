@@ -1,0 +1,55 @@
+name: ChromeGo Merge Script
+
+on:
+  push:
+    branches: [ "master" ]
+
+# on:
+#   # push:
+#   #   branches:
+#   #     - main  # 替换为你的默认分支
+#   schedule:
+#     - cron: '0 0,3,13 * * *'  # 每6h一次
+#   workflow_dispatch:  # 触发手动事件
+
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.11
+      
+      - name: Update Submodule
+        run: |
+          git submodule init
+          git submodule update --remote
+
+      - name: Install dependencies
+        run: |
+          python main.py
+          cd python/chromego_merge
+          pip install -r requirements.txt
+
+      - name: Run merge script
+        run: python meta_merge.py 
+
+      - name: Run shadowrocket merge script
+        run: |
+          pwd
+          python merge.py  
+
+      # - name: Commit Changes
+      #   run: |
+      #     git config core.ignorecase false
+      #     git config --local user.email "actions@github.com"
+      #     git config --local user.name "GitHub Action"
+      #     git add .
+      #     git commit -m "Updated at $(date '+%Y-%m-%d %H:%M:%S')"
+      #     git push
