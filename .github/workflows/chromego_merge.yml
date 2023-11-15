@@ -2,7 +2,7 @@ name: ChromeGo Merge Script
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "main" ]
 
 # on:
 #   # push:
