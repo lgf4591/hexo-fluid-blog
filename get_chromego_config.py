@@ -158,7 +158,7 @@ if __name__ == '__main__':
             for file in os.listdir(ip_bat_path):
                 if file.endswith(".bat"):
                     file_name = file.split(".")[0]
-                    with open(Path(ip_bat_path, file), 'r', encoding='utf-8') as f:
+                    with open(Path(ip_bat_path, file), 'r', encoding='gbk') as f:
                         # print(f.read())
                         ip_data = f.read()
                         # print("Urls: ", find_url(ip_data))
