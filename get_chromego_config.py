@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import os
 from pathlib import Path
-import shutil
+import datetime
 import time
 import re
 import platform
@@ -14,6 +14,8 @@ import httpx
 # import py7zr
 
 from python.modules.downloader import DownloadFile
+
+update_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
 proxy_flag = False
 proxy = "http://127.0.0.1:2080" if proxy_flag else None
@@ -29,6 +31,25 @@ headers = {
 httpx_session = httpx.Client(http2=False, proxies=proxies)
 httpx_session.headers = {"author": "lgf"}
 
+all_config_md_content_list = []
+chromego_md_header = f"""
+---
+title: ChromeGo所有配置文件合集 
+date: {update_time}
+index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
+category: VPN
+tags:
+  - VPN
+  - ChromeGo
+  - Config
+math: true
+mermaid: true
+sticky: 100
+---
+
+> Last Update Time: {update_time}
+---
+"""
 
 def find_url(string): 
     # findall() 查找匹配正则表达式的所有网址集合
@@ -49,6 +70,8 @@ async def get_async_request(client, url: str, file_name: str, proxy_type: str, c
         # content = await res.read()
     # print(text)
     ext = url.split("/")[-1].split(".")[-1]
+    all_config_md_content_list.append([f"{proxy_type}-{file_name}.{ext}", text])
+    
     config_dir = f"./python/chromego/{proxy_type}"
     if not os.path.exists(config_dir):
         os.mkdir(config_dir)
@@ -182,6 +205,16 @@ if __name__ == '__main__':
     
     asyncio.run(async_httpx_once_client(proxy_urls_tuple_list, proxy))
     
+    all_config_md_content_list = sorted(all_config_md_content_list,key=(lambda x:x[0]),reverse=False)
+
+    with open("./source/_posts/ChromeGo所有配置文件合集.md", "w", encoding="utf-8") as md:
+        md.write(chromego_md_header)
+    for config in all_config_md_content_list:
+        with open("./source/_posts/ChromeGo所有配置文件合集.md", "a", encoding="utf-8") as md:
+            md.write(f"\n## {config[0]}\n")
+            md.write("```bash\n")
+            md.write(f"{config[1]}\n")
+            md.write("```\n")
     
     
     end_time = time.time()
