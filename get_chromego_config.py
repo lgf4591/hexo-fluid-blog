@@ -49,7 +49,10 @@ async def get_async_request(client, url: str, file_name: str, proxy_type: str, c
         # content = await res.read()
     # print(text)
     ext = url.split("/")[-1].split(".")[-1]
-    with open(f"./python/chromego/{proxy_type}/{file_name}.{ext}", "w", encoding='utf-8') as f:
+    config_dir = f"./python/chromego/{proxy_type}"
+    if not os.path.exists(config_dir):
+        os.mkdir(config_dir)
+    with open(f"{config_dir}/{file_name}.{ext}", "w", encoding='utf-8') as f:
         f.write(text)
 
 def get_status_code(url):
