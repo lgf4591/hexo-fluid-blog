@@ -65,6 +65,28 @@ jobs:
           python main.py
           cat source/_posts/VPN合集.md
       
+      # - name: Commit Changes
+      #   run: |
+      #     git status
+      #     git branch -a
+      #     cat .git/config
+      #     git add .
+      #     git commit --allow-empty -m "pdated at $(date '+%Y-%m-%d %H:%M:%S')"
+      #     git push
+
+      - name: create ChromeGo Config markdown file
+        run: |
+          pwd
+          rm -rf downlaod
+          mkdir -p downlaod
+          sudo apt-get install wget curl axel p7zip-full -y
+          cd downlaod
+          axel -n 10 --output=ChromeGo.7z https://github.com/bannedbook/fanqiang/releases/download/ChromeGo-latest/ChromeGo.7z
+          7z x ChromeGo.7z
+          ls -la ChromeGo
+          cd ..
+          python get_chromego_config.py
+          
       - name: Commit Changes
         run: |
           git status
@@ -73,11 +95,4 @@ jobs:
           git add .
           git commit --allow-empty -m "pdated at $(date '+%Y-%m-%d %H:%M:%S')"
           git push
-
-      - name: create ChromeGo Config markdown file
-        run: |
-          pwd
-          mkdir -p downlaod
-          python get_chromego_config.py
-          ls downlaod
 

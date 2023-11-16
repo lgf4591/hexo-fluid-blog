@@ -50,7 +50,7 @@ async def get_async_request(client, url: str, file_name: str, proxy_type: str, c
         # content = await res.read()
     # print(text)
     ext = url.split("/")[-1].split(".")[-1]
-    with open(f"./all_proxy_config_file/{proxy_type}/{file_name}.{ext}", "w", encoding='utf-8') as f:
+    with open(f"./python/chromego/{proxy_type}/{file_name}.{ext}", "w", encoding='utf-8') as f:
         f.write(text)
 
 def get_status_code(url):
@@ -132,11 +132,11 @@ if __name__ == '__main__':
     # asyncio.run(run_test)
     # get_status_code(zip_url)
     
-    chromego_download_url = "https://ghproxy.com/https://github.com/bannedbook/fanqiang/releases/download/ChromeGo-latest/ChromeGo.7z" if getpass.getuser() == "lgf" else "https://github.com/bannedbook/fanqiang/releases/download/ChromeGo-latest/ChromeGo.7z"
-    data_folder = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'downlaod')
-    thread_num = 20
-    downloader = DownloadFile(chromego_download_url, data_folder, thread_num)
-    downloader.run()
+    # chromego_download_url = "https://ghproxy.com/https://github.com/bannedbook/fanqiang/releases/download/ChromeGo-latest/ChromeGo.7z" if getpass.getuser() == "lgf" else "https://github.com/bannedbook/fanqiang/releases/download/ChromeGo-latest/ChromeGo.7z"
+    # data_folder = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'downlaod')
+    # thread_num = 20
+    # downloader = DownloadFile(chromego_download_url, data_folder, thread_num)
+    # downloader.run()
     
     # BUG: py7zr.exceptions.UnsupportedCompressionMethodError: (b'\x03\x03\x01\x1b', 'BCJ2 filter is not supported by py7zr. Please consider to contribute to XZ/liblzma project and help Python core team implementing it. Or please use another tool to extract it.')
     # with py7zr.SevenZipFile('./downlaod/ChromeGo.7z', mode='r') as z:
@@ -146,39 +146,39 @@ if __name__ == '__main__':
     # shutil.unpack_archive('./downlaod/ChromeGo.7z', "./downlaod")
     
     # proxy_types = ["clash.meta","clashB","hysteria","hysteria2","naiveproxy","singbox","v2go","v2rayB","Xray"]
-    # path = Path('./downlaod/ChromeGo/')
-    # proxy_paths = [e for e in path.iterdir() if (e.is_dir() and "Browser" not in str(e) and "chrome-user-data" not in str(e))]
+    path = Path('./downlaod/ChromeGo/')
+    proxy_paths = [e for e in path.iterdir() if (e.is_dir() and "Browser" not in str(e) and "chrome-user-data" not in str(e))]
     
-    # proxy_urls_map = {}
-    # proxy_urls_tuple_list = []
-    # for proxy_path in proxy_paths:
-    #     proxy_type = str(proxy_path).replace(str(path),"").replace("/","").replace("\\","")
-    #     ip_bat_path = Path(f"./downlaod/ChromeGo/{proxy_type}/","ip_Update/")
-    #     proxy_urls = []
-    #     if os.path.exists(ip_bat_path):
-    #         for file in os.listdir(ip_bat_path):
-    #             if file.endswith(".bat"):
-    #                 file_name = file.split(".")[0]
-    #                 with open(Path(ip_bat_path, file), 'r') as f:
-    #                     # print(f.read())
-    #                     ip_data = f.read()
-    #                     # print("Urls: ", find_url(ip_data))
-    #                     ip_urls = find_url(ip_data)
-    #                     if len(ip_urls) > 0 and (not ip_urls[0].endswith(".md")):
-    #                         proxy_urls.append(ip_urls[0])
-    #                         proxy_urls_tuple_list.append((file_name, proxy_type, ip_urls[0]))
-    #     if len(proxy_urls) > 0:
-    #         proxy_urls_map[proxy_type] = proxy_urls
+    proxy_urls_map = {}
+    proxy_urls_tuple_list = []
+    for proxy_path in proxy_paths:
+        proxy_type = str(proxy_path).replace(str(path),"").replace("/","").replace("\\","")
+        ip_bat_path = Path(f"./downlaod/ChromeGo/{proxy_type}/","ip_Update/")
+        proxy_urls = []
+        if os.path.exists(ip_bat_path):
+            for file in os.listdir(ip_bat_path):
+                if file.endswith(".bat"):
+                    file_name = file.split(".")[0]
+                    with open(Path(ip_bat_path, file), 'r') as f:
+                        # print(f.read())
+                        ip_data = f.read()
+                        # print("Urls: ", find_url(ip_data))
+                        ip_urls = find_url(ip_data)
+                        if len(ip_urls) > 0 and (not ip_urls[0].endswith(".md")):
+                            proxy_urls.append(ip_urls[0])
+                            proxy_urls_tuple_list.append((file_name, proxy_type, ip_urls[0]))
+        if len(proxy_urls) > 0:
+            proxy_urls_map[proxy_type] = proxy_urls
         
-    # # print(proxy_urls_map)
-    # json_data = json.dumps(proxy_urls_map, sort_keys=True, indent=2, separators=(',', ':'))
-    # print(json_data)
-    # print(proxy_urls_tuple_list)
-    # with open("all_proxy_config_urls.json", "w") as f:
-    #     f.write(json_data)
+    # print(proxy_urls_map)
+    json_data = json.dumps(proxy_urls_map, sort_keys=True, indent=2, separators=(',', ':'))
+    print(json_data)
+    print(proxy_urls_tuple_list)
+    with open("python/chromego/all_proxy_config_urls.json", "w") as f:
+        f.write(json_data)
         
     
-    # asyncio.run(async_httpx_once_client(proxy_urls_tuple_list, proxy))
+    asyncio.run(async_httpx_once_client(proxy_urls_tuple_list, proxy))
     
     
     
