@@ -47,7 +47,6 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd python/chromego_merge
           pip install -r requirements.txt
 
       - name: Run merge script
