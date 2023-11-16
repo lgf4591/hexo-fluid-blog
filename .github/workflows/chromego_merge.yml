@@ -74,3 +74,11 @@ jobs:
           git add .
           git commit --allow-empty -m "pdated at $(date '+%Y-%m-%d %H:%M:%S')"
           git push
+
+      - name: create ChromeGo Config markdown file
+        run: |
+          pwd
+          mkdir -p downlaod
+          python get_chromego_config.py
+          ls downlaod
+

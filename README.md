@@ -2,6 +2,7 @@
 
 如果你有相关文章想投稿，可以通过 [Pull Request](https://github.com/fluid-dev/hexo-fluid-blog/pulls) 方式提交（文中图片可暂时使用自己的外链或存放在 source 里），不要忘记文章头部留下自己的原文链接（[格式参考](https://raw.githubusercontent.com/fluid-dev/hexo-fluid-blog/master/source/_posts/hexo-darkmode.md)）。
 
+- [Hexo Fluid 用户手册](https://hexo.fluid-dev.com/docs/)
 
 # 如何使用
 ## 1. 更新themes下的git子模块
