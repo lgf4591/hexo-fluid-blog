@@ -1,7 +1,7 @@
 
 ---
 title: VPN合集 
-date: 2023-11-17 00:54:24
+date: 2023-11-17 03:12:15
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2023-11-17 00:54:24
+> Last Update Time: 2023-11-17 03:12:15
 ---
 # vless_node
 ```bash
@@ -82,8 +82,8 @@ None
 140.82.114.25                 alive.github.com
 140.82.113.5                  api.github.com
 185.199.110.153               assets-cdn.github.com
-185.199.108.133               avatars.githubusercontent.com
-185.199.108.133               avatars0.githubusercontent.com
+185.199.110.133               avatars.githubusercontent.com
+185.199.110.133               avatars0.githubusercontent.com
 185.199.108.133               avatars1.githubusercontent.com
 185.199.108.133               avatars2.githubusercontent.com
 185.199.108.133               avatars3.githubusercontent.com
@@ -106,7 +106,7 @@ None
 140.82.114.4                  github.com
 140.82.112.18                 github.community
 185.199.109.154               github.githubassets.com
-151.101.193.194               github.global.ssl.fastly.net
+151.101.1.194                 github.global.ssl.fastly.net
 185.199.110.153               github.io
 185.199.108.133               github.map.fastly.net
 185.199.110.153               githubstatus.com
@@ -120,14 +120,14 @@ None
 140.82.113.22                 education.github.com
 
 
-# Update time: 2023-11-17T08:18:57+08:00
+# Update time: 2023-11-17T10:15:16+08:00
 # Update url: https://raw.hellogithub.com/hosts
 # Star me: https://github.com/521xueweihan/GitHub520
 # GitHub520 Host End
 
 ```
 
-该内容会自动定时更新， 数据更新时间：2023-11-17T08:18:57+08:00
+该内容会自动定时更新， 数据更新时间：2023-11-17T10:15:16+08:00
 
 #### 2.1.2 修改 hosts 文件
 
