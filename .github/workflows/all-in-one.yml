@@ -27,7 +27,20 @@ jobs:
         python-version: [3.11]
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Check Out Repo
+      uses: actions/checkout@v3
+
+    - name: Setup Git
+      env:
+        ACTION_KEY: ${{ secrets.ACTION_KEY }}
+      run: |
+        mkdir -p ~/.ssh/
+        echo "$ACTION_KEY" > ~/.ssh/id_rsa
+        chmod 700 ~/.ssh
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan github.com >> ~/.ssh/known_hosts
+        git config --global user.email "actions@github.com"
+        git config --global user.name "GitHub Action"
 
     - name: Use Python ${{ matrix.python-version }}
       uses: actions/setup-python@v4
@@ -55,10 +68,15 @@ jobs:
       run: |
         python merge.py
 
-    - uses: actions/upload-artifact@v3
-      with:
-        name: hexo-fluid-blog
-        path: /home/runner/work/hexo-fluid-blog/hexo-fluid-blog
+    - name: Auto Commit Changes
+      run: |
+        cd .. && cd ..
+        git status
+        git branch -a
+        cat .git/config
+        git add .
+        git commit --allow-empty -m "github actions(chromego-mergo) auto updated at $(date '+%Y-%m-%d %H:%M:%S')"
+        git push
 
 
   chromego:
@@ -78,10 +96,20 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
         
-    - uses: actions/download-artifact@v3
-      with:
-        name: hexo-fluid-blog
-        path: ./
+    - name: Check Out Repo
+      uses: actions/checkout@v3
+
+    - name: Setup Git
+      env:
+        ACTION_KEY: ${{ secrets.ACTION_KEY }}
+      run: |
+        mkdir -p ~/.ssh/
+        echo "$ACTION_KEY" > ~/.ssh/id_rsa
+        chmod 700 ~/.ssh
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan github.com >> ~/.ssh/known_hosts
+        git config --global user.email "actions@github.com"
+        git config --global user.name "GitHub Action"
     
     - name: Install dependencies
       run: |
@@ -109,10 +137,16 @@ jobs:
         python main.py
         cat source/_posts/VPN合集.md
 
-    - uses: actions/upload-artifact@v3
-      with:
-        name: hexo-fluid-blog
-        path: ./
+    - name: Auto Commit Changes
+      run: |
+        cd .. && cd ..
+        git status
+        git branch -a
+        cat .git/config
+        git add .
+        git commit --allow-empty -m "github actions(chromego) auto updated at $(date '+%Y-%m-%d %H:%M:%S')"
+        git push
+  
 
 
   auto-publish:
@@ -132,14 +166,9 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         
-    - uses: actions/download-artifact@v3
-      with:
-        name: hexo-fluid-blog
-        path: ./
+    - name: Check Out Repo
+      uses: actions/checkout@v3
 
-    - name: Install Pandoc
-      run: sudo apt-get install -y pandoc
-    
     - name: Setup Git
       env:
         ACTION_KEY: ${{ secrets.ACTION_KEY }}
@@ -149,10 +178,11 @@ jobs:
         chmod 700 ~/.ssh
         chmod 600 ~/.ssh/id_rsa
         ssh-keyscan github.com >> ~/.ssh/known_hosts
-        git config user.email "actions@github.com"
-        git config user.name "GitHub Action"
         git config --global user.email "actions@github.com"
         git config --global user.name "GitHub Action"
+
+    - name: Install Pandoc
+      run: sudo apt-get install -y pandoc
 
     - name: Install Node Modules
       run: |
@@ -188,10 +218,11 @@ jobs:
 
     - name: Auto Commit Changes
       run: |
+        cd .. && cd ..
         git status
         git branch -a
         cat .git/config
         git add .
-        git commit --allow-empty -m "github actions auto updated at $(date '+%Y-%m-%d %H:%M:%S')"
+        git commit --allow-empty -m "github actions(auto-publish) auto updated at $(date '+%Y-%m-%d %H:%M:%S')"
         git push
 
