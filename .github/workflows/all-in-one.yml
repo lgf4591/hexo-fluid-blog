@@ -58,7 +58,7 @@ jobs:
     - uses: actions/upload-artifact@v3
       with:
         name: hexo-fluid-blog
-        path: ../../
+        path: /home/runner/work/hexo-fluid-blog/hexo-fluid-blog
 
 
   chromego:
