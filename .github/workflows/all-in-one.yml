@@ -151,6 +151,8 @@ jobs:
         ssh-keyscan github.com >> ~/.ssh/known_hosts
         git config user.email "actions@github.com"
         git config user.name "GitHub Action"
+        git config --global user.email "actions@github.com"
+        git config --global user.name "GitHub Action"
 
     - name: Install Node Modules
       run: |
