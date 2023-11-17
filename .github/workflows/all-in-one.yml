@@ -28,7 +28,7 @@ jobs:
 
     steps:
     - name: Check Out Repo
-      uses: actions/checkout@v3
+      uses: actions/checkout@v2
 
     - name: Setup Git
       env:
@@ -97,7 +97,7 @@ jobs:
         python-version: ${{ matrix.python-version }}
         
     - name: Check Out Repo
-      uses: actions/checkout@v3
+      uses: actions/checkout@v2
 
     - name: Setup Git
       env:
@@ -144,7 +144,6 @@ jobs:
 
     - name: Auto Commit Changes
       run: |
-        cd .. && cd ..
         git status
         git branch -a
         cat .git/config
@@ -172,7 +171,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
         
     - name: Check Out Repo
-      uses: actions/checkout@v3
+      uses: actions/checkout@v2
 
     - name: Setup Git
       env:
@@ -228,7 +227,6 @@ jobs:
 
     - name: Auto Commit Changes
       run: |
-        cd .. && cd ..
         git status
         git branch -a
         cat .git/config
