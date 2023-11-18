@@ -1,7 +1,7 @@
 
 ---
 title: VPN合集 
-date: 2023-11-17 19:19:29
+date: 2023-11-18 00:53:39
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2023-11-17 19:19:29
+> Last Update Time: 2023-11-18 00:53:39
 ---
 # vless_node
 ```bash
@@ -120,14 +120,14 @@ None
 140.82.113.22                 education.github.com
 
 
-# Update time: 2023-11-18T02:05:28+08:00
+# Update time: 2023-11-18T08:18:39+08:00
 # Update url: https://raw.hellogithub.com/hosts
 # Star me: https://github.com/521xueweihan/GitHub520
 # GitHub520 Host End
 
 ```
 
-该内容会自动定时更新， 数据更新时间：2023-11-18T02:05:28+08:00
+该内容会自动定时更新， 数据更新时间：2023-11-18T08:18:39+08:00
 
 #### 2.1.2 修改 hosts 文件
 
@@ -388,7 +388,7 @@ sed -i "/# fetch-github-hosts begin/Q" /etc/hosts && curl https://hosts.gitcdn.t
 
 
 # [freefq](https://github.com/freefq/free)
-更新时间 2023-11-18 00:00  
+更新时间 2023-11-18 08:00  
 所有免费节点都爬取自网络，请勿用于非法用途  
 |  工具  | Android  | Windows  |  
 |  ----  | ----   | ----  |  
@@ -403,11 +403,13 @@ CTRL+A网页全选，CTRL+C复制，右键点击任务栏v2rayN客户端图标�
 新开bulink镜像站[burstlinker.com](https://www.burstlinker.com)（不需要翻墙）  
 ## v2ray  
 ```  
-vmess://eyJ2IjogIjIiLCAicHMiOiAiZ2l0aHViLmNvbS9mcmVlZnEgLSBcdTViODlcdTVmYmRcdTc3MDFcdTU0MDhcdTgwYTVcdTVlMDJcdTc5ZmJcdTUyYTggMSIsICJhZGQiOiAiMTEyLjI5Ljk0LjIzIiwgInBvcnQiOiAiNDkyMjMiLCAiaWQiOiAiMjFhOWJmZjItNzJkZS00ZTYyLTkzZmYtOGIxNTlmNjZkODc1IiwgImFpZCI6ICI2NCIsICJzY3kiOiAiYXV0byIsICJuZXQiOiAidGNwIiwgInR5cGUiOiAibm9uZSIsICJob3N0IjogIiIsICJwYXRoIjogIiIsICJ0bHMiOiAiIiwgInNuaSI6ICIiLCAiYWxwbiI6ICIifQ==  
-vmess://eyJhZGQiOiAiMTYyLjE1OS4xOTIuMTMzIiwgImFpZCI6IDAsICJob3N0IjogImtpbmcudHVyYm8wMjEubGluayIsICJpZCI6ICI1ZjJlYTUzMS0yOWU0LTQ4MzYtYzYwYS1hNzM5YjhlNmIwYTMiLCAibmV0IjogIndzIiwgInBhdGgiOiAiLzVmMmVhNTMxLTI5ZTQtNDgzNi1jNjBhLWE3MzliOGU2YjBhMyIsICJwb3J0IjogNDQzLCAicHMiOiAiZ2l0aHViLmNvbS9mcmVlZnEgLSBcdTdmOGVcdTU2ZmRDbG91ZEZsYXJlXHU4MjgyXHU3MGI5IDIiLCAidGxzIjogInRscyIsICJ0eXBlIjogImF1dG8iLCAic2VjdXJpdHkiOiAiYXV0byIsICJza2lwLWNlcnQtdmVyaWZ5IjogdHJ1ZSwgInNuaSI6ICIifQ==  
-vmess://eyJ2IjogIjIiLCAicHMiOiAiZ2l0aHViLmNvbS9mcmVlZnEgLSBcdTdmOGVcdTU2ZmRDbG91ZEZsYXJlXHU4MjgyXHU3MGI5IDMiLCAiYWRkIjogImNkbi55aWZlbmppY2hhbmcudG9wIiwgInBvcnQiOiAiNDQzIiwgImlkIjogImZmZGUwNmQzLWY5NTItNGVlNy1mMDlmLWU1ODdiN2ZiMTU1OCIsICJhaWQiOiAiMCIsICJzY3kiOiAiYXV0byIsICJuZXQiOiAid3MiLCAidHlwZSI6ICJub25lIiwgImhvc3QiOiAiY2EzLm1pYW5mZW55dW4wMTIuZXUub3JnIiwgInBhdGgiOiAiL2ZzYXNkc2FkIiwgInRscyI6ICJ0bHMiLCAic25pIjogIiJ9  
-vmess://eyJ2IjogIjIiLCAicHMiOiAiZ2l0aHViLmNvbS9mcmVlZnEgLSBcdTdmOGVcdTU2ZmRDbG91ZEZsYXJlXHU4MjgyXHU3MGI5IDQiLCAiYWRkIjogImNjMy5zaGFiaWppY2hhbmcuY29tIiwgInBvcnQiOiAiODAiLCAiaWQiOiAiYzQ1ODY5NWQtNjkwOC00NWMzLTk1MTItZTBjNDY0MTg0NTRjIiwgImFpZCI6ICIwIiwgInNjeSI6ICJhdXRvIiwgIm5ldCI6ICJ3cyIsICJ0eXBlIjogIm5vbmUiLCAiaG9zdCI6ICJjYzMuc2hhYmlqaWNoYW5nLmNvbSIsICJwYXRoIjogIi8iLCAidGxzIjogIiIsICJzbmkiOiAiIiwgImFscG4iOiAiIn0=  
-vmess://eyJhZGQiOiAiMTk4LjQxLjIxNy41IiwgImFpZCI6ICIwIiwgImFscG4iOiAiaDIsaHR0cC8xLjEiLCAiZnAiOiAiY2hyb21lIiwgImhvc3QiOiAiZG9jczIub2JuZWgyNDcuaXIiLCAiaWQiOiAiMzNkMmM5OWMtODFlYS00MjYyLTlhNjEtNGE2NTQ0Y2NjZDAwIiwgIm5ldCI6ICJ3cyIsICJwYXRoIjogIi8ydjJyYXlURUFNIiwgInBvcnQiOiAiMjA4NyIsICJwcyI6ICJnaXRodWIuY29tL2ZyZWVmcSAtIFx1N2Y4ZVx1NTZmZENsb3VkRmxhcmVcdTgyODJcdTcwYjkgNSIsICJzY3kiOiAiYXV0byIsICJzbmkiOiAiZG9jczIub2JuZWgyNDcuaXIiLCAidGxzIjogInRscyIsICJ0eXBlIjogIiIsICJ2IjogIjIifQ==  
+vmess://eyJhZGQiOiAiMTgzLjIzNy4yMC4xNDgiLCAidiI6ICIyIiwgInBzIjogImdpdGh1Yi5jb20vZnJlZWZxIC0gXHU1ZTdmXHU0ZTFjXHU3NzAxXHU3OWZiXHU1MmE4IDEiLCAicG9ydCI6IDUwNzA3LCAiaWQiOiAiNDE4MDQ4YWYtYTI5My00Yjk5LTliMGMtOThjYTM1ODBkZDI0IiwgImFpZCI6ICI2NCIsICJuZXQiOiAidGNwIiwgInR5cGUiOiAiIiwgImhvc3QiOiAiIiwgInBhdGgiOiAiLyIsICJ0bHMiOiAiIn0=  
+ss://YWVzLTI1Ni1nY206NWM4YjIxMGEtMmYwMC00MjkyLTk2NGItMDUyODFjN2FkNWQx@bjcu.xzyunjiasu.icu:33952#github.com/freefq%20-%20%E6%B9%96%E5%8D%97%E7%9C%81%E8%81%94%E9%80%9A%202  
+vmess://eyJ2IjogIjIiLCAicHMiOiAiZ2l0aHViLmNvbS9mcmVlZnEgLSBcdTdmOGVcdTU2ZmRDbG91ZEZsYXJlXHU1MTZjXHU1M2Y4Q0ROXHU4MjgyXHU3MGI5IDMiLCAiYWRkIjogIm1sMy5zaGFiaWppY2hhbmcuY29tIiwgInBvcnQiOiAiODAiLCAiaWQiOiAiYzQ1ODY5NWQtNjkwOC00NWMzLTk1MTItZTBjNDY0MTg0NTRjIiwgImFpZCI6ICIwIiwgInNjeSI6ICJhdXRvIiwgIm5ldCI6ICJ3cyIsICJ0eXBlIjogIm5vbmUiLCAiaG9zdCI6ICJtbDMuc2hhYmlqaWNoYW5nLmNvbSIsICJwYXRoIjogIi8iLCAidGxzIjogIiIsICJzbmkiOiAiIiwgImFscG4iOiAiIn0=  
+vmess://eyJhZGQiOiAiMTA0LjIxLjM2LjI2IiwgImFpZCI6IDAsICJob3N0IjogImNsb3VkY29uZWFhYS5nb3Jnb3JjaGlja2VuLm9uZSIsICJpZCI6ICIxY2VjMWViYy1iNDg5LTQ3NjktZjJkOS1lMDc5YjU4MzJhNjAiLCAibmV0IjogIndzIiwgInBhdGgiOiAiL2Nsb3VkY29uZWFhYSIsICJwb3J0IjogODQ0MywgInBzIjogImdpdGh1Yi5jb20vZnJlZWZxIC0gXHU3ZjhlXHU1NmZkQ2xvdWRGbGFyZVx1NTE2Y1x1NTNmOENETlx1ODI4Mlx1NzBiOSA0IiwgInRscyI6ICJ0bHMiLCAidHlwZSI6ICJhdXRvIiwgInNlY3VyaXR5IjogImF1dG8iLCAic2tpcC1jZXJ0LXZlcmlmeSI6IHRydWUsICJzbmkiOiAiIn0=  
+vmess://eyJ2IjogIjIiLCAicHMiOiAiZ2l0aHViLmNvbS9mcmVlZnEgLSBcdTdmOGVcdTU2ZmRDbG91ZEZsYXJlXHU1MTZjXHU1M2Y4Q0ROXHU4MjgyXHU3MGI5IDUiLCAiYWRkIjogIm1sMi5zaGFiaWppY2hhbmcuY29tIiwgInBvcnQiOiAiODAiLCAiaWQiOiAiMTBlYTNiMmEtYjYxNS00NWYxLWIxYjctYzYyYmFmZThjODBjIiwgImFpZCI6ICIwIiwgInNjeSI6ICJhdXRvIiwgIm5ldCI6ICJ3cyIsICJ0eXBlIjogIm5vbmUiLCAiaG9zdCI6ICIiLCAicGF0aCI6ICIvIiwgInRscyI6ICIiLCAic25pIjogIiIsICJhbHBuIjogIiJ9  
+vmess://eyJhZGQiOiAiMTk0LjE1Ni45OC4xNzkiLCAiYWlkIjogMCwgImhvc3QiOiAiIiwgImlkIjogIjA4NTViNDEwLTBlOTYtNGQwYS05YjZlLTgwODMwZWRlYzQ2MiIsICJuZXQiOiAidGNwIiwgInBhdGgiOiAiIiwgInBvcnQiOiA4MCwgInBzIjogImdpdGh1Yi5jb20vZnJlZWZxIC0gXHU5OTk5XHU2ZTJmQURDREFUQVx1NjU3MFx1NjM2ZVx1NGUyZFx1NWZjMyA2IiwgInRscyI6ICIiLCAidHlwZSI6ICJhdXRvIiwgInNlY3VyaXR5IjogImF1dG8iLCAic2tpcC1jZXJ0LXZlcmlmeSI6IHRydWUsICJzbmkiOiAiIn0=  
+vmess://eyJ2IjogIjIiLCAicHMiOiAiZ2l0aHViLmNvbS9mcmVlZnEgLSBcdTdmOGVcdTU2ZmRDbG91ZEZsYXJlXHU4MjgyXHU3MGI5IDciLCAiYWRkIjogIjE5OC40MS4xOTIuNCIsICJwb3J0IjogIjgwODAiLCAiaWQiOiAiZjQ0MDUyN2UtNTI0My00Y2E4LTg5MGMtNWUwNWU0YjNiYjQxIiwgImFpZCI6ICIwIiwgInNjeSI6ICJhdXRvIiwgIm5ldCI6ICJ3cyIsICJ0eXBlIjogIm5vbmUiLCAiaG9zdCI6ICJldTEub3BlbnhhaS5saW5rIiwgInBhdGgiOiAiLyIsICJ0bHMiOiAiIiwgInNuaSI6ICIiLCAiYWxwbiI6ICIifQ==  
 ```  
 
 
