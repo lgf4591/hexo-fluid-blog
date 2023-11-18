@@ -21,41 +21,27 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: python/chromego_merge
+        working-directory: ./
     strategy:
       matrix:
         python-version: [3.11]
 
     steps:
-    - name: Check Out Repo
-      uses: actions/checkout@v2
-
-    - name: Setup Git
-      env:
-        ACTION_KEY: ${{ secrets.ACTION_KEY }}
-      run: |
-        mkdir -p ~/.ssh/
-        echo "$ACTION_KEY" > ~/.ssh/id_rsa
-        chmod 700 ~/.ssh
-        chmod 600 ~/.ssh/id_rsa
-        ssh-keyscan github.com >> ~/.ssh/known_hosts
-        git config --global user.email "actions@github.com"
-        git config --global user.name "GitHub Action"
-        git pull
-
     - name: Use Python ${{ matrix.python-version }}
       uses: actions/setup-python@v4
       with:
         python-version: ${{ matrix.python-version }}
-    
-    - name: Update Git Submodule
-      run: |
-        cd .. && cd ..
-        git submodule init
-        git submodule update --remote
+
+    - name: Checkout repo With SSH
+      uses: lgf4591/CheckoutWithSSHAction@main
+      with:
+        repo_name: hexo-fluid-blog
+        repo_owner: lgf4591
+        git_private_key: ${{ secrets.ACTION_KEY }}
     
     - name: Install dependencies
       run: |
+        cd python/chromego_merge
         pwd
         ls -la
         python -m pip install --upgrade pip
@@ -63,21 +49,16 @@ jobs:
 
     - name: Run merge script
       run: |
+        cd python/chromego_merge
         python meta_merge.py 
 
     - name: Run shadowrocket merge script
       run: |
+        cd python/chromego_merge
         python merge.py
 
-    - name: Auto Commit Changes
-      run: |
-        cd .. && cd ..
-        git status
-        git branch -a
-        cat .git/config
-        git add .
-        git commit --allow-empty -m "github actions(chromego-mergo) auto updated at $(date '+%Y-%m-%d %H:%M:%S')"
-        git push
+    - name: Update Git With SSH
+      uses: lgf4591/GitUpdateWithSSHAction@main
 
 
   chromego:
@@ -97,26 +78,12 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
         
-    - name: Check Out Repo
-      uses: actions/checkout@v2
-
-    - name: Setup Git
-      env:
-        ACTION_KEY: ${{ secrets.ACTION_KEY }}
-      run: |
-        mkdir -p ~/.ssh/
-        echo "$ACTION_KEY" > ~/.ssh/id_rsa
-        chmod 700 ~/.ssh
-        chmod 600 ~/.ssh/id_rsa
-        ssh-keyscan github.com >> ~/.ssh/known_hosts
-        git config --global user.email "actions@github.com"
-        git config --global user.name "GitHub Action"
-        git pull
-    
-    - name: Update Git Submodule
-      run: |
-        git submodule init
-        git submodule update --remote
+    - name: Checkout repo With SSH
+      uses: lgf4591/CheckoutWithSSHAction@main
+      with:
+        repo_name: hexo-fluid-blog
+        repo_owner: lgf4591
+        git_private_key: ${{ secrets.ACTION_KEY }}
 
     - name: Install dependencies
       run: |
@@ -144,16 +111,9 @@ jobs:
         python main.py
         cat source/_posts/VPN合集.md
 
-    - name: Auto Commit Changes
-      run: |
-        git status
-        git branch -a
-        cat .git/config
-        git add .
-        git commit --allow-empty -m "github actions(chromego) auto updated at $(date '+%Y-%m-%d %H:%M:%S')"
-        git push
+    - name: Update Git With SSH
+      uses: lgf4591/GitUpdateWithSSHAction@main
   
-
 
   auto-publish:
     runs-on: ubuntu-latest
@@ -172,26 +132,12 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         
-    - name: Check Out Repo
-      uses: actions/checkout@v2
-
-    - name: Setup Git
-      env:
-        ACTION_KEY: ${{ secrets.ACTION_KEY }}
-      run: |
-        mkdir -p ~/.ssh/
-        echo "$ACTION_KEY" > ~/.ssh/id_rsa
-        chmod 700 ~/.ssh
-        chmod 600 ~/.ssh/id_rsa
-        ssh-keyscan github.com >> ~/.ssh/known_hosts
-        git config --global user.email "actions@github.com"
-        git config --global user.name "GitHub Action"
-        git pull
-
-    - name: Update Git Submodule
-      run: |
-        git submodule init
-        git submodule update --remote
+    - name: Checkout repo With SSH
+      uses: lgf4591/CheckoutWithSSHAction@main
+      with:
+        repo_name: hexo-fluid-blog
+        repo_owner: lgf4591
+        git_private_key: ${{ secrets.ACTION_KEY }}
 
     - name: Install Pandoc
       run: sudo apt-get install -y pandoc
@@ -228,12 +174,6 @@ jobs:
         # Optional: Change the Wrangler version, allows you to point to a specific version or a tag such as `beta`
         wranglerVersion: '3'
 
-    - name: Auto Commit Changes
-      run: |
-        git status
-        git branch -a
-        cat .git/config
-        git add .
-        git commit --allow-empty -m "github actions(auto-publish) auto updated at $(date '+%Y-%m-%d %H:%M:%S')"
-        git push
+    - name: Update Git With SSH
+      uses: lgf4591/GitUpdateWithSSHAction@main
 
