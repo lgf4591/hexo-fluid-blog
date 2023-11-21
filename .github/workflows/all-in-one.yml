@@ -35,8 +35,7 @@ jobs:
     - name: Checkout repo With SSH
       uses: lgf4591/CheckoutWithSSHAction@main
       with:
-        repo_name: hexo-fluid-blog
-        repo_owner: lgf4591
+        repo: lgf4591/hexo-fluid-blog
         git_private_key: ${{ secrets.ACTION_KEY }}
     
     - name: Install dependencies
@@ -81,8 +80,6 @@ jobs:
     - name: Checkout repo With SSH
       uses: lgf4591/CheckoutWithSSHAction@main
       with:
-        repo_name: hexo-fluid-blog
-        repo_owner: lgf4591
         git_private_key: ${{ secrets.ACTION_KEY }}
 
     - name: Install dependencies
@@ -135,8 +132,6 @@ jobs:
     - name: Checkout repo With SSH
       uses: lgf4591/CheckoutWithSSHAction@main
       with:
-        repo_name: hexo-fluid-blog
-        repo_owner: lgf4591
         git_private_key: ${{ secrets.ACTION_KEY }}
 
     - name: Install Pandoc
