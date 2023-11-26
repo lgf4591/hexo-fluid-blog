@@ -1,7 +1,7 @@
 
 ---
 title: ChromeGo所有配置文件合集 
-date: 2023-11-26 03:43:10
+date: 2023-11-26 13:13:00
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2023-11-26 03:43:10
+> Last Update Time: 2023-11-26 13:13:00
 ---
 
 ## Xray-ip_1.json
@@ -1422,7 +1422,7 @@ rules:
 ```bash
 
 {
-  "server": "www.dtku46.xyz:33330",
+  "server": "www.dtku46.xyz:53850",
   "auth": "dongtaiwang.com",
   "tls": {
     "sni": "www.bing.com",
