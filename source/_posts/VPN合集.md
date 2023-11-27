@@ -1,7 +1,7 @@
 
 ---
 title: VPN合集 
-date: 2023-11-27 13:19:58
+date: 2023-11-27 13:20:51
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2023-11-27 13:19:58
+> Last Update Time: 2023-11-27 13:20:51
 ---
 # vless_node
 ```bash
@@ -1124,6 +1124,10 @@ proxies:
   - 0
   - 0
   - 0
+  remote-dns-resolve: true
+  dns:
+  - 1.1.1.1
+  - 8.8.8.8
   dialer-proxy: WARP前置节点
 - name: meta_hysteria_01
   type: hysteria
@@ -1425,6 +1429,10 @@ proxies:
   - 0
   - 0
   - 0
+  remote-dns-resolve: true
+  dns:
+  - 1.1.1.1
+  - 8.8.8.8
   dialer-proxy: WARP前置节点
 - name: meta_hysteria_01
   type: hysteria
