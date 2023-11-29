@@ -1,7 +1,7 @@
 
 ---
 title: ChromeGo所有配置文件合集 
-date: 2023-11-27 13:23:35
+date: 2023-11-29 13:15:13
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2023-11-27 13:23:35
+> Last Update Time: 2023-11-29 13:15:13
 ---
 
 ## Xray-ip_1.json
@@ -571,21 +571,40 @@ sticky: 100
   "outbounds": [
     {
       "tag": "proxy",
-      "protocol": "shadowsocks",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "www3.dtku49.xyz",
-            "method": "2022-blake3-chacha20-poly1305",
-            "ota": false,
-            "password": "x3jy8UXDQj6OPEL/MLXqqtPqmidNFNbHzXo91Wd8tiw=",
-            "port": 10088,
-            "level": 1
+            "address": "dongtaiwang2.com",
+            "port": 443,
+            "users": [
+              {
+                "id": "f5c180eb-fbce-49ac-9029-482eca9385c0",
+                "alterId": 0,
+                "email": "t@t.tt",
+                "security": "auto",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp"
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "xray1.freeh1.xyz",
+          "fingerprint": "chrome",
+          "show": false
+        },
+        "wsSettings": {
+          "path": "/gzogws",
+          "headers": {
+            "Host": "xray1.freeh1.xyz"
+          }
+        }
       },
       "mux": {
         "enabled": false,
@@ -1478,9 +1497,8 @@ rules:
 
 ## hysteria2-ip_4.json
 ```bash
-
 {
-  "server": "www.dtku48.xyz:37151",
+  "server": "167.160.90.252:63530",
   "auth": "dongtaiwang.com",
   "tls": {
     "sni": "www.bing.com",
@@ -1492,7 +1510,6 @@ rules:
     "initConnReceiveWindow": 33554432,
     "maxConnReceiveWindow": 33554432
   },
-  "fastOpen": true,
   "socks5": {
     "listen": "127.0.0.1:1080"
   },
@@ -1509,7 +1526,7 @@ rules:
 ```bash
 {
   "listen": "socks://127.0.0.1:1080",
-  "proxy": "https://dongtaiwang.com:dongtaiwang.com@www.dtku48.xyz:443"
+  "proxy": "https://dongtaiwang.com:dongtaiwang.com@naive16.cfcdn3.xyz:443"
 }
 
 ```
