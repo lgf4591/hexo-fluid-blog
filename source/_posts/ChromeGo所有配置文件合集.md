@@ -1,7 +1,7 @@
 
 ---
 title: ChromeGo所有配置文件合集 
-date: 2023-12-05 03:36:23
+date: 2023-12-05 13:15:41
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2023-12-05 03:36:23
+> Last Update Time: 2023-12-05 13:15:41
 ---
 
 ## Xray-ip_1.json
@@ -1263,27 +1263,27 @@ rules:
 ## hysteria-ip_1.json
 ```bash
 {
-"server": "109.104.152.180:64502",
+"server": "109.104.152.180:59759",
 "protocol": "udp",
 "up_mbps": 11,
 "down_mbps": 55,
 "http": {
 "listen": "127.0.0.1:1081",
-"timeout" : 300,
+"timeout" : 220,
 "disable_udp": false
 },
 "socks5": {
 "listen": "127.0.0.1:1080",
-"timeout": 300,
+"timeout": 220,
 "disable_udp": false
 },
 "obfs": "",
-"auth_str": "kxeFKpB8fhGjP7cO7NNgXYr19ZsqKQMco612ZCfXiaJrojw571",
+"auth_str": "dongtaiwang.com",
 "alpn": "h3",
 "server_name": "bing.com",
 "insecure": true,
-"recv_window_conn": 576716800,
-"recv_window": 2306867200,
+"recv_window_conn": 5767168,
+"recv_window": 23068672,
 "disable_mtu_discovery": true,
 "resolver": "https://223.5.5.5/dns-query",
 "retry": 3,
