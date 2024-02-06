@@ -41,7 +41,6 @@ jobs:
     - name: Install dependencies
       run: |
         cd python/chromego_merge
-				git pull
         pwd
         ls -la
         python -m pip install --upgrade pip
