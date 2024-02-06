@@ -109,8 +109,13 @@ jobs:
         python main.py
         cat source/_posts/VPN合集.md
 
+    # - name: Update Git With SSH
+    #   uses: lgf4591/GitUpdateWithSSHAction@main
+
     - name: Update Git With SSH
       uses: lgf4591/GitUpdateWithSSHAction@main
+      with:
+        token: ${{ secrets.ACTION_TOKEN }}
 
 
   auto-publish:
@@ -170,6 +175,12 @@ jobs:
         # Optional: Change the Wrangler version, allows you to point to a specific version or a tag such as `beta`
         wranglerVersion: '3'
 
+    # - name: Update Git With SSH
+    #   uses: lgf4591/GitUpdateWithSSHAction@main
+
     - name: Update Git With SSH
       uses: lgf4591/GitUpdateWithSSHAction@main
+      with:
+        token: ${{ secrets.ACTION_TOKEN }}
+
 
