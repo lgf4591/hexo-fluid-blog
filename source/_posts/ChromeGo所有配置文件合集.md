@@ -1,7 +1,7 @@
 
 ---
 title: ChromeGo所有配置文件合集 
-date: 2023-11-21 13:29:43
+date: 2023-12-10 03:12:30
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2023-11-21 13:29:43
+> Last Update Time: 2023-12-10 03:12:30
 ---
 
 ## Xray-ip_1.json
@@ -571,21 +571,40 @@ sticky: 100
   "outbounds": [
     {
       "tag": "proxy",
-      "protocol": "shadowsocks",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "www3.dtku49.xyz",
-            "method": "2022-blake3-chacha20-poly1305",
-            "ota": false,
-            "password": "x3jy8UXDQj6OPEL/MLXqqtPqmidNFNbHzXo91Wd8tiw=",
-            "port": 10088,
-            "level": 1
+            "address": "dongtaiwang2.com",
+            "port": 443,
+            "users": [
+              {
+                "id": "f5c180eb-fbce-49ac-9029-482eca9385c0",
+                "alterId": 0,
+                "email": "t@t.tt",
+                "security": "auto",
+                "encryption": "none",
+                "flow": ""
+              }
+            ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp"
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "xray1.freeh1.xyz",
+          "fingerprint": "chrome",
+          "show": false
+        },
+        "wsSettings": {
+          "path": "/gzogws",
+          "headers": {
+            "Host": "xray1.freeh1.xyz"
+          }
+        }
       },
       "mux": {
         "enabled": false,
@@ -1244,7 +1263,7 @@ rules:
 ## hysteria-ip_1.json
 ```bash
 {
-"server": "109.104.152.180:64502",
+"server": "109.104.152.180:40522",
 "protocol": "udp",
 "up_mbps": 11,
 "down_mbps": 55,
@@ -1259,12 +1278,12 @@ rules:
 "disable_udp": false
 },
 "obfs": "",
-"auth_str": "kxeFKpB8fhGjP7cO7NNgXYr19ZsqKQMco612ZCfXiaJrojw571",
+"auth_str": "dongtaiwang.com",
 "alpn": "h3",
-"server_name": "bing.com",
+"server_name": "www.microsoft.com",
 "insecure": true,
-"recv_window_conn": 576716800,
-"recv_window": 2306867200,
+"recv_window_conn": 5767168,
+"recv_window": 23068672,
 "disable_mtu_discovery": true,
 "resolver": "https://223.5.5.5/dns-query",
 "retry": 3,
@@ -1393,7 +1412,7 @@ rules:
 ```bash
 
 {
-  "server": "108.181.22.155:44141",
+  "server": "108.181.22.155:15565",
   "auth": "dongtaiwang.com",
   "tls": {
     "sni": "www.bing.com",
@@ -1422,7 +1441,7 @@ rules:
 ```bash
 
 {
-  "server": "www.dtku46.xyz:49730",
+  "server": "www.dtku46.xyz:62580",
   "auth": "dongtaiwang.com",
   "tls": {
     "sni": "www.bing.com",
@@ -1451,7 +1470,7 @@ rules:
 ```bash
 
 {
-  "server": "108.181.22.155:44141",
+  "server": "108.181.22.155:15565",
   "auth": "dongtaiwang.com",
   "tls": {
     "sni": "www.bing.com",
@@ -1478,9 +1497,8 @@ rules:
 
 ## hysteria2-ip_4.json
 ```bash
-
 {
-  "server": "www.dtku48.xyz:26806",
+  "server": "167.160.90.252:63530",
   "auth": "dongtaiwang.com",
   "tls": {
     "sni": "www.bing.com",
@@ -1492,7 +1510,6 @@ rules:
     "initConnReceiveWindow": 33554432,
     "maxConnReceiveWindow": 33554432
   },
-  "fastOpen": true,
   "socks5": {
     "listen": "127.0.0.1:1080"
   },
@@ -1509,7 +1526,7 @@ rules:
 ```bash
 {
   "listen": "socks://127.0.0.1:1080",
-  "proxy": "https://dongtaiwang.com:dongtaiwang.com@www.dtku48.xyz:443"
+  "proxy": "https://dongtaiwang.com:dongtaiwang.com@naive16.cfcdn3.xyz:443"
 }
 
 ```
