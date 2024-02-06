@@ -5,18 +5,18 @@ import urllib.request
 
 
 def curl(url):
-    try:
-        response = urllib.request.urlopen(url)
-        if response.status == 200:
-            # 响应状态码为200表示请求成功
-            data = response.read().decode('utf-8')
-            # json_data = json.loads(data)
-            # print(json_data)
-            return data
-        else:
-            print(f'Error: {response.status} {response.reason}')
-    except urllib.error.URLError as e:
-        print(f'Error: {e.reason}')
+	try:
+		response = urllib.request.urlopen(url)
+		if response.status == 200:
+			# 响应状态码为200表示请求成功
+			data = response.read().decode('utf-8')
+			# json_data = json.loads(data)
+			# print(json_data)
+			return data
+		else:
+			print(f'Error: {response.status} {response.reason}')
+	except urllib.error.URLError as e:
+		print(f'Error: {e.reason}')
 
 update_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
@@ -33,22 +33,22 @@ sing_box = curl('https://mareep.netlify.app/sub/sb.json')
 
 
 with open("python/chromego_merge/ReadMe.md","r", encoding="utf-8") as f:
-    chromego_merge_readme = f.read()
+  chromego_merge_readme = f.read()
 
 with open("python/chromego_merge/sub/merged_proxies.yaml","r", encoding="utf-8") as f:
-    chromego_merge_merged_proxies = f.read()
+  chromego_merge_merged_proxies = f.read()
 
 with open("python/chromego_merge/sub/merged_proxies_new.yaml","r", encoding="utf-8") as f:
-    chromego_merge_merged_proxies_new = f.read()
+  chromego_merge_merged_proxies_new = f.read()
 
 with open("python/chromego_merge/sub/merged_warp_proxies.yaml","r", encoding="utf-8") as f:
-    chromego_merge_merged_warp_proxies = f.read()
+  chromego_merge_merged_warp_proxies = f.read()
 
 with open("python/chromego_merge/sub/merged_warp_proxies_new.yaml","r", encoding="utf-8") as f:
-    chromego_merge_merged_warp_proxies_new = f.read()
+  chromego_merge_merged_warp_proxies_new = f.read()
 
 with open("python/chromego_merge/sub/shadowrocket_base64.txt","r", encoding="utf-8") as f:
-    chromego_merge_shadowrocket_base64 = f.read()
+  chromego_merge_shadowrocket_base64 = f.read()
 
 
 final_content = f"""
@@ -133,26 +133,26 @@ None
 """
 
 def main():
-    print("hello, python")
-    # print(final_content)
-    with open("source/_posts/VPN合集.md", "w", encoding="utf-8") as f:
-        f.write(final_content)
+	print("hello, python")
+	# print(final_content)
+	with open("source/_posts/VPN合集.md", "w", encoding="utf-8") as f:
+			f.write(final_content)
 
-		with open("source/chromego_merge/merged_proxies_new.yaml", "w", encoding="utf-8") as f:
-        f.write(clashmeta_without_warp)
+	with open("source/chromego_merge/merged_proxies_new.yaml", "w", encoding="utf-8") as f:
+		f.write(clashmeta_without_warp)
 
-		with open("source/chromego_merge/merged_warp_proxies_new.yaml", "w", encoding="utf-8") as f:
-        f.write(clashmeta_with_warp)
+	with open("source/chromego_merge/merged_warp_proxies_new.yaml", "w", encoding="utf-8") as f:
+		f.write(clashmeta_with_warp)
 
-		with open("source/chromego_merge/shadowrocket_base64.txt", "w", encoding="utf-8") as f:
-        f.write(shadowrocket_and_nekoray)
+	with open("source/chromego_merge/shadowrocket_base64.txt", "w", encoding="utf-8") as f:
+		f.write(shadowrocket_and_nekoray)
 
-		with open("source/chromego_merge/sb.json", "w", encoding="utf-8") as f:
-        f.write(sing_box)
+	with open("source/chromego_merge/sb.json", "w", encoding="utf-8") as f:
+		f.write(sing_box)
 
 
 if __name__ == "__main__":
-    main()
+  main()
 
 
 
