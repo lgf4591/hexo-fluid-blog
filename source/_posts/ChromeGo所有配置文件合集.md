@@ -1,7 +1,7 @@
 
 ---
 title: ChromeGo所有配置文件合集 
-date: 2024-02-06 16:41:35
+date: 2024-02-06 16:42:26
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2024-02-06 16:41:35
+> Last Update Time: 2024-02-06 16:42:26
 ---
 
 ## Quick-ip_1.yaml
@@ -1039,7 +1039,7 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {"name":"dongtaiwang.com_1","type":"tuic","server":"62.210.103.14","port":44556,"udp":true,"uuid":"0d9d053c-81c8-4f26-9b5c-dff313dfdd70","password":dongtaiwang.com,"alpn":["h3"],"disable-sni":true,"reduce-rtt":true,"udp-relay-mode":native,"congestion-controller":"bbr"}
+  - {"name":"dongtaiwang.com_1","type":"tuic","server":"195.137.220.189","port":33445,"udp":true,"uuid":"983a85bd-8fae-45d2-a702-5d00a383763e","password":dongtaiwang.com,"alpn":["h3"],"disable-sni":true,"reduce-rtt":true,"udp-relay-mode":native,"congestion-controller":"bbr"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
