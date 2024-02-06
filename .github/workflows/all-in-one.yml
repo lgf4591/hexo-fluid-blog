@@ -59,7 +59,7 @@ jobs:
     - name: Update Git With SSH
       uses: lgf4591/GitUpdateWithSSHAction@main
       with:
-      	token: ${{ secrets.ACTION_TOKEN }}
+        token: ${{ secrets.ACTION_TOKEN }}
 
   chromego:
     if: ${{ success() }}
