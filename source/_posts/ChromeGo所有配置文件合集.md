@@ -1,7 +1,7 @@
 
 ---
 title: ChromeGo所有配置文件合集 
-date: 2024-02-06 16:57:23
+date: 2024-02-06 16:58:21
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2024-02-06 16:57:23
+> Last Update Time: 2024-02-06 16:58:21
 ---
 
 ## Quick-ip_1.yaml
@@ -756,25 +756,36 @@ rules:
   "outbounds": [
     {
       "tag": "proxy",
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "62.210.100.235",
-            "port": 20138,
+            "address": "62.210.101.0",
+            "port": 18700,
             "users": [
               {
-                "id": "3de3fd56-cc9f-42bc-a7e3-608c8990c75f",
+                "id": "e659661d-8439-46e0-b1ab-d75ceaf73404",
                 "alterId": 0,
                 "email": "t@t.tt",
-                "security": "auto"
+                "security": "auto",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp"
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "update.microsoft",
+          "fingerprint": "chrome",
+          "show": false,
+          "publicKey": "PBRc2v9SSXpG4jjQRYNa-kgs8w9V4U3MNLuncd2d0hw",
+          "shortId": "6ba85179e30d4fc2",
+          "spiderX": ""
+        }
       },
       "mux": {
         "enabled": false,
