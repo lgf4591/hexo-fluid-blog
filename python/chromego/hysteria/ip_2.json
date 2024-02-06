@@ -1,22 +1,22 @@
 {
-"server": "51.158.54.46:11926",
+"server": "167.160.91.115:41189",
 "protocol": "udp",
 "up_mbps": 11,
 "down_mbps": 55,
 "http": {
 "listen": "127.0.0.1:1081",
-"timeout" : 300,
+"timeout" : 250,
 "disable_udp": false
 },
 "socks5": {
 "listen": "127.0.0.1:1080",
-"timeout": 300,
+"timeout": 250,
 "disable_udp": false
 },
 "obfs": "",
-"auth_str": "Trz2alKwzCImRAXI3nXfpo1ylpHfqOL8s1vageWKoyjjvWeMVs",
+"auth_str": "bWAwIqINo7XDm1fUlXQGBifVIXoYs1ylgVKqWFKzK1XyDKuwNF",
 "alpn": "h3",
-"server_name": "youku.com",
+"server_name": "www.amazon.cn",
 "insecure": true,
 "recv_window_conn": 5767168,
 "recv_window": 23068672,

@@ -47,40 +47,25 @@
   "outbounds": [
     {
       "tag": "proxy",
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "dongtaiwang3.com",
-            "port": 443,
+            "address": "62.210.100.235",
+            "port": 20138,
             "users": [
               {
-                "id": "0773256c-d020-436d-afea-6eee7cb6c872",
+                "id": "3de3fd56-cc9f-42bc-a7e3-608c8990c75f",
                 "alterId": 0,
                 "email": "t@t.tt",
-                "security": "auto",
-                "encryption": "none",
-                "flow": ""
+                "security": "auto"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "xray1.freegradely.xyz",
-          "fingerprint": "chrome",
-          "show": false
-        },
-        "wsSettings": {
-          "path": "/bodhws",
-          "headers": {
-            "Host": "xray1.freegradely.xyz"
-          }
-        }
+        "network": "tcp"
       },
       "mux": {
         "enabled": false,

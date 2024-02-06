@@ -1,7 +1,7 @@
 
 ---
 title: ChromeGo所有配置文件合集 
-date: 2023-12-10 03:12:30
+date: 2024-02-06 13:58:06
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,8 +13,379 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2023-12-10 03:12:30
+> Last Update Time: 2024-02-06 13:58:06
 ---
+
+## Quick-ip_1.yaml
+```bash
+secret: dongtaiwang.com
+mixed-port: 7890
+allow-lan: false
+log-level: info
+dns:
+  enabled: true
+  nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
+  fallback:
+    - 8.8.8.8
+    - 8.8.4.4
+    - tls://1.0.0.1:853
+    - tls://dns.google:853
+proxies:
+  - name: ip1 
+    type: hysteria2
+    server: 51.158.54.46
+    port: 44550
+    password: dongtaiwang.com
+    sni: bing.com
+    skip-cert-verify: true 
+proxy-groups:
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - DIRECT
+      - ip1
+  - name: ♻️ 自动选择
+    type: url-test
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - ip1
+  - name: 🌍 国外媒体
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🎯 全球直连
+      - ip1
+  - name: 📲 电报信息
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - ip1
+  - name: Ⓜ️ 微软服务
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🚀 节点选择
+      - ip1
+  - name: 🍎 苹果服务
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - ip1
+  - name: 🎯 全球直连
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - ♻️ 自动选择
+  - name: 🛑 全球拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🍃 应用净化
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - ♻️ 自动选择
+      - ip1
+
+rules:
+  - MATCH,🚀 节点选择
+
+```
+
+## Quick-ip_2.yaml
+```bash
+secret: dongtaiwang.com
+mixed-port: 7890
+allow-lan: false
+log-level: info
+dns:
+  enabled: true
+  nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
+  fallback:
+    - 8.8.8.8
+    - 8.8.4.4
+    - tls://1.0.0.1:853
+    - tls://dns.google:853
+proxies:
+  - name: ip 
+    type: hysteria
+    server: www2.dtku48.xyz
+    port: 22334
+    auth-str: dongtaiwang.com
+    alpn:
+      - h3
+    protocol: udp
+    up: "11 Mbps"
+    down: "55 Mbps"
+    skip-cert-verify: true 
+proxy-groups:
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - DIRECT
+      - ip
+  - name: ♻️ 自动选择
+    type: url-test
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - ip
+  - name: 🌍 国外媒体
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🎯 全球直连
+      - ip
+  - name: 📲 电报信息
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - ip
+  - name: Ⓜ️ 微软服务
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🚀 节点选择
+      - ip
+  - name: 🍎 苹果服务
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - ip
+  - name: 🎯 全球直连
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - ♻️ 自动选择
+  - name: 🛑 全球拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🍃 应用净化
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - ♻️ 自动选择
+      - ip
+
+rules:
+  - MATCH,🚀 节点选择
+
+```
+
+## Quick-ip_3.yaml
+```bash
+secret: dongtaiwang.com
+mixed-port: 7890
+allow-lan: false
+log-level: info
+dns:
+  enabled: true
+  nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
+  fallback:
+    - 8.8.8.8
+    - 8.8.4.4
+    - tls://1.0.0.1:853
+    - tls://dns.google:853
+proxies:
+  - {"name":"quick_ip3","type":"hysteria","server":"www.dtku50.xyz","port":18470,"sni":"www.amazon.cn","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"dongtaiwang.com","up":2,"down":10}
+proxy-groups:
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - DIRECT
+      - quick_ip3
+  - name: ♻️ 自动选择
+    type: url-test
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - quick_ip3
+  - name: 🌍 国外媒体
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🎯 全球直连
+      - quick_ip3
+  - name: 📲 电报信息
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - quick_ip3
+  - name: Ⓜ️ 微软服务
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🚀 节点选择
+      - quick_ip3
+  - name: 🍎 苹果服务
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - quick_ip3
+  - name: 🎯 全球直连
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - ♻️ 自动选择
+  - name: 🛑 全球拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🍃 应用净化
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - ♻️ 自动选择
+      - quick_ip3
+
+rules:
+  - MATCH,🚀 节点选择
+
+
+```
+
+## Quick-ip_4.yaml
+```bash
+secret: dongtaiwang.com
+mixed-port: 7890
+allow-lan: false
+log-level: info
+dns:
+  enabled: true
+  nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
+  fallback:
+    - 8.8.8.8
+    - 8.8.4.4
+    - tls://1.0.0.1:853
+    - tls://dns.google:853
+proxies:
+  - name: ip 
+    type: hysteria
+    server: www2.dtku48.xyz
+    port: 22334
+    auth-str: dongtaiwang.com
+    alpn:
+      - h3
+    protocol: udp
+    up: "11 Mbps"
+    down: "55 Mbps"
+    skip-cert-verify: true 
+proxy-groups:
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - DIRECT
+      - ip
+  - name: ♻️ 自动选择
+    type: url-test
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - ip
+  - name: 🌍 国外媒体
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🎯 全球直连
+      - ip
+  - name: 📲 电报信息
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - ip
+  - name: Ⓜ️ 微软服务
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🚀 节点选择
+      - ip
+  - name: 🍎 苹果服务
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - ip
+  - name: 🎯 全球直连
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - ♻️ 自动选择
+  - name: 🛑 全球拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🍃 应用净化
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - ♻️ 自动选择
+      - ip
+
+rules:
+  - MATCH,🚀 节点选择
+
+```
 
 ## Xray-ip_1.json
 ```bash
@@ -67,40 +438,25 @@ sticky: 100
   "outbounds": [
     {
       "tag": "proxy",
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "dongtaiwang3.com",
-            "port": 443,
+            "address": "62.210.100.235",
+            "port": 20138,
             "users": [
               {
-                "id": "0773256c-d020-436d-afea-6eee7cb6c872",
+                "id": "3de3fd56-cc9f-42bc-a7e3-608c8990c75f",
                 "alterId": 0,
                 "email": "t@t.tt",
-                "security": "auto",
-                "encryption": "none",
-                "flow": ""
+                "security": "auto"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "xray1.freegradely.xyz",
-          "fingerprint": "chrome",
-          "show": false
-        },
-        "wsSettings": {
-          "path": "/bodhws",
-          "headers": {
-            "Host": "xray1.freegradely.xyz"
-          }
-        }
+        "network": "tcp"
       },
       "mux": {
         "enabled": false,
@@ -239,35 +595,31 @@ sticky: 100
       "settings": {
         "vnext": [
           {
-            "address": "dongtaiwang3.com",
-            "port": 443,
+            "address": "108.181.22.213",
+            "port": 28945,
             "users": [
               {
-                "id": "f5c180eb-fbce-49ac-9029-482eca9385c0",
+                "id": "9cc39477-0d85-4419-84d4-fb7fc77668b3",
                 "alterId": 0,
                 "email": "t@t.tt",
                 "security": "auto",
                 "encryption": "none",
-                "flow": ""
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "xray1.freeh1.xyz",
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "m.media-amazon.com",
           "fingerprint": "chrome",
-          "show": false
-        },
-        "wsSettings": {
-          "path": "/gzogws",
-          "headers": {
-            "Host": "xray1.freeh1.xyz"
-          }
+          "show": false,
+          "publicKey": "yKXmLTmXAi-BHBg3JpCz-NWUmVcKlfm7iMmVoq7YQx0",
+          "shortId": "6ba85179e30d4fc2",
+          "spiderX": ""
         }
       },
       "mux": {
@@ -350,6 +702,7 @@ sticky: 100
   }
 }
 
+
 ```
 
 ## Xray-ip_3.json
@@ -403,40 +756,25 @@ sticky: 100
   "outbounds": [
     {
       "tag": "proxy",
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "dongtaiwang2.com",
-            "port": 443,
+            "address": "62.210.100.235",
+            "port": 20138,
             "users": [
               {
-                "id": "f5c180eb-fbce-49ac-9029-482eca9385c0",
+                "id": "3de3fd56-cc9f-42bc-a7e3-608c8990c75f",
                 "alterId": 0,
                 "email": "t@t.tt",
-                "security": "auto",
-                "encryption": "none",
-                "flow": ""
+                "security": "auto"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "xray1.freeh1.xyz",
-          "fingerprint": "chrome",
-          "show": false
-        },
-        "wsSettings": {
-          "path": "/gzogws",
-          "headers": {
-            "Host": "xray1.freeh1.xyz"
-          }
-        }
+        "network": "tcp"
       },
       "mux": {
         "enabled": false,
@@ -575,35 +913,31 @@ sticky: 100
       "settings": {
         "vnext": [
           {
-            "address": "dongtaiwang2.com",
-            "port": 443,
+            "address": "108.181.22.213",
+            "port": 28945,
             "users": [
               {
-                "id": "f5c180eb-fbce-49ac-9029-482eca9385c0",
+                "id": "9cc39477-0d85-4419-84d4-fb7fc77668b3",
                 "alterId": 0,
                 "email": "t@t.tt",
                 "security": "auto",
                 "encryption": "none",
-                "flow": ""
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "xray1.freeh1.xyz",
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "m.media-amazon.com",
           "fingerprint": "chrome",
-          "show": false
-        },
-        "wsSettings": {
-          "path": "/gzogws",
-          "headers": {
-            "Host": "xray1.freeh1.xyz"
-          }
+          "show": false,
+          "publicKey": "yKXmLTmXAi-BHBg3JpCz-NWUmVcKlfm7iMmVoq7YQx0",
+          "shortId": "6ba85179e30d4fc2",
+          "spiderX": ""
         }
       },
       "mux": {
@@ -705,55 +1039,46 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - name: ip
-    type: hysteria
-    server: hy2.dtku47.xyz
-    port: 15566
-    auth-str: jQrGpwSqp34P
-    alpn:
-      - h3
-    protocol: udp
-    up: "50 Mbps"
-    down: "100 Mbps"
+  - {"name":"dongtaiwang.com_1","type":"tuic","server":"62.210.103.14","port":44556,"udp":true,"uuid":"0d9d053c-81c8-4f26-9b5c-dff313dfdd70","password":dongtaiwang.com,"alpn":["h3"],"disable-sni":true,"reduce-rtt":true,"udp-relay-mode":native,"congestion-controller":"bbr"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - ip
+      - dongtaiwang.com_1
   - name: ♻️ 自动选择
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - ip
+      - dongtaiwang.com_1
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - ip
+      - dongtaiwang.com_1
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - ip
+      - dongtaiwang.com_1
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - ip
+      - dongtaiwang.com_1
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - ip
+      - dongtaiwang.com_1
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -776,10 +1101,11 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - ip
+      - dongtaiwang.com_1
 
 rules:
   - MATCH,🚀 节点选择
+  
 
 ```
 
@@ -800,55 +1126,46 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - name: ip
-    type: hysteria
-    server: clash1.dtku47.xyz
-    port: 11223
-    auth-str: O5tQQiW2xKf5
-    alpn:
-      - h3
-    protocol: udp
-    up: "50 Mbps"
-    down: "100 Mbps"
+  - {"name":"dongtaiwang.com_1","type":"tuic","server":"109.104.152.4","port":443,"udp":true,"uuid":"9ec44c8c-5dc0-4c92-a7ed-5422b0ac1913","password":dongtaiwang.com,"alpn":["h3"],"disable-sni":true,"reduce-rtt":true,"udp-relay-mode":native,"congestion-controller":"bbr"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - ip
+      - dongtaiwang.com_1
   - name: ♻️ 自动选择
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - ip
+      - dongtaiwang.com_1
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - ip
+      - dongtaiwang.com_1
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - ip
+      - dongtaiwang.com_1
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - ip
+      - dongtaiwang.com_1
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - ip
+      - dongtaiwang.com_1
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -871,7 +1188,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - ip
+      - dongtaiwang.com_1
 
 rules:
   - MATCH,🚀 节点选择
@@ -895,55 +1212,46 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - name: ip
-    type: hysteria
-    server: hy2.dtku47.xyz
-    port: 15566
-    auth-str: jQrGpwSqp34P
-    alpn:
-      - h3
-    protocol: udp
-    up: "50 Mbps"
-    down: "100 Mbps"
+  - {"name":"dongtaiwang.com_1","type":"tuic","server":"109.104.153.17","port":22334,"udp":true,"uuid":"364d2d85-5bfd-463f-a3dd-a08012a2a6ce","password":dongtaiwang.com,"alpn":["h3"],"disable-sni":true,"reduce-rtt":true,"udp-relay-mode":native,"congestion-controller":"bbr"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - ip
+      - dongtaiwang.com_1
   - name: ♻️ 自动选择
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - ip
+      - dongtaiwang.com_1
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - ip
+      - dongtaiwang.com_1
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - ip
+      - dongtaiwang.com_1
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - ip
+      - dongtaiwang.com_1
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - ip
+      - dongtaiwang.com_1
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -966,7 +1274,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - ip
+      - dongtaiwang.com_1
 
 rules:
   - MATCH,🚀 节点选择
@@ -990,55 +1298,46 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - name: ip
-    type: hysteria
-    server: hy2.dtku47.xyz
-    port: 15566
-    auth-str: jQrGpwSqp34P
-    alpn:
-      - h3
-    protocol: udp
-    up: "50 Mbps"
-    down: "100 Mbps"
+  - {"name":"dongtaiwang.com_1","type":"tuic","server":"62.210.103.14","port":44556,"udp":true,"uuid":"0d9d053c-81c8-4f26-9b5c-dff313dfdd70","password":dongtaiwang.com,"alpn":["h3"],"disable-sni":true,"reduce-rtt":true,"udp-relay-mode":native,"congestion-controller":"bbr"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - ip
+      - dongtaiwang.com_1
   - name: ♻️ 自动选择
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - ip
+      - dongtaiwang.com_1
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - ip
+      - dongtaiwang.com_1
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - ip
+      - dongtaiwang.com_1
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - ip
+      - dongtaiwang.com_1
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - ip
+      - dongtaiwang.com_1
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1061,7 +1360,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - ip
+      - dongtaiwang.com_1
 
 rules:
   - MATCH,🚀 节点选择
@@ -1085,55 +1384,46 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - name: ip
-    type: hysteria
-    server: hy1.dtku47.xyz
-    port: 22334
-    auth-str: lASdKzWK0VxL
-    alpn:
-      - h3
-    protocol: udp
-    up: "50 Mbps"
-    down: "100 Mbps"
+  - {"name":"dongtaiwang.com_1","type":"tuic","server":"62.210.103.14","port":44556,"udp":true,"uuid":"0d9d053c-81c8-4f26-9b5c-dff313dfdd70","password":dongtaiwang.com,"alpn":["h3"],"disable-sni":true,"reduce-rtt":true,"udp-relay-mode":native,"congestion-controller":"bbr"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - ip
+      - dongtaiwang.com_1
   - name: ♻️ 自动选择
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - ip
+      - dongtaiwang.com_1
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - ip
+      - dongtaiwang.com_1
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - ip
+      - dongtaiwang.com_1
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - ip
+      - dongtaiwang.com_1
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - ip
+      - dongtaiwang.com_1
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1156,12 +1446,10 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - ip
+      - dongtaiwang.com_1
 
 rules:
   - MATCH,🚀 节点选择
-
-
 
 ```
 
@@ -1182,55 +1470,46 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - name: ip
-    type: hysteria
-    server: hy1.dtku47.xyz
-    port: 22334
-    auth-str: lASdKzWK0VxL
-    alpn:
-      - h3
-    protocol: udp
-    up: "50 Mbps"
-    down: "100 Mbps"
+  - {"name":"dongtaiwang.com_1","type":"tuic","server":"62.210.103.14","port":44556,"udp":true,"uuid":"0d9d053c-81c8-4f26-9b5c-dff313dfdd70","password":dongtaiwang.com,"alpn":["h3"],"disable-sni":true,"reduce-rtt":true,"udp-relay-mode":native,"congestion-controller":"bbr"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - ip
+      - dongtaiwang.com_1
   - name: ♻️ 自动选择
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - ip
+      - dongtaiwang.com_1
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - ip
+      - dongtaiwang.com_1
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - ip
+      - dongtaiwang.com_1
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - ip
+      - dongtaiwang.com_1
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - ip
+      - dongtaiwang.com_1
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1253,7 +1532,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - ip
+      - dongtaiwang.com_1
 
 rules:
   - MATCH,🚀 节点选择
@@ -1262,28 +1541,29 @@ rules:
 
 ## hysteria-ip_1.json
 ```bash
+
 {
-"server": "109.104.152.180:40522",
+"server": "51.158.54.46:55396",
 "protocol": "udp",
 "up_mbps": 11,
 "down_mbps": 55,
 "http": {
 "listen": "127.0.0.1:1081",
-"timeout" : 300,
+"timeout" : 250,
 "disable_udp": false
 },
 "socks5": {
 "listen": "127.0.0.1:1080",
-"timeout": 300,
+"timeout": 250,
 "disable_udp": false
 },
 "obfs": "",
 "auth_str": "dongtaiwang.com",
 "alpn": "h3",
-"server_name": "www.microsoft.com",
+"server_name": "youku.com",
 "insecure": true,
-"recv_window_conn": 5767168,
-"recv_window": 23068672,
+"recv_window_conn": 115343360,
+"recv_window": 461373440,
 "disable_mtu_discovery": true,
 "resolver": "https://223.5.5.5/dns-query",
 "retry": 3,
@@ -1300,24 +1580,24 @@ rules:
 ## hysteria-ip_2.json
 ```bash
 {
-"server": "51.158.54.46:11926",
+"server": "167.160.91.115:41189",
 "protocol": "udp",
 "up_mbps": 11,
 "down_mbps": 55,
 "http": {
 "listen": "127.0.0.1:1081",
-"timeout" : 300,
+"timeout" : 250,
 "disable_udp": false
 },
 "socks5": {
 "listen": "127.0.0.1:1080",
-"timeout": 300,
+"timeout": 250,
 "disable_udp": false
 },
 "obfs": "",
-"auth_str": "Trz2alKwzCImRAXI3nXfpo1ylpHfqOL8s1vageWKoyjjvWeMVs",
+"auth_str": "bWAwIqINo7XDm1fUlXQGBifVIXoYs1ylgVKqWFKzK1XyDKuwNF",
 "alpn": "h3",
-"server_name": "youku.com",
+"server_name": "www.amazon.cn",
 "insecure": true,
 "recv_window_conn": 5767168,
 "recv_window": 23068672,
@@ -1337,27 +1617,27 @@ rules:
 ## hysteria-ip_3.json
 ```bash
 {
-"server": "173.234.25.52:20164",
+"server": "173.234.25.52:30072",
 "protocol": "udp",
 "up_mbps": 11,
 "down_mbps": 55,
 "http": {
 "listen": "127.0.0.1:1081",
-"timeout" : 250,
+"timeout" : 300,
 "disable_udp": false
 },
 "socks5": {
 "listen": "127.0.0.1:1080",
-"timeout": 250,
+"timeout": 300,
 "disable_udp": false
 },
 "obfs": "",
-"auth_str": "Ljg6NNEATDqP97hdAdHe1lJv7ggtKc0h7zmCCZKCX3qY0LR64F",
+"auth_str": "dongtaiwang.com",
 "alpn": "h3",
-"server_name": "www.microsoft.com",
+"server_name": "bing.com",
 "insecure": true,
-"recv_window_conn": 5767168,
-"recv_window": 23068672,
+"recv_window_conn": 115343360,
+"recv_window": 461373440,
 "disable_mtu_discovery": true,
 "resolver": "https://223.5.5.5/dns-query",
 "retry": 3,
@@ -1374,27 +1654,27 @@ rules:
 ## hysteria-ip_4.json
 ```bash
 {
-"server": "109.104.152.149:48406",
+"server": "108.181.22.239:39967",
 "protocol": "udp",
 "up_mbps": 11,
 "down_mbps": 55,
 "http": {
 "listen": "127.0.0.1:1081",
-"timeout" : 300,
+"timeout" : 250,
 "disable_udp": false
 },
 "socks5": {
 "listen": "127.0.0.1:1080",
-"timeout": 300,
+"timeout": 250,
 "disable_udp": false
 },
 "obfs": "",
-"auth_str": "xfNhrunYJ9GvDXCTktY2bIwhc1EyeyyAbiUMx1UtBOWgI4cMVB",
+"auth_str": "dongtaiwang.com",
 "alpn": "h3",
-"server_name": "www.amazon.cn",
+"server_name": "bing.com",
 "insecure": true,
-"recv_window_conn": 5767168,
-"recv_window": 23068672,
+"recv_window_conn": 115343360,
+"recv_window": 461373440,
 "disable_mtu_discovery": true,
 "resolver": "https://223.5.5.5/dns-query",
 "retry": 3,
@@ -1410,9 +1690,8 @@ rules:
 
 ## hysteria2-ip_1.json
 ```bash
-
 {
-  "server": "108.181.22.155:15565",
+  "server": "64.110.25.11:33337",
   "auth": "dongtaiwang.com",
   "tls": {
     "sni": "www.bing.com",
@@ -1424,7 +1703,6 @@ rules:
     "initConnReceiveWindow": 33554432,
     "maxConnReceiveWindow": 33554432
   },
-  "fastOpen": true,
   "socks5": {
     "listen": "127.0.0.1:1080"
   },
@@ -1439,9 +1717,8 @@ rules:
 
 ## hysteria2-ip_2.json
 ```bash
-
 {
-  "server": "www.dtku46.xyz:62580",
+  "server": "62.210.101.0:52465",
   "auth": "dongtaiwang.com",
   "tls": {
     "sni": "www.bing.com",
@@ -1453,7 +1730,6 @@ rules:
     "initConnReceiveWindow": 33554432,
     "maxConnReceiveWindow": 33554432
   },
-    "fastOpen": true,
   "socks5": {
     "listen": "127.0.0.1:1080"
   },
@@ -1468,9 +1744,8 @@ rules:
 
 ## hysteria2-ip_3.json
 ```bash
-
 {
-  "server": "108.181.22.155:15565",
+  "server": "108.181.24.77:43656",
   "auth": "dongtaiwang.com",
   "tls": {
     "sni": "www.bing.com",
@@ -1482,7 +1757,6 @@ rules:
     "initConnReceiveWindow": 33554432,
     "maxConnReceiveWindow": 33554432
   },
-  "fastOpen": true,
   "socks5": {
     "listen": "127.0.0.1:1080"
   },
@@ -1498,7 +1772,7 @@ rules:
 ## hysteria2-ip_4.json
 ```bash
 {
-  "server": "167.160.90.252:63530",
+  "server": "62.210.103.0:52465",
   "auth": "dongtaiwang.com",
   "tls": {
     "sni": "www.bing.com",
@@ -1526,17 +1800,16 @@ rules:
 ```bash
 {
   "listen": "socks://127.0.0.1:1080",
-  "proxy": "https://dongtaiwang.com:dongtaiwang.com@naive16.cfcdn3.xyz:443"
+  "proxy": "https://dongtaiwang.com:dongtaiwang.com@naive19.cfcdn3.xyz:443"
 }
 
 ```
 
 ## naiveproxy-ip_2.json
 ```bash
-
 {
   "listen": "socks://127.0.0.1:1080",
-  "proxy": "https://dongtaiwang.com:dongtaiwang.com@naive14.cfcdn3.xyz:443"
+  "proxy": "https://dongtaiwang.com:dongtaiwang.com@www.dtku50.xyz:443"
 }
 
 ```
@@ -1557,15 +1830,16 @@ rules:
   "outbounds": [
     {
       "type": "hysteria",
-      "tag": "Hysteria-3166",
-      "server": "www.dtku50.xyz", 
-      "server_port": 28877,
-      "up_mbps": 50, 
-      "down_mbps": 100, 
-      "auth_str": "y6Sf5xTFyNx5",
+      "tag": "dongtaiwang.com",
+      "server": "www2.dtku48.xyz", 
+      "server_port": 22334,
+      "up_mbps": 11, 
+      "down_mbps": 55,
+      "auth_str": "dongtaiwang.com",
       "tls": {
         "enabled": true,
-        "server_name": "www.dtku50.xyz", 
+        "insecure": true,
+        "server_name": "bing.com", 
         "alpn": [
           "h3"
         ]
@@ -1575,6 +1849,7 @@ rules:
   ] 
 	 
 }
+
 
 ```
 
@@ -1593,19 +1868,17 @@ rules:
   ],
   "outbounds": [
     {
-      "type": "tuic",
-      "tag": "tuic-6132",
-      "server": "sing2.dtku47.xyz", 
-      "server_port": 55667,
-      "uuid": "2dca51f2-8968-479b-b086-4a62269f3f37", 
-      "password": "dongtaiwang", 
-      "congestion_control": "bbr",
-      "udp_relay_mode": "native",
-      "zero_rtt_handshake": false,
-      "heartbeat": "10s",
+      "type": "hysteria",
+      "tag": "dongtaiwang.com",
+      "server": "www.dtku50.xyz", 
+      "server_port": 11229,
+      "up_mbps": 11, 
+      "down_mbps": 55,
+      "auth_str": "dongtaiwang.com",
       "tls": {
         "enabled": true,
-        "server_name": "sing2.dtku47.xyz", 
+        "insecure": true,
+        "server_name": "bing.com", 
         "alpn": [
           "h3"
         ]
@@ -1615,5 +1888,6 @@ rules:
   ] 
 	 
 }
+
 
 ```

@@ -51,35 +51,31 @@
       "settings": {
         "vnext": [
           {
-            "address": "dongtaiwang2.com",
-            "port": 443,
+            "address": "108.181.22.213",
+            "port": 28945,
             "users": [
               {
-                "id": "f5c180eb-fbce-49ac-9029-482eca9385c0",
+                "id": "9cc39477-0d85-4419-84d4-fb7fc77668b3",
                 "alterId": 0,
                 "email": "t@t.tt",
                 "security": "auto",
                 "encryption": "none",
-                "flow": ""
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": false,
-          "serverName": "xray1.freeh1.xyz",
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "m.media-amazon.com",
           "fingerprint": "chrome",
-          "show": false
-        },
-        "wsSettings": {
-          "path": "/gzogws",
-          "headers": {
-            "Host": "xray1.freeh1.xyz"
-          }
+          "show": false,
+          "publicKey": "yKXmLTmXAi-BHBg3JpCz-NWUmVcKlfm7iMmVoq7YQx0",
+          "shortId": "6ba85179e30d4fc2",
+          "spiderX": ""
         }
       },
       "mux": {

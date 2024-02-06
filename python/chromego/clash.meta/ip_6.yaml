@@ -13,55 +13,46 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - name: ip
-    type: hysteria
-    server: hy1.dtku47.xyz
-    port: 22334
-    auth-str: lASdKzWK0VxL
-    alpn:
-      - h3
-    protocol: udp
-    up: "50 Mbps"
-    down: "100 Mbps"
+  - {"name":"dongtaiwang.com_1","type":"tuic","server":"62.210.103.14","port":44556,"udp":true,"uuid":"0d9d053c-81c8-4f26-9b5c-dff313dfdd70","password":dongtaiwang.com,"alpn":["h3"],"disable-sni":true,"reduce-rtt":true,"udp-relay-mode":native,"congestion-controller":"bbr"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - ip
+      - dongtaiwang.com_1
   - name: ♻️ 自动选择
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - ip
+      - dongtaiwang.com_1
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - ip
+      - dongtaiwang.com_1
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - ip
+      - dongtaiwang.com_1
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - ip
+      - dongtaiwang.com_1
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - ip
+      - dongtaiwang.com_1
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -84,7 +75,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - ip
+      - dongtaiwang.com_1
 
 rules:
   - MATCH,🚀 节点选择
