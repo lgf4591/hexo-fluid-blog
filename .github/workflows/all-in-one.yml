@@ -3,7 +3,7 @@ name: Auto deploy to github/cloudfare pages
 on:
   push:
     branches: [ "main" ]
-    paths-ignore: 
+    paths-ignore:
       - '**/README.md'
       # - '**/*.yml'
   pull_request:
@@ -37,10 +37,11 @@ jobs:
       with:
         repo: lgf4591/hexo-fluid-blog
         git_private_key: ${{ secrets.ACTION_KEY }}
-    
+
     - name: Install dependencies
       run: |
         cd python/chromego_merge
+				git pull
         pwd
         ls -la
         python -m pip install --upgrade pip
@@ -49,7 +50,7 @@ jobs:
     - name: Run merge script
       run: |
         cd python/chromego_merge
-        python meta_merge.py 
+        python meta_merge.py
 
     - name: Run shadowrocket merge script
       run: |
@@ -76,7 +77,7 @@ jobs:
       uses: actions/setup-python@v4
       with:
         python-version: ${{ matrix.python-version }}
-        
+
     - name: Checkout repo With SSH
       uses: lgf4591/CheckoutWithSSHAction@main
       with:
@@ -88,7 +89,7 @@ jobs:
         ls -la
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-    
+
     - name: create ChromeGo Config markdown post
       run: |
         pwd
@@ -110,7 +111,7 @@ jobs:
 
     - name: Update Git With SSH
       uses: lgf4591/GitUpdateWithSSHAction@main
-  
+
 
   auto-publish:
     runs-on: ubuntu-latest
@@ -128,7 +129,7 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node-version }}
-        
+
     - name: Checkout repo With SSH
       uses: lgf4591/CheckoutWithSSHAction@main
       with:
@@ -150,7 +151,7 @@ jobs:
         yarn run hexo clean
         yarn run hexo generate
         yarn run hexo deploy
-    
+
     - name: Publish to Cloudflare Pages
       uses: cloudflare/pages-action@v1
       with:
