@@ -1,7 +1,7 @@
 
 ---
 title: ChromeGo所有配置文件合集 
-date: 2024-02-07 08:33:59
+date: 2024-02-07 08:35:00
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2024-02-07 08:33:59
+> Last Update Time: 2024-02-07 08:35:00
 ---
 
 ## Quick-ip_1.yaml
@@ -1030,6 +1030,7 @@ rules:
 
 ## clash.meta-ip_1.yaml
 ```bash
+
 secret: dongtaiwang.com
 mixed-port: 7890
 allow-lan: false
@@ -1045,7 +1046,7 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {"name":"dongtaiwang.com_1","type":"tuic","server":"195.137.220.189","port":33445,"udp":true,"uuid":"983a85bd-8fae-45d2-a702-5d00a383763e","password":dongtaiwang.com,"alpn":["h3"],"disable-sni":true,"reduce-rtt":true,"udp-relay-mode":native,"congestion-controller":"bbr"}
+  - {"name":"dongtaiwang.com_1","type":"hysteria","server":"51.159.103.141","port":18044,10000-13000,"sni":"bing.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"dongtaiwang.com","up":11,"down":55,"hop_interval":190}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -1306,7 +1307,7 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {"name":"dongtaiwang.com_1","type":"hysteria","server":"51.159.103.141","port":18044,10000-13000,"sni":"bing.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"dongtaiwang.com","up":11,"down":55,"hop_interval":190}
+  - {"name":"dongtaiwang.com_1","type":"tuic","server":"195.137.220.189","port":33445,"udp":true,"uuid":"983a85bd-8fae-45d2-a702-5d00a383763e","password":dongtaiwang.com,"alpn":["h3"],"disable-sni":true,"reduce-rtt":true,"udp-relay-mode":native,"congestion-controller":"bbr"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
