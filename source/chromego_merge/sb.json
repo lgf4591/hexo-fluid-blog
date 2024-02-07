@@ -105,12 +105,12 @@
       "outbounds": [
         "auto",
         "direct",
-        "🇫🇷 France_tuic_0",
+        "🇺🇸 United States_tuic_0",
         "🇺🇸 United States_tuic_1",
-        "🇳🇱 Netherlands_tuic_2",
-        "🇫🇷 France_tuic_3",
-        "🇫🇷 France_tuic_4",
-        "🇫🇷 France_tuic_5",
+        "🇺🇸 United States_tuic_2",
+        "🇺🇸 United States_tuic_3",
+        "🇺🇸 United States_tuic_4",
+        "🇺🇸 United States_tuic_5",
         "🇹🇼 Taiwan_hy_6",
         "🇫🇷 France_hy2_7",
         "🇹🇼 Taiwan_hy_8",
@@ -123,7 +123,9 @@
         "🇺🇸 United States_hysteria2_1",
         "🇫🇷 France_hysteria2_2",
         "🇺🇸 United States_hysteria2_3",
+        "🇫🇷 France_vless_0",
         "🇺🇸 United States_vless_1",
+        "🇫🇷 France_vless_2",
         "🇺🇸 United States_vless_3"
       ]
     },
@@ -373,7 +375,12 @@
       "tag": "America",
       "type": "selector",
       "outbounds": [
+        "🇺🇸 United States_tuic_0",
         "🇺🇸 United States_tuic_1",
+        "🇺🇸 United States_tuic_2",
+        "🇺🇸 United States_tuic_3",
+        "🇺🇸 United States_tuic_4",
+        "🇺🇸 United States_tuic_5",
         "🇺🇸 United States_hysteria_1",
         "🇺🇸 United States_hysteria_2",
         "🇺🇸 United States_hysteria_3",
@@ -388,15 +395,12 @@
       "tag": "Others",
       "type": "selector",
       "outbounds": [
-        "🇫🇷 France_tuic_0",
-        "🇳🇱 Netherlands_tuic_2",
-        "🇫🇷 France_tuic_3",
-        "🇫🇷 France_tuic_4",
-        "🇫🇷 France_tuic_5",
         "🇫🇷 France_hy2_7",
         "🇫🇷 France_hysteria_0",
         "🇫🇷 France_hysteria2_0",
         "🇫🇷 France_hysteria2_2",
+        "🇫🇷 France_vless_0",
+        "🇫🇷 France_vless_2",
         "proxy"
       ]
     },
@@ -404,12 +408,12 @@
       "tag": "auto",
       "type": "urltest",
       "outbounds": [
-        "🇫🇷 France_tuic_0",
+        "🇺🇸 United States_tuic_0",
         "🇺🇸 United States_tuic_1",
-        "🇳🇱 Netherlands_tuic_2",
-        "🇫🇷 France_tuic_3",
-        "🇫🇷 France_tuic_4",
-        "🇫🇷 France_tuic_5",
+        "🇺🇸 United States_tuic_2",
+        "🇺🇸 United States_tuic_3",
+        "🇺🇸 United States_tuic_4",
+        "🇺🇸 United States_tuic_5",
         "🇹🇼 Taiwan_hy_6",
         "🇫🇷 France_hy2_7",
         "🇹🇼 Taiwan_hy_8",
@@ -422,7 +426,9 @@
         "🇺🇸 United States_hysteria2_1",
         "🇫🇷 France_hysteria2_2",
         "🇺🇸 United States_hysteria2_3",
+        "🇫🇷 France_vless_0",
         "🇺🇸 United States_vless_1",
+        "🇫🇷 France_vless_2",
         "🇺🇸 United States_vless_3"
       ],
       "url": "http://www.gstatic.com/generate_204",
@@ -442,11 +448,11 @@
       "tag": "block"
     },
     {
-      "tag": "🇫🇷 France_tuic_0",
+      "tag": "🇺🇸 United States_tuic_0",
       "type": "tuic",
-      "server": "62.210.103.14",
-      "server_port": 44556,
-      "uuid": "0d9d053c-81c8-4f26-9b5c-dff313dfdd70",
+      "server": "195.137.220.189",
+      "server_port": 33445,
+      "uuid": "983a85bd-8fae-45d2-a702-5d00a383763e",
       "password": "dongtaiwang.com",
       "congestion_control": "bbr",
       "udp_relay_mode": "native",
@@ -462,9 +468,9 @@
     {
       "tag": "🇺🇸 United States_tuic_1",
       "type": "tuic",
-      "server": "109.104.152.4",
+      "server": "74.63.249.229",
       "server_port": 443,
-      "uuid": "9ec44c8c-5dc0-4c92-a7ed-5422b0ac1913",
+      "uuid": "9a6140f4-abd8-4ece-aa0e-4f14556de56b",
       "password": "dongtaiwang.com",
       "congestion_control": "bbr",
       "udp_relay_mode": "native",
@@ -478,11 +484,11 @@
       }
     },
     {
-      "tag": "🇳🇱 Netherlands_tuic_2",
+      "tag": "🇺🇸 United States_tuic_2",
       "type": "tuic",
-      "server": "109.104.153.17",
-      "server_port": 22334,
-      "uuid": "364d2d85-5bfd-463f-a3dd-a08012a2a6ce",
+      "server": "108.181.2.158",
+      "server_port": 33440,
+      "uuid": "996c2970-ec1c-4659-9c5f-b3609c42a764",
       "password": "dongtaiwang.com",
       "congestion_control": "bbr",
       "udp_relay_mode": "native",
@@ -496,11 +502,11 @@
       }
     },
     {
-      "tag": "🇫🇷 France_tuic_3",
+      "tag": "🇺🇸 United States_tuic_3",
       "type": "tuic",
-      "server": "62.210.103.14",
-      "server_port": 44556,
-      "uuid": "0d9d053c-81c8-4f26-9b5c-dff313dfdd70",
+      "server": "74.63.249.229",
+      "server_port": 443,
+      "uuid": "9a6140f4-abd8-4ece-aa0e-4f14556de56b",
       "password": "dongtaiwang.com",
       "congestion_control": "bbr",
       "udp_relay_mode": "native",
@@ -514,11 +520,11 @@
       }
     },
     {
-      "tag": "🇫🇷 France_tuic_4",
+      "tag": "🇺🇸 United States_tuic_4",
       "type": "tuic",
-      "server": "62.210.103.14",
-      "server_port": 44556,
-      "uuid": "0d9d053c-81c8-4f26-9b5c-dff313dfdd70",
+      "server": "74.63.249.229",
+      "server_port": 443,
+      "uuid": "9a6140f4-abd8-4ece-aa0e-4f14556de56b",
       "password": "dongtaiwang.com",
       "congestion_control": "bbr",
       "udp_relay_mode": "native",
@@ -532,11 +538,11 @@
       }
     },
     {
-      "tag": "🇫🇷 France_tuic_5",
+      "tag": "🇺🇸 United States_tuic_5",
       "type": "tuic",
-      "server": "62.210.103.14",
-      "server_port": 44556,
-      "uuid": "0d9d053c-81c8-4f26-9b5c-dff313dfdd70",
+      "server": "74.63.249.229",
+      "server_port": 443,
+      "uuid": "9a6140f4-abd8-4ece-aa0e-4f14556de56b",
       "password": "dongtaiwang.com",
       "congestion_control": "bbr",
       "udp_relay_mode": "native",
@@ -688,8 +694,8 @@
     {
       "tag": "🇫🇷 France_hysteria2_0",
       "type": "hysteria2",
-      "server": "62.210.101.0",
-      "server_port": 52465,
+      "server": "62.210.103.0",
+      "server_port": 22483,
       "password": "dongtaiwang.com",
       "up_mbps": 10,
       "down_mbps": 100,
@@ -723,7 +729,7 @@
       "tag": "🇫🇷 France_hysteria2_2",
       "type": "hysteria2",
       "server": "62.210.103.0",
-      "server_port": 52465,
+      "server_port": 22483,
       "password": "dongtaiwang.com",
       "up_mbps": 10,
       "down_mbps": 100,
@@ -754,6 +760,29 @@
       }
     },
     {
+      "tag": "🇫🇷 France_vless_0",
+      "type": "vless",
+      "server": "62.210.101.0",
+      "server_port": 18700,
+      "uuid": "e659661d-8439-46e0-b1ab-d75ceaf73404",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "update.microsoft",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "PBRc2v9SSXpG4jjQRYNa-kgs8w9V4U3MNLuncd2d0hw",
+          "short_id": "6ba85179e30d4fc2"
+        }
+      }
+    },
+    {
       "tag": "🇺🇸 United States_vless_1",
       "type": "vless",
       "server": "108.181.22.213",
@@ -772,6 +801,29 @@
         "reality": {
           "enabled": true,
           "public_key": "yKXmLTmXAi-BHBg3JpCz-NWUmVcKlfm7iMmVoq7YQx0",
+          "short_id": "6ba85179e30d4fc2"
+        }
+      }
+    },
+    {
+      "tag": "🇫🇷 France_vless_2",
+      "type": "vless",
+      "server": "62.210.101.0",
+      "server_port": 18700,
+      "uuid": "e659661d-8439-46e0-b1ab-d75ceaf73404",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "update.microsoft",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "PBRc2v9SSXpG4jjQRYNa-kgs8w9V4U3MNLuncd2d0hw",
           "short_id": "6ba85179e30d4fc2"
         }
       }
