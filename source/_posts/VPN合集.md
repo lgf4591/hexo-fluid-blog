@@ -1,7 +1,7 @@
 
 ---
 title: VPN合集
-date: 2024-02-07 05:43:06
+date: 2024-02-07 05:44:12
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2024-02-07 05:43:06
+> Last Update Time: 2024-02-07 05:44:12
 ---
 # vless_node
 ```bash
@@ -443,7 +443,7 @@ vmess://eyJhZGQiOiAic2VydmVyMzIuYmVoZXNodGJhbmVoLmNvbSIsICJhaWQiOiAwLCAiaG9zdCI6
 
 [warp+机器人](https://t.me/generatewarpplusbot)
 
-然后本地创建一个yaml文件，参考：[issues #20](https://github.com/vveg26/chromego_merge/issues/20)
+然后本地创建一个yaml文件，参考：[issues #20](https://github.com/mianayang/chromego_merge/issues/20)
 
 </details>
 
