@@ -1,7 +1,7 @@
 
 ---
 title: ChromeGo所有配置文件合集 
-date: 2024-02-07 07:00:56
+date: 2024-02-07 07:01:52
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2024-02-07 07:00:56
+> Last Update Time: 2024-02-07 07:01:52
 ---
 
 ## Quick-ip_1.yaml
@@ -591,11 +591,11 @@ rules:
       "settings": {
         "vnext": [
           {
-            "address": "108.181.22.213",
-            "port": 28945,
+            "address": "62.210.101.0",
+            "port": 18700,
             "users": [
               {
-                "id": "9cc39477-0d85-4419-84d4-fb7fc77668b3",
+                "id": "e659661d-8439-46e0-b1ab-d75ceaf73404",
                 "alterId": 0,
                 "email": "t@t.tt",
                 "security": "auto",
@@ -610,10 +610,10 @@ rules:
         "network": "tcp",
         "security": "reality",
         "realitySettings": {
-          "serverName": "m.media-amazon.com",
+          "serverName": "update.microsoft",
           "fingerprint": "chrome",
           "show": false,
-          "publicKey": "yKXmLTmXAi-BHBg3JpCz-NWUmVcKlfm7iMmVoq7YQx0",
+          "publicKey": "PBRc2v9SSXpG4jjQRYNa-kgs8w9V4U3MNLuncd2d0hw",
           "shortId": "6ba85179e30d4fc2",
           "spiderX": ""
         }
@@ -697,7 +697,6 @@ rules:
     ]
   }
 }
-
 
 ```
 
