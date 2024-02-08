@@ -1,7 +1,7 @@
 
 ---
 title: ChromeGo所有配置文件合集 
-date: 2024-02-08 06:07:17
+date: 2024-02-08 06:08:35
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2024-02-08 06:07:17
+> Last Update Time: 2024-02-08 06:08:35
 ---
 
 ## Quick-ip_1.yaml
@@ -1030,7 +1030,6 @@ rules:
 
 ## clash.meta-ip_1.yaml
 ```bash
-
 secret: dongtaiwang.com
 mixed-port: 7890
 allow-lan: false
@@ -1046,7 +1045,7 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {"name":"dongtaiwang.com_1","type":"hysteria","server":"51.159.103.141","port":18044,10000-13000,"sni":"bing.com","skip-cert-verify":true,"alpn":["h3"],"protocol":"udp","auth_str":"dongtaiwang.com","up":11,"down":55,"hop_interval":190}
+  - {"name":"dongtaiwang.com_1","type":"tuic","server":"109.104.152.212","port":33440,"udp":true,"uuid":"41b29997-f495-4957-845c-a3f0d421d9e0","password":dongtaiwang.com,"alpn":["h3"],"disable-sni":true,"reduce-rtt":true,"udp-relay-mode":native,"congestion-controller":"bbr"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -1220,7 +1219,7 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {"name":"dongtaiwang.com_1","type":"tuic","server":"www2.dtku45.xyz","port":33098,"udp":true,"uuid":"fef3d3c2-ab3e-4134-a2f3-0c2d83e0a76d","password":dongtaiwang.com,"alpn":["h3"],"disable-sni":true,"reduce-rtt":true,"udp-relay-mode":native,"congestion-controller":"bbr"}
+  - {"name":"dongtaiwang.com_1","type":"tuic","server":"1.162.136.33","port":33098,"udp":true,"uuid":"fef3d3c2-ab3e-4134-a2f3-0c2d83e0a76d","password":dongtaiwang.com,"alpn":["h3"],"disable-sni":true,"reduce-rtt":true,"udp-relay-mode":native,"congestion-controller":"bbr"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -1307,7 +1306,7 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {"name":"dongtaiwang.com_1","type":"tuic","server":"195.137.220.189","port":33445,"udp":true,"uuid":"983a85bd-8fae-45d2-a702-5d00a383763e","password":dongtaiwang.com,"alpn":["h3"],"disable-sni":true,"reduce-rtt":true,"udp-relay-mode":native,"congestion-controller":"bbr"}
+  - {"name":"dongtaiwang.com_1","type":"tuic","server":"109.104.152.212","port":33440,"udp":true,"uuid":"41b29997-f495-4957-845c-a3f0d421d9e0","password":dongtaiwang.com,"alpn":["h3"],"disable-sni":true,"reduce-rtt":true,"udp-relay-mode":native,"congestion-controller":"bbr"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -1374,6 +1373,7 @@ proxy-groups:
 rules:
   - MATCH,🚀 节点选择
   
+
 
 ```
 
@@ -1481,7 +1481,7 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {"name":"dongtaiwang.com_1","type":"vless","server":"92.118.205.66","port":10081,"udp":true,"uuid":"7c009b14-ceb0-4373-9504-ab2a9ca2354a","tls":true,"servername":"images-na.ssl-images-amazon.com","network":"grpc","grpc-opts":{"grpc-service-name":"grpc"},"reality-opts":{"public-key":"JMHogufiGO132mtTq26O34ssU8rjCkUcFC98PSeMF3A","short-id":"6ba85179e30d4fc2"},"client-fingerprint":"chrome"}
+  - {"name":"dongtaiwang.com_1","type":"tuic","server":"109.104.152.212","port":33440,"udp":true,"uuid":"41b29997-f495-4957-845c-a3f0d421d9e0","password":dongtaiwang.com,"alpn":["h3"],"disable-sni":true,"reduce-rtt":true,"udp-relay-mode":native,"congestion-controller":"bbr"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
