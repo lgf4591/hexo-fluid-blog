@@ -1,7 +1,7 @@
 
 ---
 title: VPN合集
-date: 2024-02-08 01:09:38
+date: 2024-02-08 01:11:05
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2024-02-08 01:09:38
+> Last Update Time: 2024-02-08 01:11:05
 ---
 # vless_node
 ```bash
@@ -1363,11 +1363,11 @@ aHlzdGVyaWE6Ly81MS4xNTkuMTAzLjE0MToxODA0ND9wZWVyPWJpbmcuY29tJmF1dGg9Jmluc2VjdXJl
       "outbounds": [
         "auto",
         "direct",
-        "🇺🇸 United States_tuic_0",
+        "🇫🇷 France_hy_0",
         "🇺🇸 United States_tuic_1",
-        "🇺🇸 United States_tuic_2",
+        "🇹🇼 Taiwan_tuic_2",
         "🇭🇰 Hong Kong_vless_3",
-        "🇭🇰 Hong Kong_vless_4",
+        "🇺🇸 United States_tuic_4",
         "🇭🇰 Hong Kong_vless_5",
         "🇹🇼 Taiwan_hy_6",
         "🇫🇷 France_hy2_7",
@@ -1381,10 +1381,9 @@ aHlzdGVyaWE6Ly81MS4xNTkuMTAzLjE0MToxODA0ND9wZWVyPWJpbmcuY29tJmF1dGg9Jmluc2VjdXJl
         "🇺🇸 United States_hysteria2_1",
         "🇫🇷 France_hysteria2_2",
         "🇺🇸 United States_hysteria2_3",
-        "🇫🇷 France_vless_0",
         "🇺🇸 United States_vless_1",
         "🇫🇷 France_vless_2",
-        "🇺🇸 United States_vless_3"
+        "🇫🇷 France_vless_3"
       ]
     },
     {
@@ -1603,7 +1602,6 @@ aHlzdGVyaWE6Ly81MS4xNTkuMTAzLjE0MToxODA0ND9wZWVyPWJpbmcuY29tJmF1dGg9Jmluc2VjdXJl
       "type": "selector",
       "outbounds": [
         "🇭🇰 Hong Kong_vless_3",
-        "🇭🇰 Hong Kong_vless_4",
         "🇭🇰 Hong Kong_vless_5",
         "proxy"
       ]
@@ -1612,6 +1610,7 @@ aHlzdGVyaWE6Ly81MS4xNTkuMTAzLjE0MToxODA0ND9wZWVyPWJpbmcuY29tJmF1dGg9Jmluc2VjdXJl
       "tag": "TaiWan",
       "type": "selector",
       "outbounds": [
+        "🇹🇼 Taiwan_tuic_2",
         "🇹🇼 Taiwan_hy_6",
         "🇹🇼 Taiwan_hy_8",
         "🇹🇼 Taiwan_hy_9",
@@ -1636,16 +1635,14 @@ aHlzdGVyaWE6Ly81MS4xNTkuMTAzLjE0MToxODA0ND9wZWVyPWJpbmcuY29tJmF1dGg9Jmluc2VjdXJl
       "tag": "America",
       "type": "selector",
       "outbounds": [
-        "🇺🇸 United States_tuic_0",
         "🇺🇸 United States_tuic_1",
-        "🇺🇸 United States_tuic_2",
+        "🇺🇸 United States_tuic_4",
         "🇺🇸 United States_hysteria_1",
         "🇺🇸 United States_hysteria_2",
         "🇺🇸 United States_hysteria_3",
         "🇺🇸 United States_hysteria2_1",
         "🇺🇸 United States_hysteria2_3",
         "🇺🇸 United States_vless_1",
-        "🇺🇸 United States_vless_3",
         "proxy"
       ]
     },
@@ -1653,12 +1650,13 @@ aHlzdGVyaWE6Ly81MS4xNTkuMTAzLjE0MToxODA0ND9wZWVyPWJpbmcuY29tJmF1dGg9Jmluc2VjdXJl
       "tag": "Others",
       "type": "selector",
       "outbounds": [
+        "🇫🇷 France_hy_0",
         "🇫🇷 France_hy2_7",
         "🇫🇷 France_hysteria_0",
         "🇫🇷 France_hysteria2_0",
         "🇫🇷 France_hysteria2_2",
-        "🇫🇷 France_vless_0",
         "🇫🇷 France_vless_2",
+        "🇫🇷 France_vless_3",
         "proxy"
       ]
     },
@@ -1666,11 +1664,11 @@ aHlzdGVyaWE6Ly81MS4xNTkuMTAzLjE0MToxODA0ND9wZWVyPWJpbmcuY29tJmF1dGg9Jmluc2VjdXJl
       "tag": "auto",
       "type": "urltest",
       "outbounds": [
-        "🇺🇸 United States_tuic_0",
+        "🇫🇷 France_hy_0",
         "🇺🇸 United States_tuic_1",
-        "🇺🇸 United States_tuic_2",
+        "🇹🇼 Taiwan_tuic_2",
         "🇭🇰 Hong Kong_vless_3",
-        "🇭🇰 Hong Kong_vless_4",
+        "🇺🇸 United States_tuic_4",
         "🇭🇰 Hong Kong_vless_5",
         "🇹🇼 Taiwan_hy_6",
         "🇫🇷 France_hy2_7",
@@ -1684,10 +1682,9 @@ aHlzdGVyaWE6Ly81MS4xNTkuMTAzLjE0MToxODA0ND9wZWVyPWJpbmcuY29tJmF1dGg9Jmluc2VjdXJl
         "🇺🇸 United States_hysteria2_1",
         "🇫🇷 France_hysteria2_2",
         "🇺🇸 United States_hysteria2_3",
-        "🇫🇷 France_vless_0",
         "🇺🇸 United States_vless_1",
         "🇫🇷 France_vless_2",
-        "🇺🇸 United States_vless_3"
+        "🇫🇷 France_vless_3"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "10m",
@@ -1706,21 +1703,20 @@ aHlzdGVyaWE6Ly81MS4xNTkuMTAzLjE0MToxODA0ND9wZWVyPWJpbmcuY29tJmF1dGg9Jmluc2VjdXJl
       "tag": "block"
     },
     {
-      "tag": "🇺🇸 United States_tuic_0",
-      "type": "tuic",
-      "server": "195.137.220.189",
-      "server_port": 33445,
-      "uuid": "983a85bd-8fae-45d2-a702-5d00a383763e",
-      "password": "dongtaiwang.com",
-      "congestion_control": "bbr",
-      "udp_relay_mode": "native",
-      "zero_rtt_handshake": false,
-      "heartbeat": "10s",
+      "tag": "🇫🇷 France_hy_0",
+      "type": "hysteria",
+      "server": "51.159.103.141",
+      "server_port": 18044,
+      "up_mbps": 50,
+      "down_mbps": 80,
+      "auth_str": "",
       "tls": {
         "enabled": true,
+        "server_name": "bing.com",
         "alpn": [
           "h3"
-        ]
+        ],
+        "insecure": true
       }
     },
     {
@@ -1742,11 +1738,11 @@ aHlzdGVyaWE6Ly81MS4xNTkuMTAzLjE0MToxODA0ND9wZWVyPWJpbmcuY29tJmF1dGg9Jmluc2VjdXJl
       }
     },
     {
-      "tag": "🇺🇸 United States_tuic_2",
+      "tag": "🇹🇼 Taiwan_tuic_2",
       "type": "tuic",
-      "server": "108.181.2.158",
-      "server_port": 33440,
-      "uuid": "996c2970-ec1c-4659-9c5f-b3609c42a764",
+      "server": "1.162.136.33",
+      "server_port": 33098,
+      "uuid": "fef3d3c2-ab3e-4134-a2f3-0c2d83e0a76d",
       "password": "dongtaiwang.com",
       "congestion_control": "bbr",
       "udp_relay_mode": "native",
@@ -1786,29 +1782,21 @@ aHlzdGVyaWE6Ly81MS4xNTkuMTAzLjE0MToxODA0ND9wZWVyPWJpbmcuY29tJmF1dGg9Jmluc2VjdXJl
       }
     },
     {
-      "tag": "🇭🇰 Hong Kong_vless_4",
-      "type": "vless",
-      "server": "92.118.205.66",
-      "server_port": 10081,
-      "uuid": "7c009b14-ceb0-4373-9504-ab2a9ca2354a",
-      "packet_encoding": "xudp",
+      "tag": "🇺🇸 United States_tuic_4",
+      "type": "tuic",
+      "server": "195.137.220.189",
+      "server_port": 33445,
+      "uuid": "983a85bd-8fae-45d2-a702-5d00a383763e",
+      "password": "dongtaiwang.com",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
+      "zero_rtt_handshake": false,
+      "heartbeat": "10s",
       "tls": {
         "enabled": true,
-        "insecure": true,
-        "server_name": "images-na.ssl-images-amazon.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "JMHogufiGO132mtTq26O34ssU8rjCkUcFC98PSeMF3A",
-          "short_id": "6ba85179e30d4fc2"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
+        "alpn": [
+          "h3"
+        ]
       }
     },
     {
@@ -2042,29 +2030,6 @@ aHlzdGVyaWE6Ly81MS4xNTkuMTAzLjE0MToxODA0ND9wZWVyPWJpbmcuY29tJmF1dGg9Jmluc2VjdXJl
       }
     },
     {
-      "tag": "🇫🇷 France_vless_0",
-      "type": "vless",
-      "server": "62.210.101.0",
-      "server_port": 18700,
-      "uuid": "e659661d-8439-46e0-b1ab-d75ceaf73404",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "insecure": false,
-        "server_name": "update.microsoft",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "PBRc2v9SSXpG4jjQRYNa-kgs8w9V4U3MNLuncd2d0hw",
-          "short_id": "6ba85179e30d4fc2"
-        }
-      }
-    },
-    {
       "tag": "🇺🇸 United States_vless_1",
       "type": "vless",
       "server": "108.181.22.213",
@@ -2111,24 +2076,24 @@ aHlzdGVyaWE6Ly81MS4xNTkuMTAzLjE0MToxODA0ND9wZWVyPWJpbmcuY29tJmF1dGg9Jmluc2VjdXJl
       }
     },
     {
-      "tag": "🇺🇸 United States_vless_3",
+      "tag": "🇫🇷 France_vless_3",
       "type": "vless",
-      "server": "108.181.22.213",
-      "server_port": 28945,
-      "uuid": "9cc39477-0d85-4419-84d4-fb7fc77668b3",
+      "server": "62.210.101.0",
+      "server_port": 18700,
+      "uuid": "e659661d-8439-46e0-b1ab-d75ceaf73404",
       "packet_encoding": "xudp",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
         "insecure": false,
-        "server_name": "m.media-amazon.com",
+        "server_name": "update.microsoft",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "yKXmLTmXAi-BHBg3JpCz-NWUmVcKlfm7iMmVoq7YQx0",
+          "public_key": "PBRc2v9SSXpG4jjQRYNa-kgs8w9V4U3MNLuncd2d0hw",
           "short_id": "6ba85179e30d4fc2"
         }
       }
