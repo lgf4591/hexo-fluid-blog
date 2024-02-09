@@ -1,7 +1,7 @@
 
 ---
 title: ChromeGo所有配置文件合集 
-date: 2024-02-09 15:11:02
+date: 2024-02-09 15:12:12
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2024-02-09 15:11:02
+> Last Update Time: 2024-02-09 15:12:12
 ---
 
 ## Quick-ip_1.yaml
@@ -1970,18 +1970,18 @@ rules:
 ## hysteria-ip_4.json
 ```bash
 {
-"server": "108.181.22.239:39967",
+"server": "36.227.252.101:18490",
 "protocol": "udp",
 "up_mbps": 11,
 "down_mbps": 55,
 "http": {
 "listen": "127.0.0.1:1081",
-"timeout" : 250,
+"timeout" : 150,
 "disable_udp": false
 },
 "socks5": {
 "listen": "127.0.0.1:1080",
-"timeout": 250,
+"timeout": 150,
 "disable_udp": false
 },
 "obfs": "",
@@ -1989,8 +1989,8 @@ rules:
 "alpn": "h3",
 "server_name": "bing.com",
 "insecure": true,
-"recv_window_conn": 115343360,
-"recv_window": 461373440,
+"recv_window_conn": 69206016,
+"recv_window": 276824064,
 "disable_mtu_discovery": true,
 "resolver": "https://223.5.5.5/dns-query",
 "retry": 3,
