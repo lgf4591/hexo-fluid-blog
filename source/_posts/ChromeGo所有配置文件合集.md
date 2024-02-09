@@ -1,7 +1,7 @@
 
 ---
 title: ChromeGo所有配置文件合集 
-date: 2024-02-09 08:33:35
+date: 2024-02-09 08:34:46
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2024-02-09 08:33:35
+> Last Update Time: 2024-02-09 08:34:46
 ---
 
 ## Quick-ip_1.yaml
@@ -3694,7 +3694,7 @@ proxy-groups:
       - dongtaiwang.com_6
       - dongtaiwang.com_7
       - dongtaiwang.com_8
-      - dongtaiwang.com_9
+
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.gstatic.com/generate_204
@@ -3709,7 +3709,7 @@ proxy-groups:
       - dongtaiwang.com_6
       - dongtaiwang.com_7
       - dongtaiwang.com_8
-      - dongtaiwang.com_9
+
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -3724,7 +3724,7 @@ proxy-groups:
       - dongtaiwang.com_6
       - dongtaiwang.com_7
       - dongtaiwang.com_8
-      - dongtaiwang.com_9
+
   - name: 📲 电报信息
     type: select
     proxies:
@@ -3738,7 +3738,7 @@ proxy-groups:
       - dongtaiwang.com_6
       - dongtaiwang.com_7
       - dongtaiwang.com_8
-      - dongtaiwang.com_9
+
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -3752,7 +3752,7 @@ proxy-groups:
       - dongtaiwang.com_6
       - dongtaiwang.com_7
       - dongtaiwang.com_8
-      - dongtaiwang.com_9
+
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -3766,7 +3766,7 @@ proxy-groups:
       - dongtaiwang.com_6
       - dongtaiwang.com_7
       - dongtaiwang.com_8
-      - dongtaiwang.com_9
+
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -3797,7 +3797,7 @@ proxy-groups:
       - dongtaiwang.com_6
       - dongtaiwang.com_7
       - dongtaiwang.com_8
-      - dongtaiwang.com_9
+
 
 rules:
   - MATCH,🚀 节点选择
@@ -3845,7 +3845,7 @@ proxy-groups:
       - dongtaiwang.com_6
       - dongtaiwang.com_7
       - dongtaiwang.com_8
-
+      - dongtaiwang.com_9
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.gstatic.com/generate_204
@@ -3860,7 +3860,7 @@ proxy-groups:
       - dongtaiwang.com_6
       - dongtaiwang.com_7
       - dongtaiwang.com_8
-
+      - dongtaiwang.com_9
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -3875,7 +3875,7 @@ proxy-groups:
       - dongtaiwang.com_6
       - dongtaiwang.com_7
       - dongtaiwang.com_8
-
+      - dongtaiwang.com_9
   - name: 📲 电报信息
     type: select
     proxies:
@@ -3889,7 +3889,7 @@ proxy-groups:
       - dongtaiwang.com_6
       - dongtaiwang.com_7
       - dongtaiwang.com_8
-
+      - dongtaiwang.com_9
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -3903,7 +3903,7 @@ proxy-groups:
       - dongtaiwang.com_6
       - dongtaiwang.com_7
       - dongtaiwang.com_8
-
+      - dongtaiwang.com_9
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -3917,7 +3917,7 @@ proxy-groups:
       - dongtaiwang.com_6
       - dongtaiwang.com_7
       - dongtaiwang.com_8
-
+      - dongtaiwang.com_9
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -3948,7 +3948,7 @@ proxy-groups:
       - dongtaiwang.com_6
       - dongtaiwang.com_7
       - dongtaiwang.com_8
-
+      - dongtaiwang.com_9
 
 rules:
   - MATCH,🚀 节点选择
