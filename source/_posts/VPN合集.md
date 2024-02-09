@@ -1,7 +1,7 @@
 
 ---
 title: VPN合集
-date: 2024-02-09 01:08:40
+date: 2024-02-09 01:10:14
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2024-02-09 01:08:40
+> Last Update Time: 2024-02-09 01:10:14
 ---
 # vless_node
 ```bash
@@ -530,22 +530,22 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: 油管绵阿羊_United States_tuic_01
-  type: tuic
-  server: 109.104.152.212
-  port: 33440
-  udp: true
-  uuid: 41b29997-f495-4957-845c-a3f0d421d9e0
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  disable-sni: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
+- name: 油管绵阿羊_None_vless_01
+  type: vless
+  server: cloudflare.cfgo.cc
+  port: 2053
+  uuid: 627016c6-a565-47f9-93cf-df937b38bbb7
+  tls: true
+  servername: 4.dtku43.xyz
+  network: ws
+  ws-opts:
+    path: /hcxiws
+    headers:
+      host: 4.dtku43.xyz
+  client-fingerprint: chrome
 - name: 油管绵阿羊_Taiwan_tuic_11
   type: tuic
-  server: 111.243.69.34
+  server: 1.162.156.206
   port: 33098
   udp: true
   uuid: fef3d3c2-ab3e-4134-a2f3-0c2d83e0a76d
@@ -556,25 +556,25 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: 油管绵阿羊_Taiwan_tuic_21
-  type: tuic
-  server: 111.243.69.34
-  port: 33098
-  udp: true
-  uuid: fef3d3c2-ab3e-4134-a2f3-0c2d83e0a76d
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  disable-sni: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
+- name: 油管绵阿羊_Canada_vless_21
+  type: vless
+  server: 23.227.38.54
+  port: 2096
+  uuid: e80e0204-ddf1-4f59-8e75-44ea502aabae
+  tls: true
+  servername: 2.dtku43.xyz
+  network: ws
+  ws-opts:
+    path: /mjyrws
+    headers:
+      host: 2.dtku43.xyz
+  client-fingerprint: chrome
 - name: 油管绵阿羊_United States_tuic_31
   type: tuic
-  server: 108.181.5.18
-  port: 22889
+  server: 64.31.55.124
+  port: 44556
   udp: true
-  uuid: 5051cc18-0850-48fb-9036-0b4f9680571b
+  uuid: a72c47f7-5d2d-4029-a5ca-997ac2d1c956
   password: dongtaiwang.com
   alpn:
   - h3
@@ -584,10 +584,10 @@ proxies:
   congestion-controller: bbr
 - name: 油管绵阿羊_United States_tuic_41
   type: tuic
-  server: 108.181.5.18
-  port: 22889
+  server: 64.31.55.124
+  port: 44556
   udp: true
-  uuid: 5051cc18-0850-48fb-9036-0b4f9680571b
+  uuid: a72c47f7-5d2d-4029-a5ca-997ac2d1c956
   password: dongtaiwang.com
   alpn:
   - h3
@@ -597,10 +597,10 @@ proxies:
   congestion-controller: bbr
 - name: 油管绵阿羊_United States_tuic_51
   type: tuic
-  server: 108.181.5.18
-  port: 22889
+  server: 64.31.55.124
+  port: 44556
   udp: true
-  uuid: 5051cc18-0850-48fb-9036-0b4f9680571b
+  uuid: a72c47f7-5d2d-4029-a5ca-997ac2d1c956
   password: dongtaiwang.com
   alpn:
   - h3
@@ -666,8 +666,8 @@ proxies:
 - name: 油管绵阿羊_United States_hy_1
   type: hysteria
   server: 173.234.25.52
-  port: 30072
-  ports: 30072
+  port: 48919
+  ports: 48919
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -785,9 +785,9 @@ proxy-groups:
   proxies:
   - 自动选择
   - DIRECT
-  - 油管绵阿羊_United States_tuic_01
+  - 油管绵阿羊_None_vless_01
   - 油管绵阿羊_Taiwan_tuic_11
-  - 油管绵阿羊_Taiwan_tuic_21
+  - 油管绵阿羊_Canada_vless_21
   - 油管绵阿羊_United States_tuic_31
   - 油管绵阿羊_United States_tuic_41
   - 油管绵阿羊_United States_tuic_51
@@ -812,9 +812,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 油管绵阿羊_United States_tuic_01
+  - 油管绵阿羊_None_vless_01
   - 油管绵阿羊_Taiwan_tuic_11
-  - 油管绵阿羊_Taiwan_tuic_21
+  - 油管绵阿羊_Canada_vless_21
   - 油管绵阿羊_United States_tuic_31
   - 油管绵阿羊_United States_tuic_41
   - 油管绵阿羊_United States_tuic_51
@@ -888,22 +888,22 @@ proxies:
   - 1.1.1.1
   - 8.8.8.8
   dialer-proxy: WARP前置节点
-- name: 油管绵阿羊_United States_tuic_01
-  type: tuic
-  server: 109.104.152.212
-  port: 33440
-  udp: true
-  uuid: 41b29997-f495-4957-845c-a3f0d421d9e0
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  disable-sni: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
+- name: 油管绵阿羊_None_vless_01
+  type: vless
+  server: cloudflare.cfgo.cc
+  port: 2053
+  uuid: 627016c6-a565-47f9-93cf-df937b38bbb7
+  tls: true
+  servername: 4.dtku43.xyz
+  network: ws
+  ws-opts:
+    path: /hcxiws
+    headers:
+      host: 4.dtku43.xyz
+  client-fingerprint: chrome
 - name: 油管绵阿羊_Taiwan_tuic_11
   type: tuic
-  server: 111.243.69.34
+  server: 1.162.156.206
   port: 33098
   udp: true
   uuid: fef3d3c2-ab3e-4134-a2f3-0c2d83e0a76d
@@ -914,25 +914,25 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: 油管绵阿羊_Taiwan_tuic_21
-  type: tuic
-  server: 111.243.69.34
-  port: 33098
-  udp: true
-  uuid: fef3d3c2-ab3e-4134-a2f3-0c2d83e0a76d
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  disable-sni: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
+- name: 油管绵阿羊_Canada_vless_21
+  type: vless
+  server: 23.227.38.54
+  port: 2096
+  uuid: e80e0204-ddf1-4f59-8e75-44ea502aabae
+  tls: true
+  servername: 2.dtku43.xyz
+  network: ws
+  ws-opts:
+    path: /mjyrws
+    headers:
+      host: 2.dtku43.xyz
+  client-fingerprint: chrome
 - name: 油管绵阿羊_United States_tuic_31
   type: tuic
-  server: 108.181.5.18
-  port: 22889
+  server: 64.31.55.124
+  port: 44556
   udp: true
-  uuid: 5051cc18-0850-48fb-9036-0b4f9680571b
+  uuid: a72c47f7-5d2d-4029-a5ca-997ac2d1c956
   password: dongtaiwang.com
   alpn:
   - h3
@@ -942,10 +942,10 @@ proxies:
   congestion-controller: bbr
 - name: 油管绵阿羊_United States_tuic_41
   type: tuic
-  server: 108.181.5.18
-  port: 22889
+  server: 64.31.55.124
+  port: 44556
   udp: true
-  uuid: 5051cc18-0850-48fb-9036-0b4f9680571b
+  uuid: a72c47f7-5d2d-4029-a5ca-997ac2d1c956
   password: dongtaiwang.com
   alpn:
   - h3
@@ -955,10 +955,10 @@ proxies:
   congestion-controller: bbr
 - name: 油管绵阿羊_United States_tuic_51
   type: tuic
-  server: 108.181.5.18
-  port: 22889
+  server: 64.31.55.124
+  port: 44556
   udp: true
-  uuid: 5051cc18-0850-48fb-9036-0b4f9680571b
+  uuid: a72c47f7-5d2d-4029-a5ca-997ac2d1c956
   password: dongtaiwang.com
   alpn:
   - h3
@@ -1024,8 +1024,8 @@ proxies:
 - name: 油管绵阿羊_United States_hy_1
   type: hysteria
   server: 173.234.25.52
-  port: 30072
-  ports: 30072
+  port: 48919
+  ports: 48919
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -1158,9 +1158,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 油管绵阿羊_United States_tuic_01
+  - 油管绵阿羊_None_vless_01
   - 油管绵阿羊_Taiwan_tuic_11
-  - 油管绵阿羊_Taiwan_tuic_21
+  - 油管绵阿羊_Canada_vless_21
   - 油管绵阿羊_United States_tuic_31
   - 油管绵阿羊_United States_tuic_41
   - 油管绵阿羊_United States_tuic_51
@@ -1182,9 +1182,9 @@ proxy-groups:
 - name: 手动选择
   type: select
   proxies:
-  - 油管绵阿羊_United States_tuic_01
+  - 油管绵阿羊_None_vless_01
   - 油管绵阿羊_Taiwan_tuic_11
-  - 油管绵阿羊_Taiwan_tuic_21
+  - 油管绵阿羊_Canada_vless_21
   - 油管绵阿羊_United States_tuic_31
   - 油管绵阿羊_United States_tuic_41
   - 油管绵阿羊_United States_tuic_51
@@ -1206,9 +1206,9 @@ proxy-groups:
 - name: 负载均衡
   type: load-balance
   proxies:
-  - 油管绵阿羊_United States_tuic_01
+  - 油管绵阿羊_None_vless_01
   - 油管绵阿羊_Taiwan_tuic_11
-  - 油管绵阿羊_Taiwan_tuic_21
+  - 油管绵阿羊_Canada_vless_21
   - 油管绵阿羊_United States_tuic_31
   - 油管绵阿羊_United States_tuic_41
   - 油管绵阿羊_United States_tuic_51
@@ -1241,7 +1241,7 @@ rules:
 
 ## 通用链接 （shadowrocket和nekoray）  (https://mareep.netlify.app/sub/shadowrocket_base64.txt)
 ```txt
-dHVpYzovLzQxYjI5OTk3LWY0OTUtNDk1Ny04NDVjLWEzZjBkNDIxZDllMDpkb25ndGFpd2FuZy5jb21AMTA5LjEwNC4xNTIuMjEyOjMzNDQwP3NuaT0mY29uZ2VzdGlvbl9jb250cm9sPWJiciZ1ZHBfcmVsYXlfbW9kZT1uYXRpdmUmYWxwbj1oMyZhbGxvd19pbnNlY3VyZT0wI1VuaXRlZCBTdGF0ZXNfdHVpY18wCnR1aWM6Ly9mZWYzZDNjMi1hYjNlLTQxMzQtYTJmMy0wYzJkODNlMGE3NmQ6ZG9uZ3RhaXdhbmcuY29tQDExMS4yNDMuNjkuMzQ6MzMwOTg/c25pPSZjb25nZXN0aW9uX2NvbnRyb2w9YmJyJnVkcF9yZWxheV9tb2RlPW5hdGl2ZSZhbHBuPWgzJmFsbG93X2luc2VjdXJlPTAjVGFpd2FuX3R1aWNfMQp0dWljOi8vZmVmM2QzYzItYWIzZS00MTM0LWEyZjMtMGMyZDgzZTBhNzZkOmRvbmd0YWl3YW5nLmNvbUAxMTEuMjQzLjY5LjM0OjMzMDk4P3NuaT0mY29uZ2VzdGlvbl9jb250cm9sPWJiciZ1ZHBfcmVsYXlfbW9kZT1uYXRpdmUmYWxwbj1oMyZhbGxvd19pbnNlY3VyZT0wI1RhaXdhbl90dWljXzIKdHVpYzovLzUwNTFjYzE4LTA4NTAtNDhmYi05MDM2LTBiNGY5NjgwNTcxYjpkb25ndGFpd2FuZy5jb21AMTA4LjE4MS41LjE4OjIyODg5P3NuaT0mY29uZ2VzdGlvbl9jb250cm9sPWJiciZ1ZHBfcmVsYXlfbW9kZT1uYXRpdmUmYWxwbj1oMyZhbGxvd19pbnNlY3VyZT0wI1VuaXRlZCBTdGF0ZXNfdHVpY18zCnR1aWM6Ly81MDUxY2MxOC0wODUwLTQ4ZmItOTAzNi0wYjRmOTY4MDU3MWI6ZG9uZ3RhaXdhbmcuY29tQDEwOC4xODEuNS4xODoyMjg4OT9zbmk9JmNvbmdlc3Rpb25fY29udHJvbD1iYnImdWRwX3JlbGF5X21vZGU9bmF0aXZlJmFscG49aDMmYWxsb3dfaW5zZWN1cmU9MCNVbml0ZWQgU3RhdGVzX3R1aWNfNAp0dWljOi8vNTA1MWNjMTgtMDg1MC00OGZiLTkwMzYtMGI0Zjk2ODA1NzFiOmRvbmd0YWl3YW5nLmNvbUAxMDguMTgxLjUuMTg6MjI4ODk/c25pPSZjb25nZXN0aW9uX2NvbnRyb2w9YmJyJnVkcF9yZWxheV9tb2RlPW5hdGl2ZSZhbHBuPWgzJmFsbG93X2luc2VjdXJlPTAjVW5pdGVkIFN0YXRlc190dWljXzUKaHlzdGVyaWE6Ly93d3cyLmR0a3U0OC54eXo6MjIzMzQ/cGVlcj0mYXV0aD1kb25ndGFpd2FuZy5jb20maW5zZWN1cmU9MSZ1cG1icHM9NTAmZG93bm1icHM9ODAmYWxwbj1oMyZtcG9ydD0yMjMzNCZvYmZzPSZwcm90b2NvbD11ZHAmZmFzdG9wZW49MSNUYWl3YW5faHlfNgpoeXN0ZXJpYTI6Ly9kb25ndGFpd2FuZy5jb21ANTEuMTU4LjU0LjQ2OjQ0NTUwP2luc2VjdXJlPTEmc25pPWJpbmcuY29tJm9iZnM9Jm9iZnMtcGFzc3dvcmQ9I0ZyYW5jZV9oeTJfNwpoeXN0ZXJpYTovL3d3dzIuZHRrdTQ4Lnh5ejoyMjMzND9wZWVyPSZhdXRoPWRvbmd0YWl3YW5nLmNvbSZpbnNlY3VyZT0xJnVwbWJwcz01MCZkb3dubWJwcz04MCZhbHBuPWgzJm1wb3J0PTIyMzM0Jm9iZnM9JnByb3RvY29sPXVkcCZmYXN0b3Blbj0xI1RhaXdhbl9oeV84Cmh5c3RlcmlhOi8vd3d3LmR0a3U1MC54eXo6MTg0NzA/cGVlcj13d3cuYW1hem9uLmNuJmF1dGg9Jmluc2VjdXJlPTEmdXBtYnBzPTUwJmRvd25tYnBzPTgwJmFscG49aDMmbXBvcnQ9MTg0NzAmb2Jmcz0mcHJvdG9jb2w9dWRwJmZhc3RvcGVuPTEjVGFpd2FuX2h5XzkKYUhSMGNITTZMeTlrYjI1bmRHRnBkMkZ1Wnk1amIyMDZaRzl1WjNSaGFYZGhibWN1WTI5dFFHNWhhWFpsTVRrdVkyWmpaRzR6TG5oNWVqbzBORE09CmFIUjBjSE02THk5a2IyNW5kR0ZwZDJGdVp5NWpiMjA2Wkc5dVozUmhhWGRoYm1jdVkyOXRRSGQzZHk1a2RHdDFOVEF1ZUhsNk9qUTBNdz09Cmh5c3RlcmlhOi8vNTEuMTU4LjU0LjQ2OjU1Mzk2P3BlZXI9eW91a3UuY29tJmF1dGg9ZG9uZ3RhaXdhbmcuY29tJmluc2VjdXJlPTEmdXBtYnBzPTExJmRvd25tYnBzPTU1JmFscG49aDMmb2Jmcz0mcHJvdG9jb2w9dWRwJmZhc3RvcGVuPTEjRnJhbmNlX2h5c3RlcmlhXzAKaHlzdGVyaWE6Ly8xNzMuMjM0LjI1LjUyOjMwMDcyP3BlZXI9YmluZy5jb20mYXV0aD1kb25ndGFpd2FuZy5jb20maW5zZWN1cmU9MSZ1cG1icHM9MTEmZG93bm1icHM9NTUmYWxwbj1oMyZvYmZzPSZwcm90b2NvbD11ZHAmZmFzdG9wZW49MSNVbml0ZWQgU3RhdGVzX2h5c3RlcmlhXzEKaHlzdGVyaWE6Ly8xMDguMTgxLjIyLjIzOTozOTk2Nz9wZWVyPWJpbmcuY29tJmF1dGg9ZG9uZ3RhaXdhbmcuY29tJmluc2VjdXJlPTEmdXBtYnBzPTExJmRvd25tYnBzPTU1JmFscG49aDMmb2Jmcz0mcHJvdG9jb2w9dWRwJmZhc3RvcGVuPTEjVW5pdGVkIFN0YXRlc19oeXN0ZXJpYV8yCmh5c3RlcmlhOi8vMTY3LjE2MC45MS4xMTU6NDExODk/cGVlcj13d3cuYW1hem9uLmNuJmF1dGg9YldBd0lxSU5vN1hEbTFmVWxYUUdCaWZWSVhvWXMxeWxnVktxV0ZLeksxWHlES3V3TkYmaW5zZWN1cmU9MSZ1cG1icHM9MTEmZG93bm1icHM9NTUmYWxwbj1oMyZvYmZzPSZwcm90b2NvbD11ZHAmZmFzdG9wZW49MSNVbml0ZWQgU3RhdGVzX2h5c3RlcmlhXzMKaHlzdGVyaWEyOi8vZG9uZ3RhaXdhbmcuY29tQDYyLjIxMC4xMDMuMDoyMjQ4Mz9pbnNlY3VyZT0xJnNuaT13d3cuYmluZy5jb20jRnJhbmNlX2h5c3RlcmlhMl8wCmh5c3RlcmlhMjovL2Rvbmd0YWl3YW5nLmNvbUA2NC4xMTAuMjUuMTE6MzMzMzc/aW5zZWN1cmU9MSZzbmk9d3d3LmJpbmcuY29tI1VuaXRlZCBTdGF0ZXNfaHlzdGVyaWEyXzEKaHlzdGVyaWEyOi8vZG9uZ3RhaXdhbmcuY29tQDYyLjIxMC4xMDMuMDoyMjQ4Mz9pbnNlY3VyZT0xJnNuaT13d3cuYmluZy5jb20jRnJhbmNlX2h5c3RlcmlhMl8yCmh5c3RlcmlhMjovL2Rvbmd0YWl3YW5nLmNvbUAxMDguMTgxLjI0Ljc3OjQzNjU2P2luc2VjdXJlPTEmc25pPXd3dy5iaW5nLmNvbSNVbml0ZWQgU3RhdGVzX2h5c3RlcmlhMl8zCnZsZXNzOi8vOWNjMzk0NzctMGQ4NS00NDE5LTg0ZDQtZmI3ZmM3NzY2OGIzQDEwOC4xODEuMjIuMjEzOjI4OTQ1P3NlY3VyaXR5PXJlYWxpdHkmYWxsb3dJbnNlY3VyZT0wJmZsb3c9eHRscy1ycHJ4LXZpc2lvbiZ0eXBlPXRjcCZmcD1jaHJvbWUmcGJrPXlLWG1MVG1YQWktQkhCZzNKcEN6LU5XVW1WY0tsZm03aU1tVm9xN1lReDAmc2lkPTZiYTg1MTc5ZTMwZDRmYzImc25pPW0ubWVkaWEtYW1hem9uLmNvbSZzZXJ2aWNlTmFtZT0mcGF0aD0maG9zdD0jVW5pdGVkIFN0YXRlc192bGVzc18xCnZsZXNzOi8vZTY1OTY2MWQtODQzOS00NmUwLWIxYWItZDc1Y2VhZjczNDA0QDYyLjIxMC4xMDEuMDoxODcwMD9zZWN1cml0eT1yZWFsaXR5JmFsbG93SW5zZWN1cmU9MCZmbG93PXh0bHMtcnByeC12aXNpb24mdHlwZT10Y3AmZnA9Y2hyb21lJnBiaz1QQlJjMnY5U1NYcEc0ampRUllOYS1rZ3M4dzlWNFUzTU5MdW5jZDJkMGh3JnNpZD02YmE4NTE3OWUzMGQ0ZmMyJnNuaT11cGRhdGUubWljcm9zb2Z0JnNlcnZpY2VOYW1lPSZwYXRoPSZob3N0PSNGcmFuY2Vfdmxlc3NfMgp2bGVzczovL2U2NTk2NjFkLTg0MzktNDZlMC1iMWFiLWQ3NWNlYWY3MzQwNEA2Mi4yMTAuMTAxLjA6MTg3MDA/c2VjdXJpdHk9cmVhbGl0eSZhbGxvd0luc2VjdXJlPTAmZmxvdz14dGxzLXJwcngtdmlzaW9uJnR5cGU9dGNwJmZwPWNocm9tZSZwYms9UEJSYzJ2OVNTWHBHNGpqUVJZTmEta2dzOHc5VjRVM01OTHVuY2QyZDBodyZzaWQ9NmJhODUxNzllMzBkNGZjMiZzbmk9dXBkYXRlLm1pY3Jvc29mdCZzZXJ2aWNlTmFtZT0mcGF0aD0maG9zdD0jRnJhbmNlX3ZsZXNzXzM=
+dmxlc3M6Ly82MjcwMTZjNi1hNTY1LTQ3ZjktOTNjZi1kZjkzN2IzOGJiYjdAY2xvdWRmbGFyZS5jZmdvLmNjOjIwNTM/c2VjdXJpdHk9dGxzJmFsbG93SW5zZWN1cmUwJmZsb3c9JnR5cGU9d3MmZnA9Y2hyb21lJnBiaz0mc2lkPSZzbmk9NC5kdGt1NDMueHl6JnNlcnZpY2VOYW1lPSZwYXRoPS9oY3hpd3MmaG9zdD0jTm9uZV92bGVzc18wCnR1aWM6Ly9mZWYzZDNjMi1hYjNlLTQxMzQtYTJmMy0wYzJkODNlMGE3NmQ6ZG9uZ3RhaXdhbmcuY29tQDEuMTYyLjE1Ni4yMDY6MzMwOTg/c25pPSZjb25nZXN0aW9uX2NvbnRyb2w9YmJyJnVkcF9yZWxheV9tb2RlPW5hdGl2ZSZhbHBuPWgzJmFsbG93X2luc2VjdXJlPTAjVGFpd2FuX3R1aWNfMQp2bGVzczovL2U4MGUwMjA0LWRkZjEtNGY1OS04ZTc1LTQ0ZWE1MDJhYWJhZUAyMy4yMjcuMzguNTQ6MjA5Nj9zZWN1cml0eT10bHMmYWxsb3dJbnNlY3VyZTAmZmxvdz0mdHlwZT13cyZmcD1jaHJvbWUmcGJrPSZzaWQ9JnNuaT0yLmR0a3U0My54eXomc2VydmljZU5hbWU9JnBhdGg9L21qeXJ3cyZob3N0PSNDYW5hZGFfdmxlc3NfMgp0dWljOi8vYTcyYzQ3ZjctNWQyZC00MDI5LWE1Y2EtOTk3YWMyZDFjOTU2OmRvbmd0YWl3YW5nLmNvbUA2NC4zMS41NS4xMjQ6NDQ1NTY/c25pPSZjb25nZXN0aW9uX2NvbnRyb2w9YmJyJnVkcF9yZWxheV9tb2RlPW5hdGl2ZSZhbHBuPWgzJmFsbG93X2luc2VjdXJlPTAjVW5pdGVkIFN0YXRlc190dWljXzMKdHVpYzovL2E3MmM0N2Y3LTVkMmQtNDAyOS1hNWNhLTk5N2FjMmQxYzk1Njpkb25ndGFpd2FuZy5jb21ANjQuMzEuNTUuMTI0OjQ0NTU2P3NuaT0mY29uZ2VzdGlvbl9jb250cm9sPWJiciZ1ZHBfcmVsYXlfbW9kZT1uYXRpdmUmYWxwbj1oMyZhbGxvd19pbnNlY3VyZT0wI1VuaXRlZCBTdGF0ZXNfdHVpY180CnR1aWM6Ly9hNzJjNDdmNy01ZDJkLTQwMjktYTVjYS05OTdhYzJkMWM5NTY6ZG9uZ3RhaXdhbmcuY29tQDY0LjMxLjU1LjEyNDo0NDU1Nj9zbmk9JmNvbmdlc3Rpb25fY29udHJvbD1iYnImdWRwX3JlbGF5X21vZGU9bmF0aXZlJmFscG49aDMmYWxsb3dfaW5zZWN1cmU9MCNVbml0ZWQgU3RhdGVzX3R1aWNfNQpoeXN0ZXJpYTovL3d3dzIuZHRrdTQ4Lnh5ejoyMjMzND9wZWVyPSZhdXRoPWRvbmd0YWl3YW5nLmNvbSZpbnNlY3VyZT0xJnVwbWJwcz01MCZkb3dubWJwcz04MCZhbHBuPWgzJm1wb3J0PTIyMzM0Jm9iZnM9JnByb3RvY29sPXVkcCZmYXN0b3Blbj0xI1RhaXdhbl9oeV82Cmh5c3RlcmlhMjovL2Rvbmd0YWl3YW5nLmNvbUA1MS4xNTguNTQuNDY6NDQ1NTA/aW5zZWN1cmU9MSZzbmk9YmluZy5jb20mb2Jmcz0mb2Jmcy1wYXNzd29yZD0jRnJhbmNlX2h5Ml83Cmh5c3RlcmlhOi8vd3d3Mi5kdGt1NDgueHl6OjIyMzM0P3BlZXI9JmF1dGg9ZG9uZ3RhaXdhbmcuY29tJmluc2VjdXJlPTEmdXBtYnBzPTUwJmRvd25tYnBzPTgwJmFscG49aDMmbXBvcnQ9MjIzMzQmb2Jmcz0mcHJvdG9jb2w9dWRwJmZhc3RvcGVuPTEjVGFpd2FuX2h5XzgKaHlzdGVyaWE6Ly93d3cuZHRrdTUwLnh5ejoxODQ3MD9wZWVyPXd3dy5hbWF6b24uY24mYXV0aD0maW5zZWN1cmU9MSZ1cG1icHM9NTAmZG93bm1icHM9ODAmYWxwbj1oMyZtcG9ydD0xODQ3MCZvYmZzPSZwcm90b2NvbD11ZHAmZmFzdG9wZW49MSNUYWl3YW5faHlfOQphSFIwY0hNNkx5OWtiMjVuZEdGcGQyRnVaeTVqYjIwNlpHOXVaM1JoYVhkaGJtY3VZMjl0UUc1aGFYWmxNVGt1WTJaalpHNHpMbmg1ZWpvME5ETT0KYUhSMGNITTZMeTlrYjI1bmRHRnBkMkZ1Wnk1amIyMDZaRzl1WjNSaGFYZGhibWN1WTI5dFFIZDNkeTVrZEd0MU5UQXVlSGw2T2pRME13PT0KaHlzdGVyaWE6Ly81MS4xNTguNTQuNDY6NTUzOTY/cGVlcj15b3VrdS5jb20mYXV0aD1kb25ndGFpd2FuZy5jb20maW5zZWN1cmU9MSZ1cG1icHM9MTEmZG93bm1icHM9NTUmYWxwbj1oMyZvYmZzPSZwcm90b2NvbD11ZHAmZmFzdG9wZW49MSNGcmFuY2VfaHlzdGVyaWFfMApoeXN0ZXJpYTovLzE3My4yMzQuMjUuNTI6NDg5MTk/cGVlcj1iaW5nLmNvbSZhdXRoPWRvbmd0YWl3YW5nLmNvbSZpbnNlY3VyZT0xJnVwbWJwcz0xMSZkb3dubWJwcz01NSZhbHBuPWgzJm9iZnM9JnByb3RvY29sPXVkcCZmYXN0b3Blbj0xI1VuaXRlZCBTdGF0ZXNfaHlzdGVyaWFfMQpoeXN0ZXJpYTovLzEwOC4xODEuMjIuMjM5OjM5OTY3P3BlZXI9YmluZy5jb20mYXV0aD1kb25ndGFpd2FuZy5jb20maW5zZWN1cmU9MSZ1cG1icHM9MTEmZG93bm1icHM9NTUmYWxwbj1oMyZvYmZzPSZwcm90b2NvbD11ZHAmZmFzdG9wZW49MSNVbml0ZWQgU3RhdGVzX2h5c3RlcmlhXzIKaHlzdGVyaWE6Ly8xNjcuMTYwLjkxLjExNTo0MTE4OT9wZWVyPXd3dy5hbWF6b24uY24mYXV0aD1iV0F3SXFJTm83WERtMWZVbFhRR0JpZlZJWG9ZczF5bGdWS3FXRkt6SzFYeURLdXdORiZpbnNlY3VyZT0xJnVwbWJwcz0xMSZkb3dubWJwcz01NSZhbHBuPWgzJm9iZnM9JnByb3RvY29sPXVkcCZmYXN0b3Blbj0xI1VuaXRlZCBTdGF0ZXNfaHlzdGVyaWFfMwpoeXN0ZXJpYTI6Ly9kb25ndGFpd2FuZy5jb21ANjIuMjEwLjEwMy4wOjIyNDgzP2luc2VjdXJlPTEmc25pPXd3dy5iaW5nLmNvbSNGcmFuY2VfaHlzdGVyaWEyXzAKaHlzdGVyaWEyOi8vZG9uZ3RhaXdhbmcuY29tQDY0LjExMC4yNS4xMTozMzMzNz9pbnNlY3VyZT0xJnNuaT13d3cuYmluZy5jb20jVW5pdGVkIFN0YXRlc19oeXN0ZXJpYTJfMQpoeXN0ZXJpYTI6Ly9kb25ndGFpd2FuZy5jb21ANjIuMjEwLjEwMy4wOjIyNDgzP2luc2VjdXJlPTEmc25pPXd3dy5iaW5nLmNvbSNGcmFuY2VfaHlzdGVyaWEyXzIKaHlzdGVyaWEyOi8vZG9uZ3RhaXdhbmcuY29tQDEwOC4xODEuMjQuNzc6NDM2NTY/aW5zZWN1cmU9MSZzbmk9d3d3LmJpbmcuY29tI1VuaXRlZCBTdGF0ZXNfaHlzdGVyaWEyXzMKdmxlc3M6Ly85Y2MzOTQ3Ny0wZDg1LTQ0MTktODRkNC1mYjdmYzc3NjY4YjNAMTA4LjE4MS4yMi4yMTM6Mjg5NDU/c2VjdXJpdHk9cmVhbGl0eSZhbGxvd0luc2VjdXJlPTAmZmxvdz14dGxzLXJwcngtdmlzaW9uJnR5cGU9dGNwJmZwPWNocm9tZSZwYms9eUtYbUxUbVhBaS1CSEJnM0pwQ3otTldVbVZjS2xmbTdpTW1Wb3E3WVF4MCZzaWQ9NmJhODUxNzllMzBkNGZjMiZzbmk9bS5tZWRpYS1hbWF6b24uY29tJnNlcnZpY2VOYW1lPSZwYXRoPSZob3N0PSNVbml0ZWQgU3RhdGVzX3ZsZXNzXzEKdmxlc3M6Ly9lNjU5NjYxZC04NDM5LTQ2ZTAtYjFhYi1kNzVjZWFmNzM0MDRANjIuMjEwLjEwMS4wOjE4NzAwP3NlY3VyaXR5PXJlYWxpdHkmYWxsb3dJbnNlY3VyZT0wJmZsb3c9eHRscy1ycHJ4LXZpc2lvbiZ0eXBlPXRjcCZmcD1jaHJvbWUmcGJrPVBCUmMydjlTU1hwRzRqalFSWU5hLWtnczh3OVY0VTNNTkx1bmNkMmQwaHcmc2lkPTZiYTg1MTc5ZTMwZDRmYzImc25pPXVwZGF0ZS5taWNyb3NvZnQmc2VydmljZU5hbWU9JnBhdGg9Jmhvc3Q9I0ZyYW5jZV92bGVzc18yCnZsZXNzOi8vZTY1OTY2MWQtODQzOS00NmUwLWIxYWItZDc1Y2VhZjczNDA0QDYyLjIxMC4xMDEuMDoxODcwMD9zZWN1cml0eT1yZWFsaXR5JmFsbG93SW5zZWN1cmU9MCZmbG93PXh0bHMtcnByeC12aXNpb24mdHlwZT10Y3AmZnA9Y2hyb21lJnBiaz1QQlJjMnY5U1NYcEc0ampRUllOYS1rZ3M4dzlWNFUzTU5MdW5jZDJkMGh3JnNpZD02YmE4NTE3OWUzMGQ0ZmMyJnNuaT11cGRhdGUubWljcm9zb2Z0JnNlcnZpY2VOYW1lPSZwYXRoPSZob3N0PSNGcmFuY2Vfdmxlc3NfMw==
 ```
 
 ## sing-box订阅链接 (https://sing-box-subscribe.vercel.app/config/https:/mareep.netlify.app/sub/merged_proxies_new.yaml)
@@ -1353,12 +1353,12 @@ dHVpYzovLzQxYjI5OTk3LWY0OTUtNDk1Ny04NDVjLWEzZjBkNDIxZDllMDpkb25ndGFpd2FuZy5jb21A
       "outbounds": [
         "auto",
         "direct",
-        "🇫🇷 France_hy_0",
-        "🇺🇸 United States_tuic_1",
+        "🇺🇸 United States_tuic_0",
+        "🇹🇼 Taiwan_tuic_1",
         "🇹🇼 Taiwan_tuic_2",
-        "🇭🇰 Hong Kong_vless_3",
+        "🇺🇸 United States_tuic_3",
         "🇺🇸 United States_tuic_4",
-        "🇭🇰 Hong Kong_vless_5",
+        "🇺🇸 United States_tuic_5",
         "🇹🇼 Taiwan_hy_6",
         "🇫🇷 France_hy2_7",
         "🇹🇼 Taiwan_hy_8",
@@ -1591,8 +1591,6 @@ dHVpYzovLzQxYjI5OTk3LWY0OTUtNDk1Ny04NDVjLWEzZjBkNDIxZDllMDpkb25ndGFpd2FuZy5jb21A
       "tag": "HongKong",
       "type": "selector",
       "outbounds": [
-        "🇭🇰 Hong Kong_vless_3",
-        "🇭🇰 Hong Kong_vless_5",
         "proxy"
       ]
     },
@@ -1600,6 +1598,7 @@ dHVpYzovLzQxYjI5OTk3LWY0OTUtNDk1Ny04NDVjLWEzZjBkNDIxZDllMDpkb25ndGFpd2FuZy5jb21A
       "tag": "TaiWan",
       "type": "selector",
       "outbounds": [
+        "🇹🇼 Taiwan_tuic_1",
         "🇹🇼 Taiwan_tuic_2",
         "🇹🇼 Taiwan_hy_6",
         "🇹🇼 Taiwan_hy_8",
@@ -1625,8 +1624,10 @@ dHVpYzovLzQxYjI5OTk3LWY0OTUtNDk1Ny04NDVjLWEzZjBkNDIxZDllMDpkb25ndGFpd2FuZy5jb21A
       "tag": "America",
       "type": "selector",
       "outbounds": [
-        "🇺🇸 United States_tuic_1",
+        "🇺🇸 United States_tuic_0",
+        "🇺🇸 United States_tuic_3",
         "🇺🇸 United States_tuic_4",
+        "🇺🇸 United States_tuic_5",
         "🇺🇸 United States_hysteria_1",
         "🇺🇸 United States_hysteria_2",
         "🇺🇸 United States_hysteria_3",
@@ -1640,7 +1641,6 @@ dHVpYzovLzQxYjI5OTk3LWY0OTUtNDk1Ny04NDVjLWEzZjBkNDIxZDllMDpkb25ndGFpd2FuZy5jb21A
       "tag": "Others",
       "type": "selector",
       "outbounds": [
-        "🇫🇷 France_hy_0",
         "🇫🇷 France_hy2_7",
         "🇫🇷 France_hysteria_0",
         "🇫🇷 France_hysteria2_0",
@@ -1654,12 +1654,12 @@ dHVpYzovLzQxYjI5OTk3LWY0OTUtNDk1Ny04NDVjLWEzZjBkNDIxZDllMDpkb25ndGFpd2FuZy5jb21A
       "tag": "auto",
       "type": "urltest",
       "outbounds": [
-        "🇫🇷 France_hy_0",
-        "🇺🇸 United States_tuic_1",
+        "🇺🇸 United States_tuic_0",
+        "🇹🇼 Taiwan_tuic_1",
         "🇹🇼 Taiwan_tuic_2",
-        "🇭🇰 Hong Kong_vless_3",
+        "🇺🇸 United States_tuic_3",
         "🇺🇸 United States_tuic_4",
-        "🇭🇰 Hong Kong_vless_5",
+        "🇺🇸 United States_tuic_5",
         "🇹🇼 Taiwan_hy_6",
         "🇫🇷 France_hy2_7",
         "🇹🇼 Taiwan_hy_8",
@@ -1693,28 +1693,11 @@ dHVpYzovLzQxYjI5OTk3LWY0OTUtNDk1Ny04NDVjLWEzZjBkNDIxZDllMDpkb25ndGFpd2FuZy5jb21A
       "tag": "block"
     },
     {
-      "tag": "🇫🇷 France_hy_0",
-      "type": "hysteria",
-      "server": "51.159.103.141",
-      "server_port": 18044,
-      "up_mbps": 50,
-      "down_mbps": 80,
-      "auth_str": "",
-      "tls": {
-        "enabled": true,
-        "server_name": "bing.com",
-        "alpn": [
-          "h3"
-        ],
-        "insecure": true
-      }
-    },
-    {
-      "tag": "🇺🇸 United States_tuic_1",
+      "tag": "🇺🇸 United States_tuic_0",
       "type": "tuic",
-      "server": "74.63.249.229",
-      "server_port": 443,
-      "uuid": "9a6140f4-abd8-4ece-aa0e-4f14556de56b",
+      "server": "109.104.152.212",
+      "server_port": 33440,
+      "uuid": "41b29997-f495-4957-845c-a3f0d421d9e0",
       "password": "dongtaiwang.com",
       "congestion_control": "bbr",
       "udp_relay_mode": "native",
@@ -1728,9 +1711,9 @@ dHVpYzovLzQxYjI5OTk3LWY0OTUtNDk1Ny04NDVjLWEzZjBkNDIxZDllMDpkb25ndGFpd2FuZy5jb21A
       }
     },
     {
-      "tag": "🇹🇼 Taiwan_tuic_2",
+      "tag": "🇹🇼 Taiwan_tuic_1",
       "type": "tuic",
-      "server": "1.162.136.33",
+      "server": "111.243.69.34",
       "server_port": 33098,
       "uuid": "fef3d3c2-ab3e-4134-a2f3-0c2d83e0a76d",
       "password": "dongtaiwang.com",
@@ -1746,37 +1729,11 @@ dHVpYzovLzQxYjI5OTk3LWY0OTUtNDk1Ny04NDVjLWEzZjBkNDIxZDllMDpkb25ndGFpd2FuZy5jb21A
       }
     },
     {
-      "tag": "🇭🇰 Hong Kong_vless_3",
-      "type": "vless",
-      "server": "92.118.205.66",
-      "server_port": 10081,
-      "uuid": "7c009b14-ceb0-4373-9504-ab2a9ca2354a",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "images-na.ssl-images-amazon.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "JMHogufiGO132mtTq26O34ssU8rjCkUcFC98PSeMF3A",
-          "short_id": "6ba85179e30d4fc2"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
-      }
-    },
-    {
-      "tag": "🇺🇸 United States_tuic_4",
+      "tag": "🇹🇼 Taiwan_tuic_2",
       "type": "tuic",
-      "server": "195.137.220.189",
-      "server_port": 33445,
-      "uuid": "983a85bd-8fae-45d2-a702-5d00a383763e",
+      "server": "111.243.69.34",
+      "server_port": 33098,
+      "uuid": "fef3d3c2-ab3e-4134-a2f3-0c2d83e0a76d",
       "password": "dongtaiwang.com",
       "congestion_control": "bbr",
       "udp_relay_mode": "native",
@@ -1790,29 +1747,57 @@ dHVpYzovLzQxYjI5OTk3LWY0OTUtNDk1Ny04NDVjLWEzZjBkNDIxZDllMDpkb25ndGFpd2FuZy5jb21A
       }
     },
     {
-      "tag": "🇭🇰 Hong Kong_vless_5",
-      "type": "vless",
-      "server": "92.118.205.66",
-      "server_port": 10081,
-      "uuid": "7c009b14-ceb0-4373-9504-ab2a9ca2354a",
-      "packet_encoding": "xudp",
+      "tag": "🇺🇸 United States_tuic_3",
+      "type": "tuic",
+      "server": "108.181.5.18",
+      "server_port": 22889,
+      "uuid": "5051cc18-0850-48fb-9036-0b4f9680571b",
+      "password": "dongtaiwang.com",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
+      "zero_rtt_handshake": false,
+      "heartbeat": "10s",
       "tls": {
         "enabled": true,
-        "insecure": true,
-        "server_name": "images-na.ssl-images-amazon.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "JMHogufiGO132mtTq26O34ssU8rjCkUcFC98PSeMF3A",
-          "short_id": "6ba85179e30d4fc2"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
+        "alpn": [
+          "h3"
+        ]
+      }
+    },
+    {
+      "tag": "🇺🇸 United States_tuic_4",
+      "type": "tuic",
+      "server": "108.181.5.18",
+      "server_port": 22889,
+      "uuid": "5051cc18-0850-48fb-9036-0b4f9680571b",
+      "password": "dongtaiwang.com",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
+      "zero_rtt_handshake": false,
+      "heartbeat": "10s",
+      "tls": {
+        "enabled": true,
+        "alpn": [
+          "h3"
+        ]
+      }
+    },
+    {
+      "tag": "🇺🇸 United States_tuic_5",
+      "type": "tuic",
+      "server": "108.181.5.18",
+      "server_port": 22889,
+      "uuid": "5051cc18-0850-48fb-9036-0b4f9680571b",
+      "password": "dongtaiwang.com",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
+      "zero_rtt_handshake": false,
+      "heartbeat": "10s",
+      "tls": {
+        "enabled": true,
+        "alpn": [
+          "h3"
+        ]
       }
     },
     {
