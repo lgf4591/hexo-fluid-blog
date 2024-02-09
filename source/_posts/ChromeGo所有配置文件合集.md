@@ -1,7 +1,7 @@
 
 ---
 title: ChromeGo所有配置文件合集 
-date: 2024-02-09 15:01:11
+date: 2024-02-09 15:02:03
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2024-02-09 15:01:11
+> Last Update Time: 2024-02-09 15:02:03
 ---
 
 ## Quick-ip_1.yaml
@@ -915,36 +915,21 @@ rules:
   "outbounds": [
     {
       "tag": "proxy",
-      "protocol": "vless",
+      "protocol": "shadowsocks",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "108.181.22.213",
-            "port": 28945,
-            "users": [
-              {
-                "id": "9cc39477-0d85-4419-84d4-fb7fc77668b3",
-                "alterId": 0,
-                "email": "t@t.tt",
-                "security": "auto",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
+            "address": "51.159.103.141",
+            "method": "2022-blake3-aes-256-gcm",
+            "ota": false,
+            "password": "KbeB6i+p+Iz+TWzXaYj5EqeKTBTyDbYStmdvFdp99QE=",
+            "port": 33345,
+            "level": 1
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "m.media-amazon.com",
-          "fingerprint": "chrome",
-          "show": false,
-          "publicKey": "yKXmLTmXAi-BHBg3JpCz-NWUmVcKlfm7iMmVoq7YQx0",
-          "shortId": "6ba85179e30d4fc2",
-          "spiderX": ""
-        }
+        "network": "tcp"
       },
       "mux": {
         "enabled": false,
