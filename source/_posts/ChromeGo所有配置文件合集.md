@@ -1,7 +1,7 @@
 
 ---
 title: ChromeGo所有配置文件合集 
-date: 2024-02-10 01:04:40
+date: 2024-02-10 01:05:52
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2024-02-10 01:04:40
+> Last Update Time: 2024-02-10 01:05:52
 ---
 
 ## Quick-ip_1.yaml
@@ -1186,10 +1186,11 @@ proxies:
   - {"name":"dongtaiwang.com_3","type":"ss","server":"service.ouluyun9803.com","port":20003,"password":"d6105bbd-be0d-45b2-82ad-31fd1071c1d2","cipher":"chacha20-ietf-poly1305"}
   - {"name":"dongtaiwang.com_4","type":"vmess","server":"104.21.82.183","port":8880,"cipher":"auto","uuid":"5a7021e0-26b4-45d6-b175-fe551601ca97","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"server26.beheshtbaneh.com"}}}
   - {"name":"dongtaiwang.com_5","type":"ss","server":"service.ouluyun9803.com","port":20005,"password":"d6105bbd-be0d-45b2-82ad-31fd1071c1d2","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"dongtaiwang.com_6","type":"ss","server":"109.104.152.161","port":12345,"password":"dongtaiwang.com","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"dongtaiwang.com_7","type":"ss","server":"109.104.152.33","port":12345,"password":"dongtaiwang.com","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"dongtaiwang.com_8","type":"ss","server":"64.31.55.124","port":12345,"password":"dongtaiwang.com","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"dongtaiwang.com_9","type":"ss","server":"111.243.98.243","port":12345,"password":"dongtaiwang.com","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"dongtaiwang.com_6","type":"ss","server":"yd.qianggewangluo.buzz","port":10808,"password":"6f35bc86-d226-4dd0-8f4c-708f23077d24","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"dongtaiwang.com_7","type":"ss","server":"foshan.chiguayun.shop","port":27104,"password":"f4b81edb-73a5-41fa-9086-6f446061815d","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"dongtaiwang.com_8","type":"ss","server":"foshan.chiguayun.shop","port":27102,"password":"f4b81edb-73a5-41fa-9086-6f446061815d","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"dongtaiwang.com_9","type":"ss","server":"series-a2.samanehha.co","port":443,"password":"mps3FwmDjLrWaOVg","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"dongtaiwang.com_10","type":"ss","server":"foshan.chiguayun.shop","port":27103,"password":"f4b81edb-73a5-41fa-9086-6f446061815d","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -1205,6 +1206,7 @@ proxy-groups:
       - dongtaiwang.com_7
       - dongtaiwang.com_8
       - dongtaiwang.com_9
+      - dongtaiwang.com_10
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.gstatic.com/generate_204
@@ -1220,6 +1222,7 @@ proxy-groups:
       - dongtaiwang.com_7
       - dongtaiwang.com_8
       - dongtaiwang.com_9
+      - dongtaiwang.com_10
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -1235,6 +1238,7 @@ proxy-groups:
       - dongtaiwang.com_7
       - dongtaiwang.com_8
       - dongtaiwang.com_9
+      - dongtaiwang.com_10
   - name: 📲 电报信息
     type: select
     proxies:
@@ -1249,6 +1253,7 @@ proxy-groups:
       - dongtaiwang.com_7
       - dongtaiwang.com_8
       - dongtaiwang.com_9
+      - dongtaiwang.com_10
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -1263,6 +1268,7 @@ proxy-groups:
       - dongtaiwang.com_7
       - dongtaiwang.com_8
       - dongtaiwang.com_9
+      - dongtaiwang.com_10
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -1277,6 +1283,7 @@ proxy-groups:
       - dongtaiwang.com_7
       - dongtaiwang.com_8
       - dongtaiwang.com_9
+      - dongtaiwang.com_10
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1308,6 +1315,7 @@ proxy-groups:
       - dongtaiwang.com_7
       - dongtaiwang.com_8
       - dongtaiwang.com_9
+      - dongtaiwang.com_10
 
 rules:
   - MATCH,🚀 节点选择
