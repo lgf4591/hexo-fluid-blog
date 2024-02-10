@@ -1,7 +1,7 @@
 
 ---
 title: ChromeGo所有配置文件合集 
-date: 2024-02-10 04:38:28
+date: 2024-02-10 13:14:02
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2024-02-10 04:38:28
+> Last Update Time: 2024-02-10 13:14:02
 ---
 
 ## Quick-ip_1.yaml
@@ -1030,102 +1030,109 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {"name":"dongtaiwang.com_1","type":"vmess","server":"www.darkroom.lol","port":8080,"cipher":"auto","uuid":"22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"www.darkroom.lol"}}}
-  - {"name":"dongtaiwang.com_2","type":"vmess","server":"172.67.221.183","port":8080,"cipher":"auto","uuid":"22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"www.blueberrywindow.online"}}}
-  - {"name":"dongtaiwang.com_3","type":"ss","server":"fast_2ray_telchannelll.fast2rayy.eu.org","port":443,"password":"Bog0ELmMM9DSxDdQ","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"dongtaiwang.com_4","type":"vmess","server":"104.21.82.183","port":8880,"cipher":"auto","uuid":"5a7021e0-26b4-45d6-b175-fe551601ca97","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"server26.beheshtbaneh.com"}}}
-  - {"name":"dongtaiwang.com_5","type":"tuic","server":"64.31.55.216","port":56789,"udp":true,"uuid":"9a661a16-675c-4451-ba20-cde666de44ae","password":dongtaiwang.com,"alpn":["h3"],"disable-sni":true,"reduce-rtt":true,"udp-relay-mode":native,"congestion-controller":"bbr"}
-  - {"name":"dongtaiwang.com_6","type":"ss","server":"jseyu.arvancode.eu.org","port":443,"password":"Bog0ELmMM9DSxDdQ","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"dongtaiwang.com_7","type":"ss","server":"yd.qianggewangluo.buzz","port":10818,"password":"6f35bc86-d226-4dd0-8f4c-708f23077d24","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"dongtaiwang.com_8","type":"ss","server":"foshan.chiguayun.shop","port":27105,"password":"f4b81edb-73a5-41fa-9086-6f446061815d","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"dongtaiwang.com_9","type":"ss","server":"foshan.chiguayun.shop","port":27108,"password":"f4b81edb-73a5-41fa-9086-6f446061815d","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"freenode_1","type":"ss","server":"foshan.chiguayun.shop","port":27103,"password":"f4b81edb-73a5-41fa-9086-6f446061815d","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"freenode_2","type":"ss","server":"yd.qianggewangluo.buzz","port":10809,"password":"6f35bc86-d226-4dd0-8f4c-708f23077d24","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"freenode_3","type":"ss","server":"yd.qianggewangluo.buzz","port":10813,"password":"6f35bc86-d226-4dd0-8f4c-708f23077d24","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"freenode_4","type":"ss","server":"yd.qianggewangluo.buzz","port":10815,"password":"6f35bc86-d226-4dd0-8f4c-708f23077d24","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"freenode_5","type":"ss","server":"yd.qianggewangluo.buzz","port":10803,"password":"6f35bc86-d226-4dd0-8f4c-708f23077d24","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"freenode_6","type":"ss","server":"hefei.chiguayun.shop","port":27101,"password":"f4b81edb-73a5-41fa-9086-6f446061815d","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"freenode_7","type":"ss","server":"yd.qianggewangluo.buzz","port":10817,"password":"6f35bc86-d226-4dd0-8f4c-708f23077d24","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"freenode_8","type":"ss","server":"hefei.chiguayun.shop","port":27105,"password":"f4b81edb-73a5-41fa-9086-6f446061815d","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"freenode_9","type":"ss","server":"uydyfkghjrtcsdx.youcansee.cyou","port":20167,"password":"ca7e0c98-136d-472c-927b-b56bcba722e3","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"freenode_10","type":"ss","server":"zhejiang.52vpn.top","port":32143,"password":"432fe02f-b649-4bdc-91d8-f91ae87002f7","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - dongtaiwang.com_1
-      - dongtaiwang.com_2
-      - dongtaiwang.com_3
-      - dongtaiwang.com_4
-      - dongtaiwang.com_5
-      - dongtaiwang.com_6
-      - dongtaiwang.com_7
-      - dongtaiwang.com_8
-      - dongtaiwang.com_9
+      - freenode_1
+      - freenode_2
+      - freenode_3
+      - freenode_4
+      - freenode_5
+      - freenode_6
+      - freenode_7
+      - freenode_8
+      - freenode_9
+      - freenode_10
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - dongtaiwang.com_1
-      - dongtaiwang.com_2
-      - dongtaiwang.com_3
-      - dongtaiwang.com_4
-      - dongtaiwang.com_5
-      - dongtaiwang.com_6
-      - dongtaiwang.com_7
-      - dongtaiwang.com_8
-      - dongtaiwang.com_9
+      - freenode_1
+      - freenode_2
+      - freenode_3
+      - freenode_4
+      - freenode_5
+      - freenode_6
+      - freenode_7
+      - freenode_8
+      - freenode_9
+      - freenode_10
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - dongtaiwang.com_1
-      - dongtaiwang.com_2
-      - dongtaiwang.com_3
-      - dongtaiwang.com_4
-      - dongtaiwang.com_5
-      - dongtaiwang.com_6
-      - dongtaiwang.com_7
-      - dongtaiwang.com_8
-      - dongtaiwang.com_9
+      - freenode_1
+      - freenode_2
+      - freenode_3
+      - freenode_4
+      - freenode_5
+      - freenode_6
+      - freenode_7
+      - freenode_8
+      - freenode_9
+      - freenode_10
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - dongtaiwang.com_1
-      - dongtaiwang.com_2
-      - dongtaiwang.com_3
-      - dongtaiwang.com_4
-      - dongtaiwang.com_5
-      - dongtaiwang.com_6
-      - dongtaiwang.com_7
-      - dongtaiwang.com_8
-      - dongtaiwang.com_9
+      - freenode_1
+      - freenode_2
+      - freenode_3
+      - freenode_4
+      - freenode_5
+      - freenode_6
+      - freenode_7
+      - freenode_8
+      - freenode_9
+      - freenode_10
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - dongtaiwang.com_1
-      - dongtaiwang.com_2
-      - dongtaiwang.com_3
-      - dongtaiwang.com_4
-      - dongtaiwang.com_5
-      - dongtaiwang.com_6
-      - dongtaiwang.com_7
-      - dongtaiwang.com_8
-      - dongtaiwang.com_9
+      - freenode_1
+      - freenode_2
+      - freenode_3
+      - freenode_4
+      - freenode_5
+      - freenode_6
+      - freenode_7
+      - freenode_8
+      - freenode_9
+      - freenode_10
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - dongtaiwang.com_1
-      - dongtaiwang.com_2
-      - dongtaiwang.com_3
-      - dongtaiwang.com_4
-      - dongtaiwang.com_5
-      - dongtaiwang.com_6
-      - dongtaiwang.com_7
-      - dongtaiwang.com_8
-      - dongtaiwang.com_9
+      - freenode_1
+      - freenode_2
+      - freenode_3
+      - freenode_4
+      - freenode_5
+      - freenode_6
+      - freenode_7
+      - freenode_8
+      - freenode_9
+      - freenode_10
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1148,15 +1155,16 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - dongtaiwang.com_1
-      - dongtaiwang.com_2
-      - dongtaiwang.com_3
-      - dongtaiwang.com_4
-      - dongtaiwang.com_5
-      - dongtaiwang.com_6
-      - dongtaiwang.com_7
-      - dongtaiwang.com_8
-      - dongtaiwang.com_9
+      - freenode_1
+      - freenode_2
+      - freenode_3
+      - freenode_4
+      - freenode_5
+      - freenode_6
+      - freenode_7
+      - freenode_8
+      - freenode_9
+      - freenode_10
 
 rules:
   - MATCH,🚀 节点选择
@@ -1181,16 +1189,17 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {"name":"dongtaiwang.com_1","type":"vmess","server":"www.darkroom.lol","port":8080,"cipher":"auto","uuid":"22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"www.darkroom.lol"}}}
-  - {"name":"dongtaiwang.com_2","type":"vmess","server":"data-us-v1.shwjfkw.cn","port":20401,"cipher":"auto","uuid":"b1478e24-4916-3abe-8f17-15931012ecbe","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/debian","headers":{"host":"data-us-v1.shwjfkw.cn"}}}
-  - {"name":"dongtaiwang.com_3","type":"ss","server":"service.ouluyun9803.com","port":20003,"password":"d6105bbd-be0d-45b2-82ad-31fd1071c1d2","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"dongtaiwang.com_4","type":"vmess","server":"104.21.82.183","port":8880,"cipher":"auto","uuid":"5a7021e0-26b4-45d6-b175-fe551601ca97","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"server26.beheshtbaneh.com"}}}
-  - {"name":"dongtaiwang.com_5","type":"ss","server":"service.ouluyun9803.com","port":20005,"password":"d6105bbd-be0d-45b2-82ad-31fd1071c1d2","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"dongtaiwang.com_6","type":"ss","server":"yd.qianggewangluo.buzz","port":10808,"password":"6f35bc86-d226-4dd0-8f4c-708f23077d24","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"dongtaiwang.com_7","type":"ss","server":"foshan.chiguayun.shop","port":27104,"password":"f4b81edb-73a5-41fa-9086-6f446061815d","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"dongtaiwang.com_8","type":"ss","server":"foshan.chiguayun.shop","port":27102,"password":"f4b81edb-73a5-41fa-9086-6f446061815d","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"dongtaiwang.com_9","type":"ss","server":"series-a2.samanehha.co","port":443,"password":"mps3FwmDjLrWaOVg","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"dongtaiwang.com_10","type":"ss","server":"foshan.chiguayun.shop","port":27103,"password":"f4b81edb-73a5-41fa-9086-6f446061815d","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"dongtaiwang.com_1","type":"vmess","server":"data-us-v1.shwjfkw.cn","port":20401,"cipher":"auto","uuid":"b1478e24-4916-3abe-8f17-15931012ecbe","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/debian","headers":{"host":"data-us-v1.shwjfkw.cn"}}}
+  - {"name":"dongtaiwang.com_2","type":"ss","server":"service.ouluyun9803.com","port":20003,"password":"d6105bbd-be0d-45b2-82ad-31fd1071c1d2","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"dongtaiwang.com_3","type":"vmess","server":"104.21.82.183","port":8880,"cipher":"auto","uuid":"5a7021e0-26b4-45d6-b175-fe551601ca97","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"server26.beheshtbaneh.com"}}}
+  - {"name":"dongtaiwang.com_4","type":"ss","server":"service.ouluyun9803.com","port":20005,"password":"d6105bbd-be0d-45b2-82ad-31fd1071c1d2","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"dongtaiwang.com_5","type":"vmess","server":"172.67.221.183","port":8080,"cipher":"auto","uuid":"22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"www.blueberrywindow.online"}}}
+  - {"name":"dongtaiwang.com_6","type":"vmess","server":"104.21.82.183","port":8880,"cipher":"auto","uuid":"5a7021e0-26b4-45d6-b175-fe551601ca97","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"server26.beheshtbaneh.com"}}}
+  - {"name":"dongtaiwang.com_7","type":"ss","server":"foshan.chiguayun.shop","port":27105,"password":"f4b81edb-73a5-41fa-9086-6f446061815d","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"dongtaiwang.com_8","type":"ss","server":"foshan.chiguayun.shop","port":27108,"password":"f4b81edb-73a5-41fa-9086-6f446061815d","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"dongtaiwang.com_9","type":"ss","server":"yd.qianggewangluo.buzz","port":10808,"password":"6f35bc86-d226-4dd0-8f4c-708f23077d24","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"dongtaiwang.com_10","type":"ss","server":"foshan.chiguayun.shop","port":27104,"password":"f4b81edb-73a5-41fa-9086-6f446061815d","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"dongtaiwang.com_11","type":"ss","server":"foshan.chiguayun.shop","port":27102,"password":"f4b81edb-73a5-41fa-9086-6f446061815d","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -1207,6 +1216,7 @@ proxy-groups:
       - dongtaiwang.com_8
       - dongtaiwang.com_9
       - dongtaiwang.com_10
+      - dongtaiwang.com_11
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.gstatic.com/generate_204
@@ -1223,6 +1233,7 @@ proxy-groups:
       - dongtaiwang.com_8
       - dongtaiwang.com_9
       - dongtaiwang.com_10
+      - dongtaiwang.com_11
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -1239,6 +1250,7 @@ proxy-groups:
       - dongtaiwang.com_8
       - dongtaiwang.com_9
       - dongtaiwang.com_10
+      - dongtaiwang.com_11
   - name: 📲 电报信息
     type: select
     proxies:
@@ -1254,6 +1266,7 @@ proxy-groups:
       - dongtaiwang.com_8
       - dongtaiwang.com_9
       - dongtaiwang.com_10
+      - dongtaiwang.com_11
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -1269,6 +1282,7 @@ proxy-groups:
       - dongtaiwang.com_8
       - dongtaiwang.com_9
       - dongtaiwang.com_10
+      - dongtaiwang.com_11
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -1284,6 +1298,7 @@ proxy-groups:
       - dongtaiwang.com_8
       - dongtaiwang.com_9
       - dongtaiwang.com_10
+      - dongtaiwang.com_11
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1316,6 +1331,7 @@ proxy-groups:
       - dongtaiwang.com_8
       - dongtaiwang.com_9
       - dongtaiwang.com_10
+      - dongtaiwang.com_11
 
 rules:
   - MATCH,🚀 节点选择
@@ -1340,15 +1356,17 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {"name":"dongtaiwang.com_1","type":"vmess","server":"www.darkroom.lol","port":8080,"cipher":"auto","uuid":"22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"www.darkroom.lol"}}}
-  - {"name":"dongtaiwang.com_2","type":"vmess","server":"data-us-v1.shwjfkw.cn","port":20401,"cipher":"auto","uuid":"b1478e24-4916-3abe-8f17-15931012ecbe","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/debian","headers":{"host":"data-us-v1.shwjfkw.cn"}}}
-  - {"name":"dongtaiwang.com_3","type":"ss","server":"service.ouluyun9803.com","port":20003,"password":"d6105bbd-be0d-45b2-82ad-31fd1071c1d2","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"dongtaiwang.com_4","type":"vmess","server":"104.21.82.183","port":8880,"cipher":"auto","uuid":"5a7021e0-26b4-45d6-b175-fe551601ca97","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"server26.beheshtbaneh.com"}}}
-  - {"name":"dongtaiwang.com_5","type":"ss","server":"service.ouluyun9803.com","port":20005,"password":"d6105bbd-be0d-45b2-82ad-31fd1071c1d2","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"dongtaiwang.com_6","type":"ss","server":"109.104.152.161","port":12345,"password":"dongtaiwang.com","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"dongtaiwang.com_7","type":"ss","server":"109.104.152.33","port":12345,"password":"dongtaiwang.com","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"dongtaiwang.com_8","type":"ss","server":"64.31.55.124","port":12345,"password":"dongtaiwang.com","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"dongtaiwang.com_9","type":"ss","server":"111.243.98.243","port":12345,"password":"dongtaiwang.com","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"dongtaiwang.com_1","type":"vmess","server":"data-us-v1.shwjfkw.cn","port":20401,"cipher":"auto","uuid":"b1478e24-4916-3abe-8f17-15931012ecbe","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/debian","headers":{"host":"data-us-v1.shwjfkw.cn"}}}
+  - {"name":"dongtaiwang.com_2","type":"ss","server":"service.ouluyun9803.com","port":20003,"password":"d6105bbd-be0d-45b2-82ad-31fd1071c1d2","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"dongtaiwang.com_3","type":"vmess","server":"104.21.82.183","port":8880,"cipher":"auto","uuid":"5a7021e0-26b4-45d6-b175-fe551601ca97","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"server26.beheshtbaneh.com"}}}
+  - {"name":"dongtaiwang.com_4","type":"ss","server":"service.ouluyun9803.com","port":20005,"password":"d6105bbd-be0d-45b2-82ad-31fd1071c1d2","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"dongtaiwang.com_5","type":"vmess","server":"172.67.221.183","port":8080,"cipher":"auto","uuid":"22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"www.blueberrywindow.online"}}}
+  - {"name":"dongtaiwang.com_6","type":"vmess","server":"104.21.82.183","port":8880,"cipher":"auto","uuid":"5a7021e0-26b4-45d6-b175-fe551601ca97","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"server26.beheshtbaneh.com"}}}
+  - {"name":"dongtaiwang.com_7","type":"ss","server":"foshan.chiguayun.shop","port":27105,"password":"f4b81edb-73a5-41fa-9086-6f446061815d","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"dongtaiwang.com_8","type":"ss","server":"foshan.chiguayun.shop","port":27108,"password":"f4b81edb-73a5-41fa-9086-6f446061815d","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"dongtaiwang.com_9","type":"ss","server":"yd.qianggewangluo.buzz","port":10808,"password":"6f35bc86-d226-4dd0-8f4c-708f23077d24","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"dongtaiwang.com_10","type":"ss","server":"foshan.chiguayun.shop","port":27104,"password":"f4b81edb-73a5-41fa-9086-6f446061815d","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"dongtaiwang.com_11","type":"ss","server":"foshan.chiguayun.shop","port":27102,"password":"f4b81edb-73a5-41fa-9086-6f446061815d","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -1364,6 +1382,8 @@ proxy-groups:
       - dongtaiwang.com_7
       - dongtaiwang.com_8
       - dongtaiwang.com_9
+      - dongtaiwang.com_10
+      - dongtaiwang.com_11
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.gstatic.com/generate_204
@@ -1379,6 +1399,8 @@ proxy-groups:
       - dongtaiwang.com_7
       - dongtaiwang.com_8
       - dongtaiwang.com_9
+      - dongtaiwang.com_10
+      - dongtaiwang.com_11
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -1394,6 +1416,8 @@ proxy-groups:
       - dongtaiwang.com_7
       - dongtaiwang.com_8
       - dongtaiwang.com_9
+      - dongtaiwang.com_10
+      - dongtaiwang.com_11
   - name: 📲 电报信息
     type: select
     proxies:
@@ -1408,6 +1432,8 @@ proxy-groups:
       - dongtaiwang.com_7
       - dongtaiwang.com_8
       - dongtaiwang.com_9
+      - dongtaiwang.com_10
+      - dongtaiwang.com_11
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -1422,6 +1448,8 @@ proxy-groups:
       - dongtaiwang.com_7
       - dongtaiwang.com_8
       - dongtaiwang.com_9
+      - dongtaiwang.com_10
+      - dongtaiwang.com_11
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -1436,6 +1464,8 @@ proxy-groups:
       - dongtaiwang.com_7
       - dongtaiwang.com_8
       - dongtaiwang.com_9
+      - dongtaiwang.com_10
+      - dongtaiwang.com_11
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1467,10 +1497,13 @@ proxy-groups:
       - dongtaiwang.com_7
       - dongtaiwang.com_8
       - dongtaiwang.com_9
+      - dongtaiwang.com_10
+      - dongtaiwang.com_11
 
 rules:
   - MATCH,🚀 节点选择
   
+
 
 ```
 
@@ -1491,15 +1524,17 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {"name":"dongtaiwang.com_1","type":"vmess","server":"www.darkroom.lol","port":8080,"cipher":"auto","uuid":"22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"www.darkroom.lol"}}}
-  - {"name":"dongtaiwang.com_2","type":"vmess","server":"data-us-v1.shwjfkw.cn","port":20401,"cipher":"auto","uuid":"b1478e24-4916-3abe-8f17-15931012ecbe","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/debian","headers":{"host":"data-us-v1.shwjfkw.cn"}}}
-  - {"name":"dongtaiwang.com_3","type":"ss","server":"service.ouluyun9803.com","port":20003,"password":"d6105bbd-be0d-45b2-82ad-31fd1071c1d2","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"dongtaiwang.com_4","type":"vmess","server":"104.21.82.183","port":8880,"cipher":"auto","uuid":"5a7021e0-26b4-45d6-b175-fe551601ca97","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"server26.beheshtbaneh.com"}}}
-  - {"name":"dongtaiwang.com_5","type":"ss","server":"service.ouluyun9803.com","port":20005,"password":"d6105bbd-be0d-45b2-82ad-31fd1071c1d2","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"dongtaiwang.com_6","type":"ss","server":"109.104.152.161","port":12345,"password":"dongtaiwang.com","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"dongtaiwang.com_7","type":"ss","server":"109.104.152.33","port":12345,"password":"dongtaiwang.com","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"dongtaiwang.com_8","type":"ss","server":"64.31.55.124","port":12345,"password":"dongtaiwang.com","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"dongtaiwang.com_9","type":"ss","server":"111.243.98.243","port":12345,"password":"dongtaiwang.com","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"dongtaiwang.com_1","type":"vmess","server":"data-us-v1.shwjfkw.cn","port":20401,"cipher":"auto","uuid":"b1478e24-4916-3abe-8f17-15931012ecbe","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/debian","headers":{"host":"data-us-v1.shwjfkw.cn"}}}
+  - {"name":"dongtaiwang.com_2","type":"ss","server":"service.ouluyun9803.com","port":20003,"password":"d6105bbd-be0d-45b2-82ad-31fd1071c1d2","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"dongtaiwang.com_3","type":"vmess","server":"104.21.82.183","port":8880,"cipher":"auto","uuid":"5a7021e0-26b4-45d6-b175-fe551601ca97","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"server26.beheshtbaneh.com"}}}
+  - {"name":"dongtaiwang.com_4","type":"ss","server":"service.ouluyun9803.com","port":20005,"password":"d6105bbd-be0d-45b2-82ad-31fd1071c1d2","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"dongtaiwang.com_5","type":"vmess","server":"172.67.221.183","port":8080,"cipher":"auto","uuid":"22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"www.blueberrywindow.online"}}}
+  - {"name":"dongtaiwang.com_6","type":"vmess","server":"104.21.82.183","port":8880,"cipher":"auto","uuid":"5a7021e0-26b4-45d6-b175-fe551601ca97","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"server26.beheshtbaneh.com"}}}
+  - {"name":"dongtaiwang.com_7","type":"ss","server":"foshan.chiguayun.shop","port":27105,"password":"f4b81edb-73a5-41fa-9086-6f446061815d","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"dongtaiwang.com_8","type":"ss","server":"foshan.chiguayun.shop","port":27108,"password":"f4b81edb-73a5-41fa-9086-6f446061815d","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"dongtaiwang.com_9","type":"ss","server":"yd.qianggewangluo.buzz","port":10808,"password":"6f35bc86-d226-4dd0-8f4c-708f23077d24","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"dongtaiwang.com_10","type":"ss","server":"foshan.chiguayun.shop","port":27104,"password":"f4b81edb-73a5-41fa-9086-6f446061815d","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"dongtaiwang.com_11","type":"ss","server":"foshan.chiguayun.shop","port":27102,"password":"f4b81edb-73a5-41fa-9086-6f446061815d","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -1515,6 +1550,8 @@ proxy-groups:
       - dongtaiwang.com_7
       - dongtaiwang.com_8
       - dongtaiwang.com_9
+      - dongtaiwang.com_10
+      - dongtaiwang.com_11
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.gstatic.com/generate_204
@@ -1530,6 +1567,8 @@ proxy-groups:
       - dongtaiwang.com_7
       - dongtaiwang.com_8
       - dongtaiwang.com_9
+      - dongtaiwang.com_10
+      - dongtaiwang.com_11
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -1545,6 +1584,8 @@ proxy-groups:
       - dongtaiwang.com_7
       - dongtaiwang.com_8
       - dongtaiwang.com_9
+      - dongtaiwang.com_10
+      - dongtaiwang.com_11
   - name: 📲 电报信息
     type: select
     proxies:
@@ -1559,6 +1600,8 @@ proxy-groups:
       - dongtaiwang.com_7
       - dongtaiwang.com_8
       - dongtaiwang.com_9
+      - dongtaiwang.com_10
+      - dongtaiwang.com_11
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -1573,6 +1616,8 @@ proxy-groups:
       - dongtaiwang.com_7
       - dongtaiwang.com_8
       - dongtaiwang.com_9
+      - dongtaiwang.com_10
+      - dongtaiwang.com_11
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -1587,6 +1632,8 @@ proxy-groups:
       - dongtaiwang.com_7
       - dongtaiwang.com_8
       - dongtaiwang.com_9
+      - dongtaiwang.com_10
+      - dongtaiwang.com_11
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1618,6 +1665,8 @@ proxy-groups:
       - dongtaiwang.com_7
       - dongtaiwang.com_8
       - dongtaiwang.com_9
+      - dongtaiwang.com_10
+      - dongtaiwang.com_11
 
 rules:
   - MATCH,🚀 节点选择
@@ -1642,15 +1691,17 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {"name":"dongtaiwang.com_1","type":"vmess","server":"www.darkroom.lol","port":8080,"cipher":"auto","uuid":"22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"www.darkroom.lol"}}}
-  - {"name":"dongtaiwang.com_2","type":"vmess","server":"data-us-v1.shwjfkw.cn","port":20401,"cipher":"auto","uuid":"b1478e24-4916-3abe-8f17-15931012ecbe","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/debian","headers":{"host":"data-us-v1.shwjfkw.cn"}}}
-  - {"name":"dongtaiwang.com_3","type":"ss","server":"service.ouluyun9803.com","port":20003,"password":"d6105bbd-be0d-45b2-82ad-31fd1071c1d2","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"dongtaiwang.com_4","type":"vmess","server":"104.21.82.183","port":8880,"cipher":"auto","uuid":"5a7021e0-26b4-45d6-b175-fe551601ca97","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"server26.beheshtbaneh.com"}}}
-  - {"name":"dongtaiwang.com_5","type":"ss","server":"service.ouluyun9803.com","port":20005,"password":"d6105bbd-be0d-45b2-82ad-31fd1071c1d2","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"dongtaiwang.com_6","type":"ss","server":"109.104.152.161","port":12345,"password":"dongtaiwang.com","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"dongtaiwang.com_7","type":"ss","server":"109.104.152.33","port":12345,"password":"dongtaiwang.com","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"dongtaiwang.com_8","type":"ss","server":"64.31.55.124","port":12345,"password":"dongtaiwang.com","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"dongtaiwang.com_9","type":"ss","server":"111.243.98.243","port":12345,"password":"dongtaiwang.com","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"dongtaiwang.com_1","type":"vmess","server":"data-us-v1.shwjfkw.cn","port":20401,"cipher":"auto","uuid":"b1478e24-4916-3abe-8f17-15931012ecbe","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/debian","headers":{"host":"data-us-v1.shwjfkw.cn"}}}
+  - {"name":"dongtaiwang.com_2","type":"ss","server":"service.ouluyun9803.com","port":20003,"password":"d6105bbd-be0d-45b2-82ad-31fd1071c1d2","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"dongtaiwang.com_3","type":"vmess","server":"104.21.82.183","port":8880,"cipher":"auto","uuid":"5a7021e0-26b4-45d6-b175-fe551601ca97","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"server26.beheshtbaneh.com"}}}
+  - {"name":"dongtaiwang.com_4","type":"ss","server":"service.ouluyun9803.com","port":20005,"password":"d6105bbd-be0d-45b2-82ad-31fd1071c1d2","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"dongtaiwang.com_5","type":"vmess","server":"172.67.221.183","port":8080,"cipher":"auto","uuid":"22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"www.blueberrywindow.online"}}}
+  - {"name":"dongtaiwang.com_6","type":"vmess","server":"104.21.82.183","port":8880,"cipher":"auto","uuid":"5a7021e0-26b4-45d6-b175-fe551601ca97","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"server26.beheshtbaneh.com"}}}
+  - {"name":"dongtaiwang.com_7","type":"ss","server":"foshan.chiguayun.shop","port":27105,"password":"f4b81edb-73a5-41fa-9086-6f446061815d","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"dongtaiwang.com_8","type":"ss","server":"foshan.chiguayun.shop","port":27108,"password":"f4b81edb-73a5-41fa-9086-6f446061815d","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"dongtaiwang.com_9","type":"ss","server":"yd.qianggewangluo.buzz","port":10808,"password":"6f35bc86-d226-4dd0-8f4c-708f23077d24","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"dongtaiwang.com_10","type":"ss","server":"foshan.chiguayun.shop","port":27104,"password":"f4b81edb-73a5-41fa-9086-6f446061815d","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"dongtaiwang.com_11","type":"ss","server":"foshan.chiguayun.shop","port":27102,"password":"f4b81edb-73a5-41fa-9086-6f446061815d","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -1666,6 +1717,8 @@ proxy-groups:
       - dongtaiwang.com_7
       - dongtaiwang.com_8
       - dongtaiwang.com_9
+      - dongtaiwang.com_10
+      - dongtaiwang.com_11
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.gstatic.com/generate_204
@@ -1681,6 +1734,8 @@ proxy-groups:
       - dongtaiwang.com_7
       - dongtaiwang.com_8
       - dongtaiwang.com_9
+      - dongtaiwang.com_10
+      - dongtaiwang.com_11
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -1696,6 +1751,8 @@ proxy-groups:
       - dongtaiwang.com_7
       - dongtaiwang.com_8
       - dongtaiwang.com_9
+      - dongtaiwang.com_10
+      - dongtaiwang.com_11
   - name: 📲 电报信息
     type: select
     proxies:
@@ -1710,6 +1767,8 @@ proxy-groups:
       - dongtaiwang.com_7
       - dongtaiwang.com_8
       - dongtaiwang.com_9
+      - dongtaiwang.com_10
+      - dongtaiwang.com_11
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -1724,6 +1783,8 @@ proxy-groups:
       - dongtaiwang.com_7
       - dongtaiwang.com_8
       - dongtaiwang.com_9
+      - dongtaiwang.com_10
+      - dongtaiwang.com_11
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -1738,6 +1799,8 @@ proxy-groups:
       - dongtaiwang.com_7
       - dongtaiwang.com_8
       - dongtaiwang.com_9
+      - dongtaiwang.com_10
+      - dongtaiwang.com_11
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1769,6 +1832,8 @@ proxy-groups:
       - dongtaiwang.com_7
       - dongtaiwang.com_8
       - dongtaiwang.com_9
+      - dongtaiwang.com_10
+      - dongtaiwang.com_11
 
 rules:
   - MATCH,🚀 节点选择
