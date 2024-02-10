@@ -113,7 +113,7 @@ proxies:
   port: 27108
   password: f4b81edb-73a5-41fa-9086-6f446061815d
   cipher: chacha20-ietf-poly1305
-- name: 油管绵阿羊_United States_vmess_11
+- name: 油管绵阿羊_None_vmess_11
   type: vmess
   server: www.darkroom.lol
   port: 8080
@@ -281,7 +281,7 @@ proxies:
   port: 12345
   password: dongtaiwang.com
   cipher: chacha20-ietf-poly1305
-- name: 油管绵阿羊_None_vmess_31
+- name: 油管绵阿羊_United States_vmess_31
   type: vmess
   server: www.darkroom.lol
   port: 8080
@@ -362,7 +362,7 @@ proxies:
   port: 12345
   password: dongtaiwang.com
   cipher: chacha20-ietf-poly1305
-- name: 油管绵阿羊_None_vmess_41
+- name: 油管绵阿羊_United States_vmess_41
   type: vmess
   server: www.darkroom.lol
   port: 8080
@@ -2259,7 +2259,7 @@ proxy-groups:
   - 油管绵阿羊_China_ss_07
   - 油管绵阿羊_China_ss_08
   - 油管绵阿羊_China_ss_09
-  - 油管绵阿羊_United States_vmess_11
+  - 油管绵阿羊_None_vmess_11
   - 油管绵阿羊_China_vmess_12
   - 油管绵阿羊_China_ss_13
   - 油管绵阿羊_None_vmess_14
@@ -2278,7 +2278,7 @@ proxy-groups:
   - 油管绵阿羊_United States_ss_27
   - 油管绵阿羊_United States_ss_28
   - 油管绵阿羊_Taiwan_ss_29
-  - 油管绵阿羊_None_vmess_31
+  - 油管绵阿羊_United States_vmess_31
   - 油管绵阿羊_China_vmess_32
   - 油管绵阿羊_China_ss_33
   - 油管绵阿羊_None_vmess_34
@@ -2287,7 +2287,7 @@ proxy-groups:
   - 油管绵阿羊_United States_ss_37
   - 油管绵阿羊_United States_ss_38
   - 油管绵阿羊_Taiwan_ss_39
-  - 油管绵阿羊_None_vmess_41
+  - 油管绵阿羊_United States_vmess_41
   - 油管绵阿羊_China_vmess_42
   - 油管绵阿羊_China_ss_43
   - 油管绵阿羊_None_vmess_44
@@ -2462,7 +2462,7 @@ proxy-groups:
   - 油管绵阿羊_China_ss_07
   - 油管绵阿羊_China_ss_08
   - 油管绵阿羊_China_ss_09
-  - 油管绵阿羊_United States_vmess_11
+  - 油管绵阿羊_None_vmess_11
   - 油管绵阿羊_China_vmess_12
   - 油管绵阿羊_China_ss_13
   - 油管绵阿羊_None_vmess_14
@@ -2481,7 +2481,7 @@ proxy-groups:
   - 油管绵阿羊_United States_ss_27
   - 油管绵阿羊_United States_ss_28
   - 油管绵阿羊_Taiwan_ss_29
-  - 油管绵阿羊_None_vmess_31
+  - 油管绵阿羊_United States_vmess_31
   - 油管绵阿羊_China_vmess_32
   - 油管绵阿羊_China_ss_33
   - 油管绵阿羊_None_vmess_34
@@ -2490,7 +2490,7 @@ proxy-groups:
   - 油管绵阿羊_United States_ss_37
   - 油管绵阿羊_United States_ss_38
   - 油管绵阿羊_Taiwan_ss_39
-  - 油管绵阿羊_None_vmess_41
+  - 油管绵阿羊_United States_vmess_41
   - 油管绵阿羊_China_vmess_42
   - 油管绵阿羊_China_ss_43
   - 油管绵阿羊_None_vmess_44
