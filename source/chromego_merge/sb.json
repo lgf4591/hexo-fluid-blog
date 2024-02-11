@@ -244,7 +244,7 @@
         "🇺🇸 United States_vless_539",
         "🇹🇼 Taiwan_hy_6",
         "🇫🇷 France_hy2_7",
-        "🇹🇼 Taiwan_hy_8",
+        "🇺🇸 United States_hy2_8",
         "🇹🇼 Taiwan_hy_9",
         "🇫🇷 France_hysteria_0",
         "🇺🇸 United States_hysteria_1",
@@ -481,7 +481,6 @@
       "type": "selector",
       "outbounds": [
         "🇹🇼 Taiwan_hy_6",
-        "🇹🇼 Taiwan_hy_8",
         "🇹🇼 Taiwan_hy_9",
         "🇹🇼 Taiwan_hysteria_2",
         "proxy"
@@ -544,6 +543,7 @@
         "🇺🇸 United States_vless_537",
         "🇺🇸 United States_vless_538",
         "🇺🇸 United States_vless_539",
+        "🇺🇸 United States_hy2_8",
         "🇺🇸 United States_hysteria_1",
         "🇺🇸 United States_hysteria_3",
         "🇺🇸 United States_hysteria2_1",
@@ -805,7 +805,7 @@
         "🇺🇸 United States_vless_539",
         "🇹🇼 Taiwan_hy_6",
         "🇫🇷 France_hy2_7",
-        "🇹🇼 Taiwan_hy_8",
+        "🇺🇸 United States_hy2_8",
         "🇹🇼 Taiwan_hy_9",
         "🇫🇷 France_hysteria_0",
         "🇺🇸 United States_hysteria_1",
@@ -3609,20 +3609,23 @@
       }
     },
     {
-      "tag": "🇹🇼 Taiwan_hy_8",
-      "type": "hysteria",
-      "server": "www2.dtku48.xyz",
-      "server_port": 22334,
-      "up_mbps": 50,
-      "down_mbps": 80,
-      "auth_str": "dongtaiwang.com",
+      "tag": "🇺🇸 United States_hy2_8",
+      "type": "hysteria2",
+      "server": "45.150.165.84",
+      "server_port": 8881,
+      "password": "d017e316-82cb-441c-8eea-7b5e9de64a20",
+      "up_mbps": 10,
+      "down_mbps": 100,
       "tls": {
         "enabled": true,
-        "server_name": "",
+        "insecure": true,
         "alpn": [
           "h3"
-        ],
-        "insecure": true
+        ]
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "d017e316-82cb-441c-8eea-7b5e9de64a20"
       }
     },
     {
