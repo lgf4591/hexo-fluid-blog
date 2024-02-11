@@ -1,7 +1,7 @@
 
 ---
 title: ChromeGo所有配置文件合集 
-date: 2024-02-11 14:09:10
+date: 2024-02-11 14:10:43
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2024-02-11 14:09:10
+> Last Update Time: 2024-02-11 14:10:43
 ---
 
 ## Quick-ip_1.yaml
@@ -489,11 +489,11 @@ rules:
       "settings": {
         "servers": [
           {
-            "address": "51.159.103.141",
+            "address": "www.dtku44.xyz",
             "method": "2022-blake3-aes-256-gcm",
             "ota": false,
-            "password": "KbeB6i+p+Iz+TWzXaYj5EqeKTBTyDbYStmdvFdp99QE=",
-            "port": 33345,
+            "password": "oats+7vdaSOb4NsxWwCBQll4qTwPu/dhpegiIGnqd9c=",
+            "port": 22335,
             "level": 1
           }
         ]
