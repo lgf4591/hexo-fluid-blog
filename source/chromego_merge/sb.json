@@ -105,6 +105,8 @@
       "outbounds": [
         "auto",
         "direct",
+        "🇺🇸 United States_vless_0",
+        "🇺🇸 United States_vless_4",
         "None_vless_5",
         "None_vless_52",
         "🇺🇸 United States_vless_5",
@@ -504,6 +506,8 @@
       "tag": "America",
       "type": "selector",
       "outbounds": [
+        "🇺🇸 United States_vless_0",
+        "🇺🇸 United States_vless_4",
         "🇺🇸 United States_vless_5",
         "🇺🇸 United States_vless_52",
         "🇺🇸 United States_vless_53",
@@ -666,6 +670,8 @@
       "tag": "auto",
       "type": "urltest",
       "outbounds": [
+        "🇺🇸 United States_vless_0",
+        "🇺🇸 United States_vless_4",
         "None_vless_5",
         "None_vless_52",
         "🇺🇸 United States_vless_5",
@@ -833,6 +839,37 @@
     {
       "type": "block",
       "tag": "block"
+    },
+    {
+      "tag": "🇺🇸 United States_vless_0",
+      "type": "vless",
+      "server": "108.181.5.18",
+      "server_port": 22222,
+      "uuid": "1bf69b3a-4673-4d02-a311-cb6380eaddce",
+      "packet_encoding": "xudp"
+    },
+    {
+      "tag": "🇺🇸 United States_vless_4",
+      "type": "vless",
+      "server": "109.104.152.101",
+      "server_port": 11111,
+      "uuid": "9cc39477-0d85-4419-84d4-fb7fc77668b3",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "m.media-amazon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "yKXmLTmXAi-BHBg3JpCz-NWUmVcKlfm7iMmVoq7YQx0",
+          "short_id": "6ba85179e30d4fc2"
+        }
+      }
     },
     {
       "tag": "None_vless_5",
