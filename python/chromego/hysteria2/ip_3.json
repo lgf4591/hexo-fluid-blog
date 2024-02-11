@@ -1,22 +1,13 @@
-{
-  "server": "108.181.24.77:43656",
-  "auth": "dongtaiwang.com",
-  "tls": {
-    "sni": "www.bing.com",
-    "insecure": true
-  },
-  "quic": {
-    "initStreamReceiveWindow": 16777216,
-    "maxStreamReceiveWindow": 16777216,
-    "initConnReceiveWindow": 33554432,
-    "maxConnReceiveWindow": 33554432
-  },
-  "socks5": {
-    "listen": "127.0.0.1:1080"
-  },
-  "transport": {
-    "udp": {
-      "hopInterval": "30s"
-    }
-  }
-}
+<html>
+<head><title>403 Forbidden</title></head>
+<body>
+<center><h1>403 Forbidden</h1></center>
+<hr><center>nginx/1.20.1</center>
+</body>
+</html>
+<!-- a padding to disable MSIE and Chrome friendly error page -->
+<!-- a padding to disable MSIE and Chrome friendly error page -->
+<!-- a padding to disable MSIE and Chrome friendly error page -->
+<!-- a padding to disable MSIE and Chrome friendly error page -->
+<!-- a padding to disable MSIE and Chrome friendly error page -->
+<!-- a padding to disable MSIE and Chrome friendly error page -->
