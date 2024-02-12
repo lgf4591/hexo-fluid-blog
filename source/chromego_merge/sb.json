@@ -106,7 +106,9 @@
         "auto",
         "direct",
         "🇺🇸 United States_vless_0",
-        "WLajywjS_vmess",
+        "2w1XTwV2_vmess",
+        "🇫🇷 France_vless_2",
+        "b8wpVkwP_vmess",
         "🇺🇸 United States_vless_4",
         "None_vless_5",
         "None_vless_52",
@@ -258,7 +260,7 @@
         "🇫🇷 France_hysteria2_2",
         "🇺🇸 United States_hysteria2_3",
         "🇫🇷 France_vless_1",
-        "🇫🇷 France_vless_2",
+        "🇫🇷 France_vless_22",
         "🇫🇷 France_vless_3"
       ]
     },
@@ -561,7 +563,9 @@
       "tag": "Others",
       "type": "selector",
       "outbounds": [
-        "WLajywjS_vmess",
+        "2w1XTwV2_vmess",
+        "🇫🇷 France_vless_2",
+        "b8wpVkwP_vmess",
         "None_vless_5",
         "None_vless_52",
         "None_vless_53",
@@ -665,7 +669,7 @@
         "🇫🇷 France_hysteria2_0",
         "🇫🇷 France_hysteria2_2",
         "🇫🇷 France_vless_1",
-        "🇫🇷 France_vless_2",
+        "🇫🇷 France_vless_22",
         "🇫🇷 France_vless_3",
         "proxy"
       ]
@@ -675,7 +679,9 @@
       "type": "urltest",
       "outbounds": [
         "🇺🇸 United States_vless_0",
-        "WLajywjS_vmess",
+        "2w1XTwV2_vmess",
+        "🇫🇷 France_vless_2",
+        "b8wpVkwP_vmess",
         "🇺🇸 United States_vless_4",
         "None_vless_5",
         "None_vless_52",
@@ -827,7 +833,7 @@
         "🇫🇷 France_hysteria2_2",
         "🇺🇸 United States_hysteria2_3",
         "🇫🇷 France_vless_1",
-        "🇫🇷 France_vless_2",
+        "🇫🇷 France_vless_22",
         "🇫🇷 France_vless_3"
       ],
       "url": "http://www.gstatic.com/generate_204",
@@ -855,11 +861,44 @@
       "packet_encoding": "xudp"
     },
     {
-      "tag": "WLajywjS_vmess",
+      "tag": "2w1XTwV2_vmess",
       "type": "vmess",
       "server": "109.104.152.144",
       "server_port": 12300,
       "uuid": "4be33771-099d-4d65-9426-09bed47eb41f",
+      "security": "auto",
+      "alter_id": 0,
+      "packet_encoding": "xudp"
+    },
+    {
+      "tag": "🇫🇷 France_vless_2",
+      "type": "vless",
+      "server": "51.159.77.153",
+      "server_port": 11112,
+      "uuid": "9cc39477-0d85-4419-84d4-fb7fc77668b3",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "m.media-amazon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "yKXmLTmXAi-BHBg3JpCz-NWUmVcKlfm7iMmVoq7YQx0",
+          "short_id": "6ba85179e30d4fc2"
+        }
+      }
+    },
+    {
+      "tag": "b8wpVkwP_vmess",
+      "type": "vmess",
+      "server": "www.dtku40.xyz",
+      "server_port": 34500,
+      "uuid": "fe3800ef-a9e8-4943-aaf2-6d99dac75c32",
       "security": "auto",
       "alter_id": 0,
       "packet_encoding": "xudp"
@@ -3858,7 +3897,7 @@
       }
     },
     {
-      "tag": "🇫🇷 France_vless_2",
+      "tag": "🇫🇷 France_vless_22",
       "type": "vless",
       "server": "62.210.101.0",
       "server_port": 18700,
