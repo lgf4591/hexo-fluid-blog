@@ -1,7 +1,7 @@
 
 ---
 title: VPN合集
-date: 2024-02-12 15:03:32
+date: 2024-02-12 15:04:32
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2024-02-12 15:03:32
+> Last Update Time: 2024-02-12 15:04:32
 ---
 # vless_node
 ```bash
