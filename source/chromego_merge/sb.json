@@ -106,6 +106,8 @@
         "auto",
         "direct",
         "🇺🇸 United States_vless_0",
+        "🇹🇼 mTWS0UPL_vmess",
+        "🇺🇸 United States_tuic_1",
         "🇺🇸 United States_vless_4",
         "None_vless_5",
         "None_vless_52",
@@ -482,6 +484,7 @@
       "tag": "TaiWan",
       "type": "selector",
       "outbounds": [
+        "🇹🇼 mTWS0UPL_vmess",
         "🇹🇼 Taiwan_hy_6",
         "🇹🇼 Taiwan_hy_9",
         "🇹🇼 Taiwan_hysteria_2",
@@ -507,6 +510,7 @@
       "type": "selector",
       "outbounds": [
         "🇺🇸 United States_vless_0",
+        "🇺🇸 United States_tuic_1",
         "🇺🇸 United States_vless_4",
         "🇺🇸 United States_vless_5",
         "🇺🇸 United States_vless_52",
@@ -671,6 +675,8 @@
       "type": "urltest",
       "outbounds": [
         "🇺🇸 United States_vless_0",
+        "🇹🇼 mTWS0UPL_vmess",
+        "🇺🇸 United States_tuic_1",
         "🇺🇸 United States_vless_4",
         "None_vless_5",
         "None_vless_52",
@@ -847,6 +853,34 @@
       "server_port": 22222,
       "uuid": "1bf69b3a-4673-4d02-a311-cb6380eaddce",
       "packet_encoding": "xudp"
+    },
+    {
+      "tag": "🇹🇼 mTWS0UPL_vmess",
+      "type": "vmess",
+      "server": "109.104.152.144",
+      "server_port": 12300,
+      "uuid": "4be33771-099d-4d65-9426-09bed47eb41f",
+      "security": "auto",
+      "alter_id": 0,
+      "packet_encoding": "xudp"
+    },
+    {
+      "tag": "🇺🇸 United States_tuic_1",
+      "type": "tuic",
+      "server": "109.104.152.144",
+      "server_port": 44411,
+      "uuid": "7bda06fd-e4af-4115-8aa3-f021832cfa78",
+      "password": "dongtaiwang.com",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
+      "zero_rtt_handshake": false,
+      "heartbeat": "10s",
+      "tls": {
+        "enabled": true,
+        "alpn": [
+          "h3"
+        ]
+      }
     },
     {
       "tag": "🇺🇸 United States_vless_4",
