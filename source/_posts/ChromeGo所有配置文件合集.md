@@ -1,7 +1,7 @@
 
 ---
 title: ChromeGo所有配置文件合集 
-date: 2024-02-12 07:06:34
+date: 2024-02-12 07:07:32
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2024-02-12 07:06:34
+> Last Update Time: 2024-02-12 07:07:32
 ---
 
 ## Quick-ip_1.yaml
@@ -633,7 +633,6 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {"name":"dongtaiwang.com_0","type":"vmess","server":"www.dtku40.xyz","port":34500,"cipher":"auto","uuid":"fe3800ef-a9e8-4943-aaf2-6d99dac75c32","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
   - {"name":"dongtaiwang.com_1","type":"tuic","server":"109.104.152.144","port":44411,"udp":true,"uuid":"7bda06fd-e4af-4115-8aa3-f021832cfa78","password":dongtaiwang.com,"alpn":["h3"],"disable-sni":true,"reduce-rtt":true,"udp-relay-mode":native,"congestion-controller":"bbr"}
 proxy-groups:
   - name: 🚀 节点选择
@@ -641,7 +640,6 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - dongtaiwang.com_0
       - dongtaiwang.com_1
   - name: ♻️ 自动选择
     type: url-test
@@ -649,7 +647,6 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - dongtaiwang.com_0
       - dongtaiwang.com_1
   - name: 🌍 国外媒体
     type: select
@@ -657,28 +654,24 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - dongtaiwang.com_0
       - dongtaiwang.com_1
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - dongtaiwang.com_0
       - dongtaiwang.com_1
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - dongtaiwang.com_0
       - dongtaiwang.com_1
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - dongtaiwang.com_0
       - dongtaiwang.com_1
   - name: 🎯 全球直连
     type: select
@@ -702,7 +695,6 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - dongtaiwang.com_0
       - dongtaiwang.com_1
 
 rules:
