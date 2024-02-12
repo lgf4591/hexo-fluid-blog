@@ -106,8 +106,7 @@
         "auto",
         "direct",
         "🇺🇸 United States_vless_0",
-        "🇹🇼 mTWS0UPL_vmess",
-        "🇺🇸 United States_tuic_1",
+        "WLajywjS_vmess",
         "🇺🇸 United States_vless_4",
         "None_vless_5",
         "None_vless_52",
@@ -258,6 +257,7 @@
         "🇺🇸 United States_hysteria2_1",
         "🇫🇷 France_hysteria2_2",
         "🇺🇸 United States_hysteria2_3",
+        "🇫🇷 France_vless_1",
         "🇫🇷 France_vless_2",
         "🇫🇷 France_vless_3"
       ]
@@ -484,7 +484,6 @@
       "tag": "TaiWan",
       "type": "selector",
       "outbounds": [
-        "🇹🇼 mTWS0UPL_vmess",
         "🇹🇼 Taiwan_hy_6",
         "🇹🇼 Taiwan_hy_9",
         "🇹🇼 Taiwan_hysteria_2",
@@ -510,7 +509,6 @@
       "type": "selector",
       "outbounds": [
         "🇺🇸 United States_vless_0",
-        "🇺🇸 United States_tuic_1",
         "🇺🇸 United States_vless_4",
         "🇺🇸 United States_vless_5",
         "🇺🇸 United States_vless_52",
@@ -563,6 +561,7 @@
       "tag": "Others",
       "type": "selector",
       "outbounds": [
+        "WLajywjS_vmess",
         "None_vless_5",
         "None_vless_52",
         "None_vless_53",
@@ -665,6 +664,7 @@
         "🇫🇷 France_hysteria_0",
         "🇫🇷 France_hysteria2_0",
         "🇫🇷 France_hysteria2_2",
+        "🇫🇷 France_vless_1",
         "🇫🇷 France_vless_2",
         "🇫🇷 France_vless_3",
         "proxy"
@@ -675,8 +675,7 @@
       "type": "urltest",
       "outbounds": [
         "🇺🇸 United States_vless_0",
-        "🇹🇼 mTWS0UPL_vmess",
-        "🇺🇸 United States_tuic_1",
+        "WLajywjS_vmess",
         "🇺🇸 United States_vless_4",
         "None_vless_5",
         "None_vless_52",
@@ -827,6 +826,7 @@
         "🇺🇸 United States_hysteria2_1",
         "🇫🇷 France_hysteria2_2",
         "🇺🇸 United States_hysteria2_3",
+        "🇫🇷 France_vless_1",
         "🇫🇷 France_vless_2",
         "🇫🇷 France_vless_3"
       ],
@@ -855,7 +855,7 @@
       "packet_encoding": "xudp"
     },
     {
-      "tag": "🇹🇼 mTWS0UPL_vmess",
+      "tag": "WLajywjS_vmess",
       "type": "vmess",
       "server": "109.104.152.144",
       "server_port": 12300,
@@ -863,24 +863,6 @@
       "security": "auto",
       "alter_id": 0,
       "packet_encoding": "xudp"
-    },
-    {
-      "tag": "🇺🇸 United States_tuic_1",
-      "type": "tuic",
-      "server": "109.104.152.144",
-      "server_port": 44411,
-      "uuid": "7bda06fd-e4af-4115-8aa3-f021832cfa78",
-      "password": "dongtaiwang.com",
-      "congestion_control": "bbr",
-      "udp_relay_mode": "native",
-      "zero_rtt_handshake": false,
-      "heartbeat": "10s",
-      "tls": {
-        "enabled": true,
-        "alpn": [
-          "h3"
-        ]
-      }
     },
     {
       "tag": "🇺🇸 United States_vless_4",
@@ -3850,6 +3832,29 @@
         "alpn": [
           "h3"
         ]
+      }
+    },
+    {
+      "tag": "🇫🇷 France_vless_1",
+      "type": "vless",
+      "server": "51.159.77.153",
+      "server_port": 11111,
+      "uuid": "9cc39477-0d85-4419-84d4-fb7fc77668b3",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "m.media-amazon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "yKXmLTmXAi-BHBg3JpCz-NWUmVcKlfm7iMmVoq7YQx0",
+          "short_id": "6ba85179e30d4fc2"
+        }
       }
     },
     {
