@@ -105,8 +105,10 @@
       "outbounds": [
         "auto",
         "direct",
-        "🇺🇸 United States_vless_0",
+        "🇺🇸 United States_hy2_0",
         "🇺🇸 United States_tuic_1",
+        "🇺🇸 United States_vless_2",
+        "🇺🇸 United States_tuic_3",
         "🇺🇸 United States_vless_4",
         "None_vless_5",
         "None_vless_52",
@@ -508,8 +510,10 @@
       "tag": "America",
       "type": "selector",
       "outbounds": [
-        "🇺🇸 United States_vless_0",
+        "🇺🇸 United States_hy2_0",
         "🇺🇸 United States_tuic_1",
+        "🇺🇸 United States_vless_2",
+        "🇺🇸 United States_tuic_3",
         "🇺🇸 United States_vless_4",
         "🇺🇸 United States_vless_5",
         "🇺🇸 United States_vless_52",
@@ -674,8 +678,10 @@
       "tag": "auto",
       "type": "urltest",
       "outbounds": [
-        "🇺🇸 United States_vless_0",
+        "🇺🇸 United States_hy2_0",
         "🇺🇸 United States_tuic_1",
+        "🇺🇸 United States_vless_2",
+        "🇺🇸 United States_tuic_3",
         "🇺🇸 United States_vless_4",
         "None_vless_5",
         "None_vless_52",
@@ -847,7 +853,42 @@
       "tag": "block"
     },
     {
-      "tag": "🇺🇸 United States_vless_0",
+      "tag": "🇺🇸 United States_hy2_0",
+      "type": "hysteria2",
+      "server": "64.31.55.30",
+      "server_port": 20011,
+      "password": "dongtaiwang.com",
+      "up_mbps": 10,
+      "down_mbps": 100,
+      "tls": {
+        "enabled": true,
+        "server_name": "bing.com",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ]
+      }
+    },
+    {
+      "tag": "🇺🇸 United States_tuic_1",
+      "type": "tuic",
+      "server": "109.104.152.144",
+      "server_port": 44411,
+      "uuid": "7bda06fd-e4af-4115-8aa3-f021832cfa78",
+      "password": "dongtaiwang.com",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
+      "zero_rtt_handshake": false,
+      "heartbeat": "10s",
+      "tls": {
+        "enabled": true,
+        "alpn": [
+          "h3"
+        ]
+      }
+    },
+    {
+      "tag": "🇺🇸 United States_vless_2",
       "type": "vless",
       "server": "108.181.5.18",
       "server_port": 22222,
@@ -855,10 +896,10 @@
       "packet_encoding": "xudp"
     },
     {
-      "tag": "🇺🇸 United States_tuic_1",
+      "tag": "🇺🇸 United States_tuic_3",
       "type": "tuic",
-      "server": "109.104.152.144",
-      "server_port": 44411,
+      "server": "109.104.152.101",
+      "server_port": 22288,
       "uuid": "7bda06fd-e4af-4115-8aa3-f021832cfa78",
       "password": "dongtaiwang.com",
       "congestion_control": "bbr",
