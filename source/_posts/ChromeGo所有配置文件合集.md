@@ -1,7 +1,7 @@
 
 ---
 title: ChromeGo所有配置文件合集 
-date: 2024-02-13 05:11:17
+date: 2024-02-13 05:12:36
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2024-02-13 05:11:17
+> Last Update Time: 2024-02-13 05:12:36
 ---
 
 ## Quick-ip_1.yaml
@@ -485,35 +485,28 @@ rules:
   "outbounds": [
     {
       "tag": "proxy",
-      "protocol": "vless",
+      "protocol": "vmess",
       "settings": {
         "vnext": [
           {
             "address": "51.159.77.153",
-            "port": 11111,
+            "port": 32200,
             "users": [
               {
-                "id": "9cc39477-0d85-4419-84d4-fb7fc77668b3",
+                "id": "7170d093-eef9-46b5-8e3c-00d404c09e41",
                 "alterId": 0,
                 "email": "t@t.tt",
-                "security": "auto",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "security": "auto"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "m.media-amazon.com",
-          "fingerprint": "chrome",
-          "show": false,
-          "publicKey": "yKXmLTmXAi-BHBg3JpCz-NWUmVcKlfm7iMmVoq7YQx0",
-          "shortId": "6ba85179e30d4fc2",
-          "spiderX": ""
+        "network": "ws",
+        "wsSettings": {
+          "path": "/S0eMfLns/",
+          "headers": {}
         }
       },
       "mux": {
