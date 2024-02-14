@@ -107,6 +107,7 @@
         "direct",
         "🇺🇸 United States_hy2_0",
         "🇺🇸 United States_tuic_1",
+        "🇺🇸 United States_hy_2",
         "🇺🇸 United States_tuic_3",
         "🇺🇸 United States_vless_4",
         "None_vless_5",
@@ -510,6 +511,7 @@
       "outbounds": [
         "🇺🇸 United States_hy2_0",
         "🇺🇸 United States_tuic_1",
+        "🇺🇸 United States_hy_2",
         "🇺🇸 United States_tuic_3",
         "🇺🇸 United States_vless_4",
         "🇺🇸 United States_vless_5",
@@ -676,6 +678,7 @@
       "outbounds": [
         "🇺🇸 United States_hy2_0",
         "🇺🇸 United States_tuic_1",
+        "🇺🇸 United States_hy_2",
         "🇺🇸 United States_tuic_3",
         "🇺🇸 United States_vless_4",
         "None_vless_5",
@@ -879,6 +882,23 @@
         "alpn": [
           "h3"
         ]
+      }
+    },
+    {
+      "tag": "🇺🇸 United States_hy_2",
+      "type": "hysteria",
+      "server": "109.104.152.101",
+      "server_port": 32200,
+      "up_mbps": 50,
+      "down_mbps": 80,
+      "auth_str": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "bing.com",
+        "alpn": [
+          "h3"
+        ],
+        "insecure": true
       }
     },
     {
