@@ -1,7 +1,7 @@
 
 ---
 title: ChromeGo所有配置文件合集 
-date: 2024-02-14 00:40:00
+date: 2024-02-14 00:41:14
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2024-02-14 00:40:00
+> Last Update Time: 2024-02-14 00:41:14
 ---
 
 ## Quick-ip_1.yaml
@@ -627,7 +627,7 @@ dns:
     - tls://dns.google:853
 proxies:
   - {"name":"dongtaiwang.com_0","type":"tuic","server":"109.104.152.144","port":44411,"udp":true,"uuid":"7bda06fd-e4af-4115-8aa3-f021832cfa78","password":dongtaiwang.com,"alpn":["h3"],"disable-sni":true,"reduce-rtt":true,"udp-relay-mode":native,"congestion-controller":"bbr"}
-  - {"name":"dongtaiwang.com_1","type":"vmess","server":"www.dtku40.xyz","port":18810,"cipher":"auto","uuid":"afb1ad76-0f6f-4cb8-983a-95f5b4708321","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/9tEYTPFN/"}}
+  - {"name":"dongtaiwang.com_1","type":"vmess","server":"www.dtku40.xyz","port":18840,"cipher":"auto","uuid":"afb1ad76-0f6f-4cb8-983a-95f5b4708321","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/9tEYTPFN/"}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
