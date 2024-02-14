@@ -107,7 +107,6 @@
         "direct",
         "🇺🇸 United States_hy2_0",
         "🇺🇸 United States_tuic_1",
-        "🇺🇸 United States_vless_2",
         "🇺🇸 United States_tuic_3",
         "🇺🇸 United States_vless_4",
         "None_vless_5",
@@ -259,7 +258,6 @@
         "🇺🇸 United States_hysteria2_1",
         "🇫🇷 France_hysteria2_2",
         "🇫🇷 France_hysteria2_3",
-        "🇫🇷 France_vless_1",
         "🇫🇷 France_vless_2",
         "🇫🇷 France_vless_3"
       ]
@@ -512,7 +510,6 @@
       "outbounds": [
         "🇺🇸 United States_hy2_0",
         "🇺🇸 United States_tuic_1",
-        "🇺🇸 United States_vless_2",
         "🇺🇸 United States_tuic_3",
         "🇺🇸 United States_vless_4",
         "🇺🇸 United States_vless_5",
@@ -668,7 +665,6 @@
         "🇫🇷 France_hysteria2_0",
         "🇫🇷 France_hysteria2_2",
         "🇫🇷 France_hysteria2_3",
-        "🇫🇷 France_vless_1",
         "🇫🇷 France_vless_2",
         "🇫🇷 France_vless_3",
         "proxy"
@@ -680,7 +676,6 @@
       "outbounds": [
         "🇺🇸 United States_hy2_0",
         "🇺🇸 United States_tuic_1",
-        "🇺🇸 United States_vless_2",
         "🇺🇸 United States_tuic_3",
         "🇺🇸 United States_vless_4",
         "None_vless_5",
@@ -832,7 +827,6 @@
         "🇺🇸 United States_hysteria2_1",
         "🇫🇷 France_hysteria2_2",
         "🇫🇷 France_hysteria2_3",
-        "🇫🇷 France_vless_1",
         "🇫🇷 France_vless_2",
         "🇫🇷 France_vless_3"
       ],
@@ -886,14 +880,6 @@
           "h3"
         ]
       }
-    },
-    {
-      "tag": "🇺🇸 United States_vless_2",
-      "type": "vless",
-      "server": "108.181.5.18",
-      "server_port": 22222,
-      "uuid": "1bf69b3a-4673-4d02-a311-cb6380eaddce",
-      "packet_encoding": "xudp"
     },
     {
       "tag": "🇺🇸 United States_tuic_3",
@@ -3881,29 +3867,6 @@
         "alpn": [
           "h3"
         ]
-      }
-    },
-    {
-      "tag": "🇫🇷 France_vless_1",
-      "type": "vless",
-      "server": "51.159.77.153",
-      "server_port": 11111,
-      "uuid": "9cc39477-0d85-4419-84d4-fb7fc77668b3",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "insecure": false,
-        "server_name": "m.media-amazon.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "yKXmLTmXAi-BHBg3JpCz-NWUmVcKlfm7iMmVoq7YQx0",
-          "short_id": "6ba85179e30d4fc2"
-        }
       }
     },
     {
