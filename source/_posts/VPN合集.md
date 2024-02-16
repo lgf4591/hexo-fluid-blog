@@ -1,7 +1,7 @@
 
 ---
 title: VPN合集
-date: 2024-02-16 01:10:31
+date: 2024-02-16 01:12:04
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2024-02-16 01:10:31
+> Last Update Time: 2024-02-16 01:12:04
 ---
 # vless_node
 ```bash
@@ -5290,7 +5290,7 @@ aHlzdGVyaWEyOi8vZG9uZ3RhaXdhbmcuY29tQDY0LjMxLjU1LjMwOjIwMDExP2luc2VjdXJlPTEmc25p
         "🇺🇸 United States_hy2_0",
         "🇺🇸 United States_hy2_0 2",
         "🇺🇸 United States_tuic_1",
-        "🇺🇸 United States_tuic_2",
+        "🇺🇸 United States_hy2_2",
         "🇺🇸 United States_tuic_3",
         "🇺🇸 United States_tuic_4",
         "None_vless_5",
@@ -5695,7 +5695,7 @@ aHlzdGVyaWEyOi8vZG9uZ3RhaXdhbmcuY29tQDY0LjMxLjU1LjMwOjIwMDExP2luc2VjdXJlPTEmc25p
         "🇺🇸 United States_hy2_0",
         "🇺🇸 United States_hy2_0 2",
         "🇺🇸 United States_tuic_1",
-        "🇺🇸 United States_tuic_2",
+        "🇺🇸 United States_hy2_2",
         "🇺🇸 United States_tuic_3",
         "🇺🇸 United States_tuic_4",
         "🇺🇸 United States_vless_5",
@@ -5863,7 +5863,7 @@ aHlzdGVyaWEyOi8vZG9uZ3RhaXdhbmcuY29tQDY0LjMxLjU1LjMwOjIwMDExP2luc2VjdXJlPTEmc25p
         "🇺🇸 United States_hy2_0",
         "🇺🇸 United States_hy2_0 2",
         "🇺🇸 United States_tuic_1",
-        "🇺🇸 United States_tuic_2",
+        "🇺🇸 United States_hy2_2",
         "🇺🇸 United States_tuic_3",
         "🇺🇸 United States_tuic_4",
         "None_vless_5",
@@ -6087,18 +6087,17 @@ aHlzdGVyaWEyOi8vZG9uZ3RhaXdhbmcuY29tQDY0LjMxLjU1LjMwOjIwMDExP2luc2VjdXJlPTEmc25p
       }
     },
     {
-      "tag": "🇺🇸 United States_tuic_2",
-      "type": "tuic",
+      "tag": "🇺🇸 United States_hy2_2",
+      "type": "hysteria2",
       "server": "109.104.152.101",
-      "server_port": 31102,
-      "uuid": "7bda06fd-e4af-4115-8aa3-f021832cfa78",
+      "server_port": 16610,
       "password": "dongtaiwang.com",
-      "congestion_control": "bbr",
-      "udp_relay_mode": "native",
-      "zero_rtt_handshake": false,
-      "heartbeat": "10s",
+      "up_mbps": 10,
+      "down_mbps": 100,
       "tls": {
         "enabled": true,
+        "server_name": "bing.com",
+        "insecure": true,
         "alpn": [
           "h3"
         ]
@@ -8900,8 +8899,8 @@ aHlzdGVyaWEyOi8vZG9uZ3RhaXdhbmcuY29tQDY0LjMxLjU1LjMwOjIwMDExP2luc2VjdXJlPTEmc25p
     {
       "tag": "🇫🇷 France_hy2_7",
       "type": "hysteria2",
-      "server": "51.158.54.46",
-      "server_port": 44550,
+      "server": "51.159.77.153",
+      "server_port": 33390,
       "password": "dongtaiwang.com",
       "up_mbps": 10,
       "down_mbps": 100,
