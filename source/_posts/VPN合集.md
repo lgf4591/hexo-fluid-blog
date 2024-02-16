@@ -1,7 +1,7 @@
 
 ---
 title: VPN合集
-date: 2024-02-16 02:33:43
+date: 2024-02-16 02:34:49
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2024-02-16 02:33:43
+> Last Update Time: 2024-02-16 02:34:49
 ---
 # vless_node
 ```bash
@@ -26,8 +26,8 @@ None
 ```bash
 
 电信172.67.167.189
-电信172.64.110.210
-电信172.67.152.212
+电信190.93.244.236
+电信172.64.135.219
 
 联通172.67.128.20
 联通172.67.132.80
