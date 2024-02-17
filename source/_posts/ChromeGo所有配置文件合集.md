@@ -1,7 +1,7 @@
 
 ---
 title: ChromeGo所有配置文件合集 
-date: 2024-02-17 15:28:33
+date: 2024-02-17 15:29:42
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2024-02-17 15:28:33
+> Last Update Time: 2024-02-17 15:29:42
 ---
 
 ## Quick-ip_1.yaml
@@ -628,6 +628,17 @@ dns:
 proxies:
   - name: dongtaiwang.com_1
     type: hysteria2
+    server: 109.104.152.171
+    port: 20011
+    password: dongtaiwang.com
+    alpn:
+      - h3
+    sni: bing.com
+    skip-cert-verify: true
+    up: "11 Mbps"
+    down: "55 Mbps"
+  - name: dongtaiwang.com_2
+    type: hysteria2
     server: 208.115.243.45
     port: 30010
     password: dongtaiwang.com
@@ -644,6 +655,7 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - dongtaiwang.com_1
+      - dongtaiwang.com_2
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.gstatic.com/generate_204
@@ -651,6 +663,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - dongtaiwang.com_1
+      - dongtaiwang.com_2
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -658,24 +671,28 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - dongtaiwang.com_1
+      - dongtaiwang.com_2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - dongtaiwang.com_1
+      - dongtaiwang.com_2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
       - dongtaiwang.com_1
+      - dongtaiwang.com_2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - dongtaiwang.com_1
+      - dongtaiwang.com_2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -699,6 +716,7 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - dongtaiwang.com_1
+      - dongtaiwang.com_2
 
 rules:
   - MATCH,🚀 节点选择
