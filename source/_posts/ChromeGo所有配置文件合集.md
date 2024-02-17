@@ -1,7 +1,7 @@
 
 ---
 title: ChromeGo所有配置文件合集 
-date: 2024-02-17 06:10:48
+date: 2024-02-17 06:11:55
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2024-02-17 06:10:48
+> Last Update Time: 2024-02-17 06:11:55
 ---
 
 ## Quick-ip_1.yaml
@@ -626,7 +626,17 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {"name":"dongtaiwang.com_1","type":"vless","server":"64.31.55.30","port":33220,"udp":true,"uuid":"fb706a82-ec58-44d9-8f7a-39b8494e3a6d","tls":true,"servername":"www.lovelive-anime.jp","network":"grpc","grpc-opts":{"grpc-service-name":"grpc"},"reality-opts":{"public-key":"fgV5xXgT53rlP82phUB6BpbKwvH8cqvomdEnrqlErko","short-id":"6ba85179e30d4fc2"},"client-fingerprint":"chrome"}
+  - name: dongtaiwang.com_1
+    type: hysteria2
+    server: 109.104.152.242
+    port: 1022
+    password: dongtaiwang.com
+    alpn:
+      - h3
+    sni: bing.com
+    skip-cert-verify: true
+    up: "11 Mbps"
+    down: "55 Mbps"
 proxy-groups:
   - name: 🚀 节点选择
     type: select
