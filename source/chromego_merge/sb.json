@@ -102,8 +102,7 @@
       "outbounds": [
         "auto",
         "direct",
-        "🇺🇸 United States_vless_0",
-        "🇺🇸 United States_vless_02",
+        "🇺🇸 United States_hy2_0",
         "🇺🇸 United States_hy2_1",
         "🇺🇸 United States_hy2_2",
         "🇺🇸 United States_vless_3",
@@ -442,8 +441,7 @@
       "tag": "🇺🇸 美国节点",
       "type": "selector",
       "outbounds": [
-        "🇺🇸 United States_vless_0",
-        "🇺🇸 United States_vless_02",
+        "🇺🇸 United States_hy2_0",
         "🇺🇸 United States_hy2_1",
         "🇺🇸 United States_hy2_2",
         "🇺🇸 United States_vless_3",
@@ -626,8 +624,7 @@
       "tag": "auto",
       "type": "urltest",
       "outbounds": [
-        "🇺🇸 United States_vless_0",
-        "🇺🇸 United States_vless_02",
+        "🇺🇸 United States_hy2_0",
         "🇺🇸 United States_hy2_1",
         "🇺🇸 United States_hy2_2",
         "🇺🇸 United States_vless_3",
@@ -801,59 +798,27 @@
       "tag": "block"
     },
     {
-      "tag": "🇺🇸 United States_vless_0",
-      "type": "vless",
-      "server": "64.31.55.30",
-      "server_port": 33220,
-      "uuid": "fb706a82-ec58-44d9-8f7a-39b8494e3a6d",
-      "packet_encoding": "xudp",
+      "tag": "🇺🇸 United States_hy2_0",
+      "type": "hysteria2",
+      "server": "64.31.55.42",
+      "server_port": 31100,
+      "password": "dongtaiwang.com",
+      "up_mbps": 10,
+      "down_mbps": 100,
       "tls": {
         "enabled": true,
+        "server_name": "bing.com",
         "insecure": true,
-        "server_name": "www.lovelive-anime.jp",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "fgV5xXgT53rlP82phUB6BpbKwvH8cqvomdEnrqlErko",
-          "short_id": "6ba85179e30d4fc2"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
-      }
-    },
-    {
-      "tag": "🇺🇸 United States_vless_02",
-      "type": "vless",
-      "server": "108.181.5.130",
-      "server_port": 19910,
-      "uuid": "9cc39477-0d85-4419-84d4-fb7fc77668b3",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "m.media-amazon.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "yKXmLTmXAi-BHBg3JpCz-NWUmVcKlfm7iMmVoq7YQx0",
-          "short_id": "6ba85179e30d4fc2"
-        }
+        "alpn": [
+          "h3"
+        ]
       }
     },
     {
       "tag": "🇺🇸 United States_hy2_1",
       "type": "hysteria2",
-      "server": "109.104.152.242",
-      "server_port": 1022,
+      "server": "64.31.55.42",
+      "server_port": 31100,
       "password": "dongtaiwang.com",
       "up_mbps": 10,
       "down_mbps": 100,
@@ -869,8 +834,8 @@
     {
       "tag": "🇺🇸 United States_hy2_2",
       "type": "hysteria2",
-      "server": "109.104.152.242",
-      "server_port": 1022,
+      "server": "64.31.55.42",
+      "server_port": 31100,
       "password": "dongtaiwang.com",
       "up_mbps": 10,
       "down_mbps": 100,
