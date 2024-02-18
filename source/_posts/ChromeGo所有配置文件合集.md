@@ -1,7 +1,7 @@
 
 ---
 title: ChromeGo所有配置文件合集 
-date: 2024-02-18 02:13:57
+date: 2024-02-18 02:15:07
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2024-02-18 02:13:57
+> Last Update Time: 2024-02-18 02:15:07
 ---
 
 ## Quick-ip_1.yaml
@@ -626,17 +626,7 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - name: dongtaiwang.com_1
-    type: hysteria2
-    server: 109.104.152.214
-    port: 11111
-    password: dongtaiwang.com
-    alpn:
-      - h3
-    sni: bing.com
-    skip-cert-verify: true
-    up: "11 Mbps"
-    down: "55 Mbps"
+  - {"name":"dongtaiwang.com_1","type":"vmess","server":"23.227.38.53","port":443,"cipher":"auto","uuid":"2b4ea72a-fd71-4433-9bec-81df29373530","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"defend-bathrooms-ronald-dev.trycloudflare.com","network":"ws","ws-opts":{"path":"2b4ea72a-fd71-4433-9bec-81df29373530-vm","headers":{"host":"defend-bathrooms-ronald-dev.trycloudflare.com"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
