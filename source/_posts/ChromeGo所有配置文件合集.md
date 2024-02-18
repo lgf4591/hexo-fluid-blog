@@ -1,7 +1,7 @@
 
 ---
 title: ChromeGo所有配置文件合集 
-date: 2024-02-18 02:44:30
+date: 2024-02-18 02:45:35
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2024-02-18 02:44:30
+> Last Update Time: 2024-02-18 02:45:35
 ---
 
 ## Quick-ip_1.yaml
@@ -626,7 +626,7 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {"name":"dongtaiwang.com_1","type":"vmess","server":"23.227.38.53","port":443,"cipher":"auto","uuid":"2b4ea72a-fd71-4433-9bec-81df29373530","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"defend-bathrooms-ronald-dev.trycloudflare.com","network":"ws","ws-opts":{"path":"2b4ea72a-fd71-4433-9bec-81df29373530-vm","headers":{"host":"defend-bathrooms-ronald-dev.trycloudflare.com"}}}
+  - {"name":"dongtaiwang.com_1","type":"vmess","server":"23.227.38.220","port":443,"cipher":"auto","uuid":"e6b124d8-7a82-463d-b360-a3a3a19f7dc2","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"photographs-encouraged-orientation-do.trycloudflare.com","network":"ws","ws-opts":{"path":"e6b124d8-7a82-463d-b360-a3a3a19f7dc2-vm","headers":{"host":"photographs-encouraged-orientation-do.trycloudflare.com"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
