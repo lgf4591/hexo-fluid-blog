@@ -1,7 +1,7 @@
 
 ---
 title: ChromeGo所有配置文件合集 
-date: 2024-02-18 06:34:44
+date: 2024-02-18 06:36:21
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2024-02-18 06:34:44
+> Last Update Time: 2024-02-18 06:36:21
 ---
 
 ## Quick-ip_1.yaml
@@ -489,11 +489,11 @@ rules:
       "settings": {
         "vnext": [
           {
-            "address": "51.159.77.153",
-            "port": 32200,
+            "address": "23.227.39.88",
+            "port": 443,
             "users": [
               {
-                "id": "7170d093-eef9-46b5-8e3c-00d404c09e41",
+                "id": "6dca5aed-9206-4496-9d1f-65c31c92f50b",
                 "alterId": 0,
                 "email": "t@t.tt",
                 "security": "auto"
@@ -504,9 +504,17 @@ rules:
       },
       "streamSettings": {
         "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "proprietary-arc-durham-motorcycle.trycloudflare.com",
+          "show": false
+        },
         "wsSettings": {
-          "path": "/S0eMfLns/",
-          "headers": {}
+          "path": "6dca5aed-9206-4496-9d1f-65c31c92f50b-vm",
+          "headers": {
+            "Host": "proprietary-arc-durham-motorcycle.trycloudflare.com"
+          }
         }
       },
       "mux": {
