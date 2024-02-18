@@ -102,12 +102,12 @@
       "outbounds": [
         "auto",
         "direct",
-        "🇺🇸 United States_hy2_0",
-        "🇺🇸 United States_hy2_02",
-        "🇺🇸 United States_tuic_1",
+        "🇺🇸 United States_vless_0",
+        "🇺🇸 United States_vless_02",
+        "🇺🇸 United States_hy2_1",
         "🇺🇸 United States_hy2_2",
-        "🇺🇸 United States_tuic_3",
-        "🇺🇸 United States_tuic_4",
+        "🇺🇸 United States_vless_3",
+        "🇺🇸 United States_vless_4",
         "None_vless_5",
         "None_vless_52",
         "🇺🇸 United States_vless_5",
@@ -442,12 +442,12 @@
       "tag": "🇺🇸 美国节点",
       "type": "selector",
       "outbounds": [
-        "🇺🇸 United States_hy2_0",
-        "🇺🇸 United States_hy2_02",
-        "🇺🇸 United States_tuic_1",
+        "🇺🇸 United States_vless_0",
+        "🇺🇸 United States_vless_02",
+        "🇺🇸 United States_hy2_1",
         "🇺🇸 United States_hy2_2",
-        "🇺🇸 United States_tuic_3",
-        "🇺🇸 United States_tuic_4",
+        "🇺🇸 United States_vless_3",
+        "🇺🇸 United States_vless_4",
         "🇺🇸 United States_vless_5",
         "🇺🇸 United States_vless_52",
         "🇺🇸 United States_vless_53",
@@ -626,12 +626,12 @@
       "tag": "auto",
       "type": "urltest",
       "outbounds": [
-        "🇺🇸 United States_hy2_0",
-        "🇺🇸 United States_hy2_02",
-        "🇺🇸 United States_tuic_1",
+        "🇺🇸 United States_vless_0",
+        "🇺🇸 United States_vless_02",
+        "🇺🇸 United States_hy2_1",
         "🇺🇸 United States_hy2_2",
-        "🇺🇸 United States_tuic_3",
-        "🇺🇸 United States_tuic_4",
+        "🇺🇸 United States_vless_3",
+        "🇺🇸 United States_vless_4",
         "None_vless_5",
         "None_vless_52",
         "🇺🇸 United States_vless_5",
@@ -801,27 +801,59 @@
       "tag": "block"
     },
     {
-      "tag": "🇺🇸 United States_hy2_0",
-      "type": "hysteria2",
+      "tag": "🇺🇸 United States_vless_0",
+      "type": "vless",
       "server": "64.31.55.30",
-      "server_port": 20011,
-      "password": "dongtaiwang.com",
-      "up_mbps": 10,
-      "down_mbps": 100,
+      "server_port": 33220,
+      "uuid": "fb706a82-ec58-44d9-8f7a-39b8494e3a6d",
+      "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
-        "server_name": "bing.com",
         "insecure": true,
-        "alpn": [
-          "h3"
-        ]
+        "server_name": "www.lovelive-anime.jp",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "fgV5xXgT53rlP82phUB6BpbKwvH8cqvomdEnrqlErko",
+          "short_id": "6ba85179e30d4fc2"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
       }
     },
     {
-      "tag": "🇺🇸 United States_hy2_02",
+      "tag": "🇺🇸 United States_vless_02",
+      "type": "vless",
+      "server": "108.181.5.130",
+      "server_port": 19910,
+      "uuid": "9cc39477-0d85-4419-84d4-fb7fc77668b3",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "m.media-amazon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "yKXmLTmXAi-BHBg3JpCz-NWUmVcKlfm7iMmVoq7YQx0",
+          "short_id": "6ba85179e30d4fc2"
+        }
+      }
+    },
+    {
+      "tag": "🇺🇸 United States_hy2_1",
       "type": "hysteria2",
-      "server": "109.104.152.144",
-      "server_port": 51100,
+      "server": "109.104.152.242",
+      "server_port": 1022,
       "password": "dongtaiwang.com",
       "up_mbps": 10,
       "down_mbps": 100,
@@ -829,24 +861,6 @@
         "enabled": true,
         "server_name": "bing.com",
         "insecure": true,
-        "alpn": [
-          "h3"
-        ]
-      }
-    },
-    {
-      "tag": "🇺🇸 United States_tuic_1",
-      "type": "tuic",
-      "server": "109.104.152.144",
-      "server_port": 44411,
-      "uuid": "7bda06fd-e4af-4115-8aa3-f021832cfa78",
-      "password": "dongtaiwang.com",
-      "congestion_control": "bbr",
-      "udp_relay_mode": "native",
-      "zero_rtt_handshake": false,
-      "heartbeat": "10s",
-      "tls": {
-        "enabled": true,
         "alpn": [
           "h3"
         ]
@@ -855,8 +869,8 @@
     {
       "tag": "🇺🇸 United States_hy2_2",
       "type": "hysteria2",
-      "server": "109.104.152.101",
-      "server_port": 16610,
+      "server": "109.104.152.242",
+      "server_port": 1022,
       "password": "dongtaiwang.com",
       "up_mbps": 10,
       "down_mbps": 100,
@@ -870,39 +884,49 @@
       }
     },
     {
-      "tag": "🇺🇸 United States_tuic_3",
-      "type": "tuic",
-      "server": "109.104.152.101",
-      "server_port": 22288,
-      "uuid": "7bda06fd-e4af-4115-8aa3-f021832cfa78",
-      "password": "dongtaiwang.com",
-      "congestion_control": "bbr",
-      "udp_relay_mode": "native",
-      "zero_rtt_handshake": false,
-      "heartbeat": "10s",
+      "tag": "🇺🇸 United States_vless_3",
+      "type": "vless",
+      "server": "108.181.5.130",
+      "server_port": 19910,
+      "uuid": "9cc39477-0d85-4419-84d4-fb7fc77668b3",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "alpn": [
-          "h3"
-        ]
+        "insecure": true,
+        "server_name": "m.media-amazon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "yKXmLTmXAi-BHBg3JpCz-NWUmVcKlfm7iMmVoq7YQx0",
+          "short_id": "6ba85179e30d4fc2"
+        }
       }
     },
     {
-      "tag": "🇺🇸 United States_tuic_4",
-      "type": "tuic",
-      "server": "109.104.152.101",
-      "server_port": 31101,
-      "uuid": "7bda06fd-e4af-4115-8aa3-f021832cfa78",
-      "password": "dongtaiwang.com",
-      "congestion_control": "bbr",
-      "udp_relay_mode": "native",
-      "zero_rtt_handshake": false,
-      "heartbeat": "10s",
+      "tag": "🇺🇸 United States_vless_4",
+      "type": "vless",
+      "server": "108.181.5.130",
+      "server_port": 19910,
+      "uuid": "9cc39477-0d85-4419-84d4-fb7fc77668b3",
+      "packet_encoding": "xudp",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "alpn": [
-          "h3"
-        ]
+        "insecure": true,
+        "server_name": "m.media-amazon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "yKXmLTmXAi-BHBg3JpCz-NWUmVcKlfm7iMmVoq7YQx0",
+          "short_id": "6ba85179e30d4fc2"
+        }
       }
     },
     {
