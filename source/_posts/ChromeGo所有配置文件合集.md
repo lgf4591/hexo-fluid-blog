@@ -1,7 +1,7 @@
 
 ---
 title: ChromeGo所有配置文件合集 
-date: 2024-02-18 02:47:40
+date: 2024-02-18 02:48:55
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2024-02-18 02:47:40
+> Last Update Time: 2024-02-18 02:48:55
 ---
 
 ## Quick-ip_1.yaml
@@ -732,11 +732,11 @@ dns:
     - tls://dns.google:853
 proxies:
 - name: dongtaiwang.com_1                           
-  server: 108.181.5.21                 
-  port: 12301                                    
+  server: 108.181.5.131              
+  port: 21167                                    
   type: tuic
-  uuid: 2b4ea72a-fd71-4433-9bec-81df29373530       
-  password: 2b4ea72a-fd71-4433-9bec-81df29373530   
+  uuid: e6b124d8-7a82-463d-b360-a3a3a19f7dc2
+  password: e6b124d8-7a82-463d-b360-a3a3a19f7dc2
   alpn: [h3]
   disable-sni: true
   reduce-rtt: true
