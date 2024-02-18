@@ -1,7 +1,7 @@
 
 ---
 title: ChromeGo所有配置文件合集 
-date: 2024-02-18 06:03:52
+date: 2024-02-18 06:05:00
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2024-02-18 06:03:52
+> Last Update Time: 2024-02-18 06:05:00
 ---
 
 ## Quick-ip_1.yaml
@@ -627,6 +627,7 @@ dns:
     - tls://dns.google:853
 proxies:
   - {"name":"dongtaiwang.com_1","type":"vmess","server":"23.227.38.220","port":443,"cipher":"auto","uuid":"e6b124d8-7a82-463d-b360-a3a3a19f7dc2","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"photographs-encouraged-orientation-do.trycloudflare.com","network":"ws","ws-opts":{"path":"e6b124d8-7a82-463d-b360-a3a3a19f7dc2-vm","headers":{"host":"photographs-encouraged-orientation-do.trycloudflare.com"}}}
+  - {"name":"dongtaiwang.com_2","type":"vmess","server":"23.227.39.210","port":443,"cipher":"auto","uuid":"41eeccfd-18e6-40b3-933d-c7000120ec2c","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"phoenix-readers-contrary-vertex.trycloudflare.com","network":"ws","ws-opts":{"path":"41eeccfd-18e6-40b3-933d-c7000120ec2c-vm","headers":{"host":"phoenix-readers-contrary-vertex.trycloudflare.com"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -634,6 +635,7 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - dongtaiwang.com_1
+      - dongtaiwang.com_2
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.gstatic.com/generate_204
@@ -641,6 +643,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - dongtaiwang.com_1
+      - dongtaiwang.com_2
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -648,24 +651,28 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - dongtaiwang.com_1
+      - dongtaiwang.com_2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - dongtaiwang.com_1
+      - dongtaiwang.com_2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
       - dongtaiwang.com_1
+      - dongtaiwang.com_2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - dongtaiwang.com_1
+      - dongtaiwang.com_2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -689,10 +696,12 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - dongtaiwang.com_1
+      - dongtaiwang.com_2
 
 rules:
   - MATCH,🚀 节点选择
   
+
 
 ```
 
