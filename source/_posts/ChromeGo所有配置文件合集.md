@@ -1,7 +1,7 @@
 
 ---
 title: ChromeGo所有配置文件合集 
-date: 2024-02-18 01:19:33
+date: 2024-02-18 01:20:42
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2024-02-18 01:19:33
+> Last Update Time: 2024-02-18 01:20:42
 ---
 
 ## Quick-ip_1.yaml
@@ -741,8 +741,17 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {"name":"dongtaiwang.com_1","type":"vless","server":"108.181.5.130","port":19910,"udp":true,"uuid":"9cc39477-0d85-4419-84d4-fb7fc77668b3","tls":true,"servername":"m.media-amazon.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"yKXmLTmXAi-BHBg3JpCz-NWUmVcKlfm7iMmVoq7YQx0","short-id":"6ba85179e30d4fc2"},"client-fingerprint":"chrome"}
-
+  - name: dongtaiwang.com_1
+    type: hysteria2
+    server: 109.104.152.214
+    port: 11111
+    password: dongtaiwang.com
+    alpn:
+      - h3
+    sni: bing.com
+    skip-cert-verify: true
+    up: "11 Mbps"
+    down: "55 Mbps"
 proxy-groups:
   - name: 🚀 节点选择
     type: select
