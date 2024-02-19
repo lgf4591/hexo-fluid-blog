@@ -1,7 +1,7 @@
 
 ---
 title: VPN合集
-date: 2024-02-19 03:17:09
+date: 2024-02-19 03:18:40
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2024-02-19 03:17:09
+> Last Update Time: 2024-02-19 03:18:40
 ---
 # vless_node
 ```bash
@@ -5211,7 +5211,6 @@ aHlzdGVyaWEyOi8vZG9uZ3RhaXdhbmcuY29tQDY0LjMxLjU1LjQyOjMxMTAwP2luc2VjdXJlPTEmc25p
         "🇺🇸 United States_hy2_0",
         "🇺🇸 United States_hy2_2",
         "🇺🇸 United States_hy2_3",
-        "🇺🇸 United States_tuic_4",
         "🇹🇼 Taiwan_hy_6",
         "🇫🇷 France_hy2_7",
         "🇺🇸 United States_hy2_8",
@@ -5412,7 +5411,6 @@ aHlzdGVyaWEyOi8vZG9uZ3RhaXdhbmcuY29tQDY0LjMxLjU1LjQyOjMxMTAwP2luc2VjdXJlPTEmc25p
         "🇺🇸 United States_hy2_0",
         "🇺🇸 United States_hy2_2",
         "🇺🇸 United States_hy2_3",
-        "🇺🇸 United States_tuic_4",
         "🇺🇸 United States_hy2_8",
         "🇺🇸 United States_hysteria_1",
         "🇺🇸 United States_hysteria_3",
@@ -5457,7 +5455,6 @@ aHlzdGVyaWEyOi8vZG9uZ3RhaXdhbmcuY29tQDY0LjMxLjU1LjQyOjMxMTAwP2luc2VjdXJlPTEmc25p
         "🇺🇸 United States_hy2_0",
         "🇺🇸 United States_hy2_2",
         "🇺🇸 United States_hy2_3",
-        "🇺🇸 United States_tuic_4",
         "🇹🇼 Taiwan_hy_6",
         "🇫🇷 France_hy2_7",
         "🇺🇸 United States_hy2_8",
@@ -5538,26 +5535,6 @@ aHlzdGVyaWEyOi8vZG9uZ3RhaXdhbmcuY29tQDY0LjMxLjU1LjQyOjMxMTAwP2luc2VjdXJlPTEmc25p
         "alpn": [
           "h3"
         ]
-      }
-    },
-    {
-      "tag": "🇺🇸 United States_tuic_4",
-      "type": "tuic",
-      "server": "108.181.5.131",
-      "server_port": 21167,
-      "uuid": "e6b124d8-7a82-463d-b360-a3a3a19f7dc2",
-      "password": "e6b124d8-7a82-463d-b360-a3a3a19f7dc2",
-      "congestion_control": "bbr",
-      "udp_relay_mode": "native",
-      "zero_rtt_handshake": false,
-      "heartbeat": "10s",
-      "tls": {
-        "enabled": true,
-        "alpn": [
-          "h3"
-        ],
-        "insecure": true,
-        "server_name": "www.bing.com"
       }
     },
     {
