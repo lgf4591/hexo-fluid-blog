@@ -1,7 +1,7 @@
 
 ---
 title: ChromeGo所有配置文件合集 
-date: 2024-02-19 00:32:13
+date: 2024-02-19 00:33:35
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2024-02-19 00:32:13
+> Last Update Time: 2024-02-19 00:33:35
 ---
 
 ## Quick-ip_1.yaml
@@ -634,8 +634,8 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {"name":"dongtaiwang.com_1","type":"vmess","server":"23.227.38.220","port":443,"cipher":"auto","uuid":"e6b124d8-7a82-463d-b360-a3a3a19f7dc2","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"pcs-referenced-camera-concerns.trycloudflare.com","network":"ws","ws-opts":{"path":"e6b124d8-7a82-463d-b360-a3a3a19f7dc2-vm","headers":{"host":"pcs-referenced-camera-concerns.trycloudflare.com"}}}
-  - {"name":"dongtaiwang.com_2","type":"vmess","server":"23.227.39.210","port":443,"cipher":"auto","uuid":"41eeccfd-18e6-40b3-933d-c7000120ec2c","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"sequence-worse-councils-nest.trycloudflare.com","network":"ws","ws-opts":{"path":"41eeccfd-18e6-40b3-933d-c7000120ec2c-vm","headers":{"host":"sequence-worse-councils-nest.trycloudflare.com"}}}
+  - {"name":"dongtaiwang.com_1","type":"vmess","server":"23.227.38.220","port":2053,"cipher":"auto","uuid":"e6b124d8-7a82-463d-b360-a3a3a19f7dc2","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"pcs-referenced-camera-concerns.trycloudflare.com","network":"ws","ws-opts":{"path":"e6b124d8-7a82-463d-b360-a3a3a19f7dc2-vm","headers":{"host":"pcs-referenced-camera-concerns.trycloudflare.com"}}}
+  - {"name":"dongtaiwang.com_2","type":"vmess","server":"23.227.39.210","port":2053,"cipher":"auto","uuid":"41eeccfd-18e6-40b3-933d-c7000120ec2c","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"sequence-worse-councils-nest.trycloudflare.com","network":"ws","ws-opts":{"path":"41eeccfd-18e6-40b3-933d-c7000120ec2c-vm","headers":{"host":"sequence-worse-councils-nest.trycloudflare.com"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
