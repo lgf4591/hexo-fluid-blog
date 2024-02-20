@@ -1,7 +1,7 @@
 
 ---
 title: ChromeGo所有配置文件合集 
-date: 2024-02-20 11:55:16
+date: 2024-02-20 11:56:33
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2024-02-20 11:55:16
+> Last Update Time: 2024-02-20 11:56:33
 ---
 
 ## Quick-ip_1.yaml
@@ -622,11 +622,11 @@ dns:
   nameserver:
     - 119.29.29.29
     - 223.5.5.5
-  fallback:
-    - 8.8.8.8
-    - 8.8.4.4
-    - tls://1.0.0.1:853
-    - tls://dns.google:853
+  fallback-filter:
+    geoip: false
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
 proxies:
   - {"name":"dongtaiwang.com_1","type":"vmess","server":"198.41.223.64","port":8080,"cipher":"auto","uuid":"d26363ff-8810-4591-8b77-d2f45e2b9f41","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"bibliographic-sword-sequence-advertisers.trycloudflare.com","network":"ws","ws-opts":{"path":"d26363ff-8810-4591-8b77-d2f45e2b9f41-vm","headers":{"host":"bibliographic-sword-sequence-advertisers.trycloudflare.com"}}}
   - {"name":"dongtaiwang.com_2","type":"vmess","server":"198.41.222.38","port":8080,"cipher":"auto","uuid":"e6b124d8-7a82-463d-b360-a3a3a19f7dc2","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"larger-marketing-amounts-skin.trycloudflare.com","network":"ws","ws-opts":{"path":"e6b124d8-7a82-463d-b360-a3a3a19f7dc2-vm","headers":{"host":"pcs-referenced-camera-concerns.trycloudflare.com"}}}
