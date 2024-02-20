@@ -1,7 +1,7 @@
 
 ---
 title: ChromeGo所有配置文件合集 
-date: 2024-02-20 11:56:33
+date: 2024-02-20 11:58:20
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2024-02-20 11:56:33
+> Last Update Time: 2024-02-20 11:58:20
 ---
 
 ## Quick-ip_1.yaml
@@ -3048,11 +3048,11 @@ dns:
   nameserver:
     - 119.29.29.29
     - 223.5.5.5
-  fallback:
-    - 8.8.8.8
-    - 8.8.4.4
-    - tls://1.0.0.1:853
-    - tls://dns.google:853
+  fallback-filter:
+    geoip: false
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
 proxies:
   - {"name":"dongtaiwang.com_1","type":"vmess","server":"23.227.39.12","port":8080,"cipher":"auto","uuid":"9084653a-ee34-4293-979e-7c2b50dffb84","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"configured-creek-relating-theater.trycloudflare.com","network":"ws","ws-opts":{"path":"9084653a-ee34-4293-979e-7c2b50dffb84-vm","headers":{"host":"configured-creek-relating-theater.trycloudflare.com"}}}
   - {"name":"dongtaiwang.com_2","type":"vmess","server":"23.227.39.23","port":8080,"cipher":"auto","uuid":"ac750859-79e7-4507-ba93-e92584ac49e3","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"per-essex-patterns-bowling.trycloudflare.com","network":"ws","ws-opts":{"path":"ac750859-79e7-4507-ba93-e92584ac49e3-vm","headers":{"host":"per-essex-patterns-bowling.trycloudflare.com"}}}
@@ -3178,11 +3178,11 @@ dns:
   nameserver:
     - 119.29.29.29
     - 223.5.5.5
-  fallback:
-    - 8.8.8.8
-    - 8.8.4.4
-    - tls://1.0.0.1:853
-    - tls://dns.google:853
+  fallback-filter:
+    geoip: false
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
 proxies:
   - {"name":"dongtaiwang.com_1","type":"vmess","server":"23.227.38.12","port":8080,"cipher":"auto","uuid":"3069ecb6-dd75-4e24-a30d-ec55747d83a1","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"nest-emily-healing-h.trycloudflare.com","network":"ws","ws-opts":{"path":"3069ecb6-dd75-4e24-a30d-ec55747d83a1-vm","headers":{"host":"nest-emily-healing-h.trycloudflare.com"}}}
   - {"name":"dongtaiwang.com_2","type":"vmess","server":"103.21.244.83","port":8080,"cipher":"auto","uuid":"3069ecb6-dd75-4e24-a30d-ec55747d83a1","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"nest-emily-healing-h.trycloudflare.com","network":"ws","ws-opts":{"path":"3069ecb6-dd75-4e24-a30d-ec55747d83a1-vm","headers":{"host":"nest-emily-healing-h.trycloudflare.com"}}}
