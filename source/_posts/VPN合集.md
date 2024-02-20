@@ -1,7 +1,7 @@
 
 ---
 title: VPN合集
-date: 2024-02-20 03:16:47
+date: 2024-02-20 03:18:54
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2024-02-20 03:16:47
+> Last Update Time: 2024-02-20 03:18:54
 ---
 # vless_node
 ```bash
@@ -26806,7 +26806,6 @@ aHlzdGVyaWE6Ly93d3cyLmR0a3U0OC54eXo6MjIzMzQ/cGVlcj0mYXV0aD1kb25ndGFpd2FuZy5jb20m
       "outbounds": [
         "auto",
         "direct",
-        "🇺🇸 United States_vless_0",
         "🇹🇼 Taiwan_hy_6",
         "🇫🇷 France_hy2_7",
         "🇺🇸 United States_hy2_8",
@@ -27004,7 +27003,6 @@ aHlzdGVyaWE6Ly93d3cyLmR0a3U0OC54eXo6MjIzMzQ/cGVlcj0mYXV0aD1kb25ndGFpd2FuZy5jb20m
       "tag": "🇺🇸 美国节点",
       "type": "selector",
       "outbounds": [
-        "🇺🇸 United States_vless_0",
         "🇺🇸 United States_hy2_8",
         "🇺🇸 United States_hysteria_1",
         "🇺🇸 United States_hysteria_3",
@@ -27046,7 +27044,6 @@ aHlzdGVyaWE6Ly93d3cyLmR0a3U0OC54eXo6MjIzMzQ/cGVlcj0mYXV0aD1kb25ndGFpd2FuZy5jb20m
       "tag": "auto",
       "type": "urltest",
       "outbounds": [
-        "🇺🇸 United States_vless_0",
         "🇹🇼 Taiwan_hy_6",
         "🇫🇷 France_hy2_7",
         "🇺🇸 United States_hy2_8",
@@ -27077,28 +27074,6 @@ aHlzdGVyaWE6Ly93d3cyLmR0a3U0OC54eXo6MjIzMzQ/cGVlcj0mYXV0aD1kb25ndGFpd2FuZy5jb20m
     {
       "type": "block",
       "tag": "block"
-    },
-    {
-      "tag": "🇺🇸 United States_vless_0",
-      "type": "vless",
-      "server": "64.31.55.42",
-      "server_port": 23514,
-      "uuid": "b17fa17d-13a0-4e8a-a398-8e549ea8b208",
-      "packet_encoding": "xudp",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ew6CB407JaI_WVD7QlD5QuvJTD7Pbv1oEbtis35-MRM"
-        }
-      }
     },
     {
       "tag": "🇹🇼 Taiwan_hy_6",
