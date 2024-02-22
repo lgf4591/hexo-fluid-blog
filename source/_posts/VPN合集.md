@@ -1,7 +1,7 @@
 
 ---
 title: VPN合集
-date: 2024-02-21 17:08:18
+date: 2024-02-22 00:53:05
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2024-02-21 17:08:18
+> Last Update Time: 2024-02-22 00:53:05
 ---
 # vless_node
 ```bash
@@ -25,7 +25,7 @@ None
 # CloudFlare优质IP
 ```bash
 
-电信198.41.215.242
+电信172.64.194.130
 电信190.93.244.236
 电信172.64.135.219
 
@@ -120,14 +120,14 @@ None
 140.82.114.21                 education.github.com
 
 
-# Update time: 2024-02-22T00:05:52+08:00
+# Update time: 2024-02-22T08:18:39+08:00
 # Update url: https://raw.hellogithub.com/hosts
 # Star me: https://github.com/521xueweihan/GitHub520
 # GitHub520 Host End
 
 ```
 
-该内容会自动定时更新， 数据更新时间：2024-02-22T00:05:52+08:00
+该内容会自动定时更新， 数据更新时间：2024-02-22T08:18:39+08:00
 
 #### 2.1.2 修改 hosts 文件
 
