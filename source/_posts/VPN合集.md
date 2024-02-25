@@ -1,7 +1,7 @@
 
 ---
 title: VPN合集
-date: 2024-02-24 16:07:46
+date: 2024-02-25 00:56:59
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2024-02-24 16:07:46
+> Last Update Time: 2024-02-25 00:56:59
 ---
 # vless_node
 ```bash
@@ -29,7 +29,7 @@ None
 电信172.64.197.252
 电信172.64.135.219
 
-联通162.159.192.134
+联通172.67.226.29
 联通172.67.132.80
 联通172.64.168.50
 
@@ -105,7 +105,7 @@ None
 192.0.66.2                    github.blog
 140.82.113.3                  github.com
 140.82.114.17                 github.community
-185.199.108.154               github.githubassets.com
+185.199.111.154               github.githubassets.com
 151.101.1.194                 github.global.ssl.fastly.net
 185.199.109.153               github.io
 185.199.109.133               github.map.fastly.net
@@ -120,14 +120,14 @@ None
 140.82.114.21                 education.github.com
 
 
-# Update time: 2024-02-25T00:05:06+08:00
+# Update time: 2024-02-25T08:20:20+08:00
 # Update url: https://raw.hellogithub.com/hosts
 # Star me: https://github.com/521xueweihan/GitHub520
 # GitHub520 Host End
 
 ```
 
-该内容会自动定时更新， 数据更新时间：2024-02-25T00:05:06+08:00
+该内容会自动定时更新， 数据更新时间：2024-02-25T08:20:20+08:00
 
 #### 2.1.2 修改 hosts 文件
 
