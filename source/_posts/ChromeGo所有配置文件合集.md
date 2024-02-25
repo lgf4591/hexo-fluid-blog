@@ -1,7 +1,7 @@
 
 ---
 title: ChromeGo所有配置文件合集 
-date: 2024-02-25 03:20:11
+date: 2024-02-25 03:21:26
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2024-02-25 03:20:11
+> Last Update Time: 2024-02-25 03:21:26
 ---
 
 ## Quick-ip_1.yaml
@@ -51,7 +51,7 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: "ip", type: hysteria2, server: 45.150.165.84, port: 8881, password: d017e316-82cb-441c-8eea-7b5e9de64a20, obfs: salamander, obfs-password: d017e316-82cb-441c-8eea-7b5e9de64a20, skip-cert-verify: true, up: "2 Mbps", down: "10 Mbps"}
+  - {name: "ip", type: hysteria2, server: 45.145.72.212, port: 8881, password: d017e316-82cb-441c-8eea-7b5e9de64a20, obfs: salamander, obfs-password: d017e316-82cb-441c-8eea-7b5e9de64a20, skip-cert-verify: true, up: "2 Mbps", down: "10 Mbps"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
