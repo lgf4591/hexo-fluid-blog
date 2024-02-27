@@ -1,7 +1,7 @@
 
 ---
 title: ChromeGo所有配置文件合集 
-date: 2024-02-27 02:44:02
+date: 2024-02-27 02:45:15
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2024-02-27 02:44:02
+> Last Update Time: 2024-02-27 02:45:15
 ---
 
 ## Quick-ip_1.yaml
@@ -925,18 +925,20 @@ rules:
   "outbounds": [
     {
       "tag": "proxy",
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "23.227.39.88",
-            "port": 8080,
+            "address": "yh1.dtku41.xyz",
+            "port": 443,
             "users": [
               {
-                "id": "6dca5aed-9206-4496-9d1f-65c31c92f50b",
+                "id": "ebfdccb6-7416-4b6e-860d-98587344d500",
                 "alterId": 0,
                 "email": "t@t.tt",
-                "security": "auto"
+                "security": "auto",
+                "encryption": "none",
+                "flow": ""
               }
             ]
           }
@@ -944,10 +946,17 @@ rules:
       },
       "streamSettings": {
         "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "lg1.freessr2.xyz",
+          "fingerprint": "chrome",
+          "show": false
+        },
         "wsSettings": {
-          "path": "6dca5aed-9206-4496-9d1f-65c31c92f50b-vm",
+          "path": "/xyakws",
           "headers": {
-            "Host": "proprietary-arc-durham-motorcycle.trycloudflare.com"
+            "Host": "lg1.freessr2.xyz"
           }
         }
       },
