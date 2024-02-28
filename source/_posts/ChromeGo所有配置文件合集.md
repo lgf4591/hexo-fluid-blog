@@ -1,7 +1,7 @@
 
 ---
 title: ChromeGo所有配置文件合集 
-date: 2024-02-28 03:41:24
+date: 2024-02-28 03:42:53
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2024-02-28 03:41:24
+> Last Update Time: 2024-02-28 03:42:53
 ---
 
 ## Quick-ip_1.yaml
@@ -1045,6 +1045,7 @@ dns:
       - 240.0.0.0/4
       - 0.0.0.0/32
 proxies:
+  - {"name":"dongtaiwang.com_0","type":"vmess","server":"fbi.gov","port":8080,"cipher":"none","uuid":"55d954d6-5eb4-47ff-a91a-3c1e1b98e44e","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"frontier-create-temperature-bmw.trycloudflare.com","network":"ws","ws-opts":{"path":"/argox-vm?ed=2048","headers":{"host":"frontier-create-temperature-bmw.trycloudflare.com"}}}
   - {"name":"dongtaiwang.com_1","type":"vmess","server":"23.227.38.23","port":8080,"cipher":"auto","uuid":"4679e4ed-dec7-4dfe-b3dd-c0f13592a0c4","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"uh-lawyers-instruments-kernel.trycloudflare.com","network":"ws","ws-opts":{"path":"4679e4ed-dec7-4dfe-b3dd-c0f13592a0c4-vm","headers":{"host":"uh-lawyers-instruments-kernel.trycloudflare.com"}}}
   - {"name":"dongtaiwang.com_2","type":"vmess","server":"23.227.38.11","port":8080,"cipher":"auto","uuid":"9084653a-ee34-4293-979e-7c2b50dffb84","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"configured-creek-relating-theater.trycloudflare.com","network":"ws","ws-opts":{"path":"9084653a-ee34-4293-979e-7c2b50dffb84-vm","headers":{"host":"configured-creek-relating-theater.trycloudflare.com"}}}
   - {"name":"dongtaiwang.com_3","type":"vmess","server":"23.227.38.22","port":8080,"cipher":"auto","uuid":"ac750859-79e7-4507-ba93-e92584ac49e3","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"per-essex-patterns-bowling.trycloudflare.com","network":"ws","ws-opts":{"path":"ac750859-79e7-4507-ba93-e92584ac49e3-vm","headers":{"host":"per-essex-patterns-bowling.trycloudflare.com"}}}
@@ -1068,6 +1069,7 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - dongtaiwang.com_0
       - dongtaiwang.com_1
       - dongtaiwang.com_2
       - dongtaiwang.com_3
@@ -1090,6 +1092,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
+      - dongtaiwang.com_0
       - dongtaiwang.com_1
       - dongtaiwang.com_2
       - dongtaiwang.com_3
@@ -1112,6 +1115,7 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - dongtaiwang.com_0
       - dongtaiwang.com_1
       - dongtaiwang.com_2
       - dongtaiwang.com_3
@@ -1133,6 +1137,7 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - dongtaiwang.com_0
       - dongtaiwang.com_1
       - dongtaiwang.com_2
       - dongtaiwang.com_3
@@ -1154,6 +1159,7 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - dongtaiwang.com_0
       - dongtaiwang.com_1
       - dongtaiwang.com_2
       - dongtaiwang.com_3
@@ -1175,6 +1181,7 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - dongtaiwang.com_0
       - dongtaiwang.com_1
       - dongtaiwang.com_2
       - dongtaiwang.com_3
@@ -1213,6 +1220,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - dongtaiwang.com_0
       - dongtaiwang.com_1
       - dongtaiwang.com_2
       - dongtaiwang.com_3
