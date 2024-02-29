@@ -1,7 +1,7 @@
 
 ---
 title: ChromeGo所有配置文件合集 
-date: 2024-02-29 08:53:13
+date: 2024-02-29 08:54:45
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2024-02-29 08:53:13
+> Last Update Time: 2024-02-29 08:54:45
 ---
 
 ## Quick-ip_1.yaml
@@ -2167,7 +2167,7 @@ rules:
 ## hysteria2-ip_3.json
 ```bash
 {
-  "server": "51.159.77.198:29277",
+  "server": "51.159.77.198:53967",
   "auth": "dongtaiwang.com",
   "tls": {
     "sni": "www.bing.com",
