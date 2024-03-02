@@ -1,7 +1,7 @@
 
 ---
 title: ChromeGo所有配置文件合集 
-date: 2024-03-02 07:33:48
+date: 2024-03-02 07:48:37
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2024-03-02 07:33:48
+> Last Update Time: 2024-03-02 07:48:37
 ---
 
 ## Quick-ip_1.yaml
@@ -596,31 +596,35 @@ rules:
       "settings": {
         "vnext": [
           {
-            "address": "62.210.101.0",
-            "port": 18700,
+            "address": "fbi.gov",
+            "port": 443,
             "users": [
               {
-                "id": "e659661d-8439-46e0-b1ab-d75ceaf73404",
+                "id": "ebfdccb6-7416-4b6e-860d-98587344d500",
                 "alterId": 0,
                 "email": "t@t.tt",
                 "security": "auto",
                 "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "flow": ""
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "update.microsoft",
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "lg1.freessr2.xyz",
           "fingerprint": "chrome",
-          "show": false,
-          "publicKey": "PBRc2v9SSXpG4jjQRYNa-kgs8w9V4U3MNLuncd2d0hw",
-          "shortId": "6ba85179e30d4fc2",
-          "spiderX": ""
+          "show": false
+        },
+        "wsSettings": {
+          "path": "/xyakws",
+          "headers": {
+            "Host": "lg1.freessr2.xyz"
+          }
         }
       },
       "mux": {
@@ -760,31 +764,35 @@ rules:
       "settings": {
         "vnext": [
           {
-            "address": "62.210.101.0",
-            "port": 18700,
+            "address": "23.227.39.88",
+            "port": 443,
             "users": [
               {
-                "id": "e659661d-8439-46e0-b1ab-d75ceaf73404",
+                "id": "ebfdccb6-7416-4b6e-860d-98587344d500",
                 "alterId": 0,
                 "email": "t@t.tt",
                 "security": "auto",
                 "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "flow": ""
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "update.microsoft",
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "serverName": "lg1.freessr2.xyz",
           "fingerprint": "chrome",
-          "show": false,
-          "publicKey": "PBRc2v9SSXpG4jjQRYNa-kgs8w9V4U3MNLuncd2d0hw",
-          "shortId": "6ba85179e30d4fc2",
-          "spiderX": ""
+          "show": false
+        },
+        "wsSettings": {
+          "path": "/xyakws",
+          "headers": {
+            "Host": "lg1.freessr2.xyz"
+          }
         }
       },
       "mux": {
