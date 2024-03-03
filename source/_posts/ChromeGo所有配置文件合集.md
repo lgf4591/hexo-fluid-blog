@@ -1,7 +1,7 @@
 
 ---
 title: ChromeGo所有配置文件合集 
-date: 2024-03-03 13:48:43
+date: 2024-03-03 13:49:58
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2024-03-03 13:48:43
+> Last Update Time: 2024-03-03 13:49:58
 ---
 
 ## Quick-ip_1.yaml
@@ -2269,27 +2269,37 @@ rules:
   ],
   "outbounds": [
     {
-      "type": "hysteria",
-      "tag": "dongtaiwang.com",
-      "server": "www2.dtku48.xyz", 
-      "server_port": 22334,
-      "up_mbps": 11, 
-      "down_mbps": 55,
-      "auth_str": "dongtaiwang.com",
+      "type": "shadowsocks",
+      "tag": "ss-6120",
+      "method": "2022-blake3-chacha20-poly1305", 
+      "password": "5IH4rBauUuOT4VpAshgMPMSQ3Tf+oJjDY/jEDbIel2Q=",
+      "detour": "stl-6243",
+      "multiplex": {
+        "enabled": true,
+        "protocol": "h2mux",
+        "max_connections": 1,
+        "min_streams": 4,
+        "padding": false
+      }
+    },
+    {
+      "type": "shadowtls",
+      "tag": "stl-6243",
+      "server": "172.83.156.157", 
+      "server_port": 44550,
+      "version": 3, 
+      "password": "FHDLxKgzbcDCPmijble8uT1gddgBmOxA1XXeDgyqgGc=", 
       "tls": {
         "enabled": true,
-        "insecure": true,
-        "server_name": "bing.com", 
-        "alpn": [
-          "h3"
-        ]
-
+        "server_name": "nijigen-works.jp", 
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome" 
+        }
       }
     }
-  ] 
-	 
+  ]
 }
-
 
 ```
 
