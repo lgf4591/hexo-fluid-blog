@@ -1,7 +1,7 @@
 
 ---
 title: ChromeGo所有配置文件合集 
-date: 2024-03-03 00:13:35
+date: 2024-03-03 00:14:48
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2024-03-03 00:13:35
+> Last Update Time: 2024-03-03 00:14:48
 ---
 
 ## Quick-ip_1.yaml
@@ -1567,8 +1567,8 @@ dns:
 proxies:
   - {"name":"dongtaiwang.com_1","type":"vmess","server":"23.227.39.12","port":8080,"cipher":"auto","uuid":"d4534b81-2c40-48a2-9a7b-35cd958c7437","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"uh-lawyers-instruments-kernel.trycloudflare.com","network":"ws","ws-opts":{"path":"d4534b81-2c40-48a2-9a7b-35cd958c7437-vm","headers":{"host":"uh-lawyers-instruments-kernel.trycloudflare.com"}}}
   - {"name":"dongtaiwang.com_2","type":"vmess","server":"23.227.39.24","port":8080,"cipher":"auto","uuid":"c575b66a-2901-4e05-a4b2-453e196f9bb5","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"per-essex-patterns-bowling.trycloudflare.com","network":"ws","ws-opts":{"path":"c575b66a-2901-4e05-a4b2-453e196f9bb5-vm","headers":{"host":"per-essex-patterns-bowling.trycloudflare.com"}}}
-  - {"name":"dongtaiwang.com_3","type":"vmess","server":"23.227.39.23","port":8080,"cipher":"auto","uuid":"e380bde6-f120-4b80-bdae-ea68b1b64504","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"configured-creek-relating-theater.trycloudflare.com","network":"ws","ws-opts":{"path":"e380bde6-f120-4b80-bdae-ea68b1b64504-vm","headers":{"host":"configured-creek-relating-theater.trycloudflare.com"}}}
-  - {"name":"dongtaiwang.com_4","type":"vmess","server":"23.227.39.45","port":8080,"cipher":"auto","uuid":"52899235-7faa-4f6f-b463-972cd7cfce04","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"widescreen-instruction-breakdown-postage.trycloudflare.com","network":"ws","ws-opts":{"path":"52899235-7faa-4f6f-b463-972cd7cfce04-vm","headers":{"host":"widescreen-instruction-breakdown-postage.trycloudflare.com"}}}
+  - {"name":"dongtaiwang.com_3","type":"vmess","server":"23.227.39.23","port":8080,"cipher":"auto","uuid":"46958ae9-31fb-48ef-8d13-9de4ac8a57b3","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"configured-creek-relating-theater.trycloudflare.com","network":"ws","ws-opts":{"path":"46958ae9-31fb-48ef-8d13-9de4ac8a57b3-vm","headers":{"host":"configured-creek-relating-theater.trycloudflare.com"}}}
+  - {"name":"dongtaiwang.com_4","type":"vmess","server":"23.227.39.45","port":8080,"cipher":"auto","uuid":"a984d860-a48a-4b1f-b6d4-74f7365b63e5","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"widescreen-instruction-breakdown-postage.trycloudflare.com","network":"ws","ws-opts":{"path":"a984d860-a48a-4b1f-b6d4-74f7365b63e5-vm","headers":{"host":"widescreen-instruction-breakdown-postage.trycloudflare.com"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -1678,8 +1678,8 @@ dns:
 proxies:
   - {"name":"dongtaiwang.com_1","type":"vmess","server":"yh1.freeh1.xyz","port":8080,"cipher":"auto","uuid":"d4534b81-2c40-48a2-9a7b-35cd958c7437","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"uh-lawyers-instruments-kernel.trycloudflare.com","network":"ws","ws-opts":{"path":"d4534b81-2c40-48a2-9a7b-35cd958c7437-vm","headers":{"host":"uh-lawyers-instruments-kernel.trycloudflare.com"}}}
   - {"name":"dongtaiwang.com_2","type":"vmess","server":"yh1.freeh1.xyz","port":8080,"cipher":"auto","uuid":"c575b66a-2901-4e05-a4b2-453e196f9bb5","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"per-essex-patterns-bowling.trycloudflare.com","network":"ws","ws-opts":{"path":"c575b66a-2901-4e05-a4b2-453e196f9bb5-vm","headers":{"host":"per-essex-patterns-bowling.trycloudflare.com"}}}
-  - {"name":"dongtaiwang.com_3","type":"vmess","server":"yh1.freeh1.xyz","port":8080,"cipher":"auto","uuid":"e380bde6-f120-4b80-bdae-ea68b1b64504","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"configured-creek-relating-theater.trycloudflare.com","network":"ws","ws-opts":{"path":"e380bde6-f120-4b80-bdae-ea68b1b64504-vm","headers":{"host":"configured-creek-relating-theater.trycloudflare.com"}}}
-  - {"name":"dongtaiwang.com_4","type":"vmess","server":"yh1.freeh1.xyz","port":8080,"cipher":"auto","uuid":"52899235-7faa-4f6f-b463-972cd7cfce04","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"widescreen-instruction-breakdown-postage.trycloudflare.com","network":"ws","ws-opts":{"path":"52899235-7faa-4f6f-b463-972cd7cfce04-vm","headers":{"host":"widescreen-instruction-breakdown-postage.trycloudflare.com"}}}
+  - {"name":"dongtaiwang.com_3","type":"vmess","server":"yh1.freeh1.xyz","port":8080,"cipher":"auto","uuid":"46958ae9-31fb-48ef-8d13-9de4ac8a57b3","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"configured-creek-relating-theater.trycloudflare.com","network":"ws","ws-opts":{"path":"46958ae9-31fb-48ef-8d13-9de4ac8a57b3-vm","headers":{"host":"configured-creek-relating-theater.trycloudflare.com"}}}
+  - {"name":"dongtaiwang.com_4","type":"vmess","server":"yh1.freeh1.xyz","port":8080,"cipher":"auto","uuid":"a984d860-a48a-4b1f-b6d4-74f7365b63e5","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"widescreen-instruction-breakdown-postage.trycloudflare.com","network":"ws","ws-opts":{"path":"a984d860-a48a-4b1f-b6d4-74f7365b63e5-vm","headers":{"host":"widescreen-instruction-breakdown-postage.trycloudflare.com"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
