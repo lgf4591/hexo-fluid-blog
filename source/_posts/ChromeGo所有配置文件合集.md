@@ -1,7 +1,7 @@
 
 ---
 title: ChromeGo所有配置文件合集 
-date: 2024-03-03 12:15:56
+date: 2024-03-03 12:17:31
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2024-03-03 12:15:56
+> Last Update Time: 2024-03-03 12:17:31
 ---
 
 ## Quick-ip_1.yaml
@@ -764,7 +764,7 @@ rules:
       "settings": {
         "vnext": [
           {
-            "address": "23.227.39.88",
+            "address": "yh6.dtku41.xyz",
             "port": 443,
             "users": [
               {
