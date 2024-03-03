@@ -1,7 +1,7 @@
 
 ---
 title: ChromeGo所有配置文件合集 
-date: 2024-03-03 21:29:10
+date: 2024-03-03 21:30:31
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2024-03-03 21:29:10
+> Last Update Time: 2024-03-03 21:30:31
 ---
 
 ## Quick-ip_1.yaml
