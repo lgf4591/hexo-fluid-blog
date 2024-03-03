@@ -1,7 +1,7 @@
 
 ---
 title: ChromeGo所有配置文件合集 
-date: 2024-03-03 11:33:15
+date: 2024-03-03 11:34:25
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2024-03-03 11:33:15
+> Last Update Time: 2024-03-03 11:34:25
 ---
 
 ## Quick-ip_1.yaml
@@ -1676,7 +1676,7 @@ dns:
       - 240.0.0.0/4
       - 0.0.0.0/32
 proxies:
-  - {"name":"dongtaiwang.com_1","type":"vmess","server":"yh1.freeh1.xyz","port":8080,"cipher":"auto","uuid":"d4534b81-2c40-48a2-9a7b-35cd958c7437","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"uh-lawyers-instruments-kernel.trycloudflare.com","network":"ws","ws-opts":{"path":"d4534b81-2c40-48a2-9a7b-35cd958c7437-vm","headers":{"host":"uh-lawyers-instruments-kernel.trycloudflare.com"}}}
+  - {"name":"dongtaiwang.com_1","type":"vmess","server":"yh1.freeh1.xyz","port":8080,"cipher":"auto","uuid":"80b48bc6-1faa-41f5-91f8-0bce015a8bea","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"uh-lawyers-instruments-kernel.trycloudflare.com","network":"ws","ws-opts":{"path":"80b48bc6-1faa-41f5-91f8-0bce015a8bea-vm","headers":{"host":"uh-lawyers-instruments-kernel.trycloudflare.com"}}}
   - {"name":"dongtaiwang.com_2","type":"vmess","server":"yh1.freeh1.xyz","port":8080,"cipher":"auto","uuid":"c575b66a-2901-4e05-a4b2-453e196f9bb5","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"per-essex-patterns-bowling.trycloudflare.com","network":"ws","ws-opts":{"path":"c575b66a-2901-4e05-a4b2-453e196f9bb5-vm","headers":{"host":"per-essex-patterns-bowling.trycloudflare.com"}}}
   - {"name":"dongtaiwang.com_3","type":"vmess","server":"yh1.freeh1.xyz","port":8080,"cipher":"auto","uuid":"46958ae9-31fb-48ef-8d13-9de4ac8a57b3","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"configured-creek-relating-theater.trycloudflare.com","network":"ws","ws-opts":{"path":"46958ae9-31fb-48ef-8d13-9de4ac8a57b3-vm","headers":{"host":"configured-creek-relating-theater.trycloudflare.com"}}}
   - {"name":"dongtaiwang.com_4","type":"vmess","server":"yh1.freeh1.xyz","port":8080,"cipher":"auto","uuid":"a984d860-a48a-4b1f-b6d4-74f7365b63e5","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"widescreen-instruction-breakdown-postage.trycloudflare.com","network":"ws","ws-opts":{"path":"a984d860-a48a-4b1f-b6d4-74f7365b63e5-vm","headers":{"host":"widescreen-instruction-breakdown-postage.trycloudflare.com"}}}
