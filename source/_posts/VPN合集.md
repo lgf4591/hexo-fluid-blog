@@ -1,7 +1,7 @@
 
 ---
 title: VPN合集
-date: 2024-03-06 17:07:17
+date: 2024-03-07 00:43:40
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2024-03-06 17:07:17
+> Last Update Time: 2024-03-07 00:43:40
 ---
 # vless_node
 ```bash
@@ -25,9 +25,9 @@ None
 # CloudFlare优质IP
 ```bash
 
-电信141.101.120.144
-电信172.64.192.97
-电信172.64.135.219
+电信172.64.94.26
+电信172.64.143.143
+电信162.159.136.23
 
 联通172.67.78.221
 联通162.159.134.96
@@ -82,20 +82,20 @@ None
 140.82.113.25                 alive.github.com
 140.82.113.6                  api.github.com
 185.199.108.153               assets-cdn.github.com
-185.199.111.133               avatars.githubusercontent.com
-185.199.111.133               avatars0.githubusercontent.com
-185.199.111.133               avatars1.githubusercontent.com
-185.199.111.133               avatars2.githubusercontent.com
-185.199.111.133               avatars3.githubusercontent.com
-185.199.111.133               avatars4.githubusercontent.com
-185.199.111.133               avatars5.githubusercontent.com
-185.199.111.133               camo.githubusercontent.com
+185.199.108.133               avatars.githubusercontent.com
+185.199.108.133               avatars0.githubusercontent.com
+185.199.108.133               avatars1.githubusercontent.com
+185.199.108.133               avatars2.githubusercontent.com
+185.199.108.133               avatars3.githubusercontent.com
+185.199.108.133               avatars4.githubusercontent.com
+185.199.108.133               avatars5.githubusercontent.com
+185.199.108.133               camo.githubusercontent.com
 140.82.113.21                 central.github.com
-185.199.111.133               cloud.githubusercontent.com
+185.199.108.133               cloud.githubusercontent.com
 140.82.114.10                 codeload.github.com
 140.82.114.22                 collector.github.com
-185.199.111.133               desktop.githubusercontent.com
-185.199.111.133               favicons.githubusercontent.com
+185.199.108.133               desktop.githubusercontent.com
+185.199.108.133               favicons.githubusercontent.com
 140.82.112.3                  gist.github.com
 52.216.109.59                 github-cloud.s3.amazonaws.com
 3.5.20.16                     github-com.s3.amazonaws.com
@@ -106,28 +106,28 @@ None
 140.82.112.3                  github.com
 140.82.114.17                 github.community
 185.199.110.154               github.githubassets.com
-151.101.129.194               github.global.ssl.fastly.net
+151.101.65.194                github.global.ssl.fastly.net
 185.199.108.153               github.io
-185.199.111.133               github.map.fastly.net
+185.199.108.133               github.map.fastly.net
 185.199.108.153               githubstatus.com
 140.82.114.25                 live.github.com
-185.199.111.133               media.githubusercontent.com
-185.199.111.133               objects.githubusercontent.com
+185.199.108.133               media.githubusercontent.com
+185.199.108.133               objects.githubusercontent.com
 13.107.42.16                  pipelines.actions.githubusercontent.com
-185.199.111.133               raw.githubusercontent.com
-185.199.111.133               user-images.githubusercontent.com
+185.199.108.133               raw.githubusercontent.com
+185.199.108.133               user-images.githubusercontent.com
 13.107.253.40                 vscode.dev
 140.82.114.21                 education.github.com
 
 
-# Update time: 2024-03-07T00:05:13+08:00
+# Update time: 2024-03-07T08:15:17+08:00
 # Update url: https://raw.hellogithub.com/hosts
 # Star me: https://github.com/521xueweihan/GitHub520
 # GitHub520 Host End
 
 ```
 
-该内容会自动定时更新， 数据更新时间：2024-03-07T00:05:13+08:00
+该内容会自动定时更新， 数据更新时间：2024-03-07T08:15:17+08:00
 
 #### 2.1.2 修改 hosts 文件
 
