@@ -1,7 +1,7 @@
 
 ---
 title: VPN合集
-date: 2024-03-07 11:01:16
+date: 2024-03-07 11:02:47
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2024-03-07 11:01:16
+> Last Update Time: 2024-03-07 11:02:47
 ---
 # vless_node
 ```bash
@@ -25,7 +25,7 @@ None
 # CloudFlare优质IP
 ```bash
 
-电信172.64.94.26
+电信172.67.158.30
 电信172.64.143.143
 电信162.159.136.23
 
