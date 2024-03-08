@@ -1,7 +1,7 @@
 
 ---
 title: VPN合集
-date: 2024-03-08 00:17:33
+date: 2024-03-08 00:19:19
 index_img: https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp
 category: VPN
 tags:
@@ -13,7 +13,7 @@ mermaid: true
 sticky: 100
 ---
 
-> Last Update Time: 2024-03-08 00:17:33
+> Last Update Time: 2024-03-08 00:19:19
 ---
 # vless_node
 ```bash
@@ -97,7 +97,7 @@ None
 185.199.111.133               desktop.githubusercontent.com
 185.199.111.133               favicons.githubusercontent.com
 140.82.112.3                  gist.github.com
-52.216.109.59                 github-cloud.s3.amazonaws.com
+3.5.20.177                    github-cloud.s3.amazonaws.com
 3.5.20.16                     github-com.s3.amazonaws.com
 54.231.161.153                github-production-release-asset-2e65be.s3.amazonaws.com
 52.217.232.161                github-production-repository-file-5c1aeb.s3.amazonaws.com
@@ -109,7 +109,7 @@ None
 151.101.1.194                 github.global.ssl.fastly.net
 185.199.108.153               github.io
 185.199.111.133               github.map.fastly.net
-185.199.111.153               githubstatus.com
+185.199.108.153               githubstatus.com
 140.82.114.26                 live.github.com
 185.199.111.133               media.githubusercontent.com
 185.199.111.133               objects.githubusercontent.com
@@ -120,14 +120,14 @@ None
 140.82.114.21                 education.github.com
 
 
-# Update time: 2024-03-08T06:04:48+08:00
+# Update time: 2024-03-08T08:19:11+08:00
 # Update url: https://raw.hellogithub.com/hosts
 # Star me: https://github.com/521xueweihan/GitHub520
 # GitHub520 Host End
 
 ```
 
-该内容会自动定时更新， 数据更新时间：2024-03-08T06:04:48+08:00
+该内容会自动定时更新， 数据更新时间：2024-03-08T08:19:11+08:00
 
 #### 2.1.2 修改 hosts 文件
 
